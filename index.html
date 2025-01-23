@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brian Hamachek's Book Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>Brian Hamachek's Book Recommendations</h1>
+
+    </header>
+
+    <main>
+        <section>
+
+            <div class="about-me">
+                <div style="display: flex; align-items: flex-start;">
+                    <img src="me.jpg" alt="Brian Hamachek" class="profile-photo" style="margin-right: 15px;" />
+                    <div>
+                        <p class="intro">I am a software engineer and entrepreneur living in Palo Alto, CA.</p>
+                        <p>
+                            I am also on <a target="_blank"
+                                href="https://www.instagram.com/brianhamachek/">Instagram</a>,
+                            <a target="_blank" href="https://www.linkedin.com/in/brianhamachek/">LinkedIn</a>,
+                            <a target="_blank" href="https://www.github.com/brianhama">Github</a>, <a target="_blank"
+                                href="https://www.medium.com/@brianhama">Medium</a>, and <a target="_blank"
+                                href="https://www.quora.com/profile/Brian-P-Hamachek">Quora</a>. I've previously worked
+                            at companies
+                            such as Microsoft, HP, StorSimple, and Portworx. I also co-founded a social networking app
+                            named Nearby
+                            and grew it to over 13 million users. I am currently the CTO of <a target="_blank"
+                                href="https://ventlyapp.com">Vently</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>About this website</h2>
+                <p>Outside of books assigned for school, I was never much of a reader growing up. Back in 2012, I
+                    decided to change that and set a goal of reading one book a month for a year. I got hooked. Since
+                    then, I've read over 600 books.</p>
+                <p>This website is a collection of the best books I've read. I've organized them by category and added a
+                    short description of each book. My hope is that someone is able to get as much from these books as I
+                    have. Also, if you have any recommendations, please let me know!</p>
+        </section>
+
+        <section id="books">
+            <h3>The Books (last update 1/23/2025)</h2>
+
+                <div>
+                    <label for="genre-select">Genre:</label>
+                    <select id="genre-select" onChange="changeCategory(this.value)">
+                        <option value="all">All</option>
+                        <option value="2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf">Non Fiction - Business & Finance</option>
+                        <option value="af857ea6-45a5-4966-9354-508e2f13ab61">Non Fiction - Science</option>
+                        <option value="19429dca-9fc0-47e9-a69e-c44cbc701c35">Non Fiction - Psychology / Sociology
+                        </option>
+                        <option value="0228bcb3-c1c7-447c-9a99-7693bacb1977">Non Fiction - History</option>
+                        <option value="40bf9cc1-4703-481a-9133-f6d5aa8cdaba">Non Fiction - Biography</option>
+                        <option value="615e7c56-6f1f-4eb3-b319-6e893eff93af">Non Fiction - Silicon Valley / Start-ups
+                        </option>
+                        <option value="577243d0-1f8b-4aa6-95af-04dcf8050f66">Non Fiction - Life Skills</option>
+                        <option value="d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de">Non Fiction - Other</option>
+                        <option value="061be80a-f4e8-4522-9672-5859fe2fc02e">Fiction</option>
+                    </select>
+                </div>
+
+                <div class="category-container" id="2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf" class="category-heading">
+                    <h2>Non Fiction - Business & Finance</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41rF4ELp2fL._SL200_.jpg"
+                            alt="The Great Mental Models, Volume 4 cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Great Mental Models, Volume 4: Economics and Art</p>
+                            <p class="book-author">Shane Parrish</p>
+                            <p class="book-blurb">Volume 4 of The Great Mental Models series delves into the realms of
+                                economics and
+                                art, presenting more than twenty-four valuable ideas with clear language and style. This
+                                book equips you
+                                with an understanding of the dynamics shaping our world.</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B0CTNLCDG6?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41gXbzUGOeL._SL200_.jpg"
+                            alt="Systems and Mathematics cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Systems and Mathematics: The Great Mental Models, Volume 3</p>
+                            <p class="book-author">Shane Parrish</p>
+                            <p class="book-blurb">Volume 3 of The Great Mental Models series focuses on systems and
+                                mathematics,
+                                simplifying more than twenty-four key concepts from these technical fields into
+                                easy-to-understand
+                                terms.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0D3VS9YJ9/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51andNpgyfL._SL200_.jpg"
+                            alt="Poor Charlie&rsquo;s Almanack cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T.
+                                Munger</p>
+                            <p class="book-author">Charles T. Munger</p>
+                            <p class="book-blurb">Spend each day trying to be a little wiser than you were when you woke
+                                up, Charles T.
+                                Munger advises in Poor Charlie’s Almanack. Originally published in 2005, this compendium
+                                of 11 talks,
+                                delivered by the legendary Berkshire Hathaway....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B0CMDCLDTP/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41GqbVAnxeL._SL200_.jpg" alt="$100M Offers cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">$100M Offers: How to Make Offers So Good People Feel Stupid Saying No
+                            </p>
+                            <p class="book-author">Alex Hormozi</p>
+                            <p class="book-blurb">The methods contained within this book are so simple, so
+                                instantaneous, and so
+                                effective, it’s as if they work by magic. If you implement even one tactic in this book,
+                                you’ll see the
+                                change in your prospects' demeanor....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B09BK57L5W/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51fHDWvvp-L._SL200_.jpg" alt="Liar's Poker cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Liar's Poker: Rising Through the Wreckage on Wall Street</p>
+                            <p class="book-author">Michael Lewis</p>
+                            <p class="book-blurb">The classic Michael Lewis book that defined an era of greed, gluttony,
+                                and outrageous
+                                fortune, available for the first time unabridged and read by the author....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B09R3X66PP/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51WrTBKEW5L._SL200_.jpg"
+                            alt="Way of the Wolf cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Way of the Wolf: Straight Line Selling: Master the Art of Persuasion,
+                                Influence, and
+                                Success</p>
+                            <p class="book-author">Jordan Belfort</p>
+                            <p class="book-blurb">Jordan Belfort—immortalized by Leonardo DiCaprio in the hit movie The
+                                Wolf of Wall
+                                Street—reveals the step-by-step sales and persuasion system proven to turn anyone into a
+                                sales-closing,
+                                money-earning rock star....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07235B2FT/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41AbpgAXGoL._SL200_.jpg" alt="Bad Blood cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Bad Blood: Secrets and Lies in a Silicon Valley Startup</p>
+                            <p class="book-author">John Carreyrou</p>
+                            <p class="book-blurb">In 2014, Theranos founder and CEO Elizabeth Holmes was widely seen as
+                                the next Steve
+                                Jobs: a brilliant Stanford dropout whose startup “unicorn” promised to revolutionize the
+                                medical
+                                industry with its breakthrough device....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07C8GVTB5/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51CUvlxvifL._SL200_.jpg" alt="Freakonomics cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Freakonomics: Revised Edition</p>
+                            <p class="book-author">Steven D. Levitt</p>
+                            <p class="book-blurb">Levitt and co-author Stephen J. Dubner show that economics is, at
+                                root, the study of
+                                incentives: how people get what they want, or need, especially when other people want or
+                                need the same
+                                thing....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V5GOHA/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41jenCaS2JL._SL200_.jpg"
+                            alt="Capital in the Twenty-First Century cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Capital in the Twenty-First Century</p>
+                            <p class="book-author">Thomas Piketty</p>
+                            <p class="book-blurb">In Capital in the Twenty-First Century, Thomas Piketty analyzes a
+                                unique collection of
+                                data from 20 countries, ranging as far back as the 18th century, to uncover key economic
+                                and social
+                                patterns....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00K33KA7M/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51yotsewD6L._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Flash Boys: A Wall Street Revolt</p>
+                            <p class="book-author">Michael Lewis</p>
+                            <p class="book-blurb">Michael Lewis returns to the financial world to give listeners a
+                                ringside seat as the
+                                biggest news story in years prepares to hit Wall Street....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B00ICRLMWI/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61SirCakIDL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Big Short: Inside the Doomsday Machine</p>
+                            <p class="book-author">Michael Lewis</p>
+                            <p class="book-blurb">Michael Lewis intelligently - and humorously - explains the current
+                                economic crisis in
+                                The Big Short....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B003B2ZV8K/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41gYz97UXNL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The New New Thing: A Silicon Valley Story</p>
+                            <p class="book-author">Michael Lewis</p>
+                            <p class="book-blurb">In the weird glow of the dying millennium, Michael Lewis sets out on a
+                                safari through
+                                Silicon Valley to find the world's most important technology entrepreneur....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002UZMXFI/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="af857ea6-45a5-4966-9354-508e2f13ab61" class="category-heading">
+                    <h2>Non Fiction - Science</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41EWW5oVlyL._SL200_.jpg"
+                            alt="Physics, Chemistry, and Biology cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Physics, Chemistry, and Biology: The Great Mental Models, Volume 2</p>
+                            <p class="book-author">Shane Parrish</p>
+                            <p class="book-blurb">Volume 2 of The Great Mental Models series provides a collection of
+                                over twenty
+                                important concepts from physics, chemistry, and biology in a clear and accessible style.
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0D3VSZR1Z/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51cSqb2gqLL._SL200_.jpg"
+                            alt="The Demon-Haunted World cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Demon-Haunted World: Science as a Candle in the Dark</p>
+                            <p class="book-author">Carl Sagan</p>
+                            <p class="book-blurb">How can we make intelligent decisions about our increasingly
+                                technology-driven lives
+                                if we don’t understand the difference between the myths of pseudoscience and the
+                                testable hypotheses of
+                                science? Find out....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B06XTZZLZ8/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51ufQTWPmgS._SL200_.jpg"
+                            alt="The Interpretation of Dreams cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Interpretation of Dreams</p>
+                            <p class="book-author">Sigmund Freud</p>
+                            <p class="book-blurb">The Interpretation of Dreams is the book that Sigmund Freud considered
+                                his most
+                                important and that forever changed the way we think about our dreams....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8MSNG/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51iqpxo43PL._SL200_.jpg"
+                            alt="The Selfish Gene cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Selfish Gene</p>
+                            <p class="book-author">Richard Dawkins</p>
+                            <p class="book-blurb">Dawkins' brilliant reformulation of the theory of natural selection
+                                has the
+                                distinction of having provoked as much excitement and interest outside the scientific
+                                community as
+                                within it....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B004QDTA9Y/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61J0IGoDviL._SL200_.jpg" alt="Genome cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Genome: The Autobiography of a Species in 23 Chapters</p>
+                            <p class="book-author">Matt Ridley</p>
+                            <p class="book-blurb">The genome's been mapped. But what does it mean? Find out....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B004JKFQO2/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="061be80a-f4e8-4522-9672-5859fe2fc02e" class="category-heading">
+                    <h2>Fiction</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/516ZTsyU2HL._SL200_.jpg" alt="Tempest cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Tempest: A Novel</p>
+                            <p class="book-author">Julie Cross</p>
+                            <p class="book-blurb">In Julie Cross' Tempest, the year is 2009. Nineteen-year-old Jackson
+                                Meyer is a normal
+                                guy… he's in college, has a girlfriend… and he can travel back through time. But it's
+                                not like the
+                                movies....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B006YK2VPW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41Sd-dVwqdL._SL200_.jpg" alt="2001 cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">2001: A Space Odyssey</p>
+                            <p class="book-author">Arthur C. Clarke</p>
+                            <p class="book-blurb">From the savannas of Africa at the dawn of mankind to the rings of
+                                Saturn as man
+                                adventures to the outer rim of our solar system, 2001: A Space Odyssey is a journey
+                                unlike any other....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002UZJGYY/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51mcI6b3HuL._SL200_.jpg"
+                            alt="Stranger in a Strange Land cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Stranger in a Strange Land</p>
+                            <p class="book-author">Robert A. Heinlein</p>
+                            <p class="book-blurb">Stranger in a Strange Land is the epic saga of an earthling, Valentine
+                                Michael Smith,
+                                born and educated on Mars, who arrives on our planet with “psi” powers....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8MUYI/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41aet8OqUJL._SL200_.jpg" alt="Haunted cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Haunted</p>
+                            <p class="book-author">Chuck Palahniuk</p>
+                            <p class="book-blurb">Haunted by Chuck Palahniuk is a novel made up of stories: 23 of them,
+                                to be precise.
+                                Twenty-three of the most horrifying, hilarious, mind-blowing, stomach-churning tales....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8N7FE/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51cUtigL-HL._SL200_.jpg" alt="I Am Legend cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">I Am Legend</p>
+                            <p class="book-author">Richard Matheson</p>
+                            <p class="book-blurb">In I Am Legend, a plague has decimated the world, and those
+                                unfortunate enough to
+                                survive are transformed into blood-thirsty creatures of the night....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V1CB2Q/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51LyHqei7mL._SL200_.jpg" alt="Sphere cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Sphere</p>
+                            <p class="book-author">Michael Crichton</p>
+                            <p class="book-blurb">A classic thriller from #1 New York Times bestselling author Michael
+                                Crichton, Sphere
+                                is a bravura demonstration of what he does better than anyone: riveting storytelling
+                                that combines
+                                frighteningly plausible, cutting-edge science and technology with pulse-pounding
+                                action....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00ZJQ8D8Q/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/31ZCuVSfdBL._SL200_.jpg" alt="Timeline cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Timeline: A Novel</p>
+                            <p class="book-author">Michael Crichton</p>
+                            <p class="book-blurb">In an Arizona desert a man wanders in a daze, speaking words that make
+                                no sense.
+                                Within twenty-four hours he is dead, his body swiftly cremated by his only known
+                                associates. Halfway
+                                around the world archaeologists make a shocking discovery at a medieval site....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002VA96S4/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51CPc-I0+vL._SL200_.jpg" alt="Jurassic Park cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Jurassic Park: A Novel</p>
+                            <p class="book-author">Michael Crichton</p>
+                            <p class="book-blurb">An astonishing technique for recovering and cloning dinosaur DNA has
+                                been discovered.
+                                Now humankind’s most thrilling fantasies have come true....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B00U7UORMU/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41ca2pXECyL._SL200_.jpg" alt="Seveneves cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Seveneves: A Novel</p>
+                            <p class="book-author">Neal Stephenson</p>
+                            <p class="book-blurb">A catastrophic event renders the earth a ticking time bomb. In a
+                                feverish race against
+                                the inevitable, nations around the globe band together to devise an ambitious plan to
+                                ensure the
+                                survival of humanity far beyond our atmosphere, in outer space....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00WNBF0RM/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51bCgl4RT5L._SL200_.jpg"
+                            alt="The Three-Body Problem cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Three-Body Problem</p>
+                            <p class="book-author">Cixin Liu</p>
+                            <p class="book-blurb">From China's most beloved sci-fi author, a first-contact story that
+                                weaves politics,
+                                science, and cosmic mystery.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00P0277C2/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/517pfctTa9L._SL200_.jpg" alt="The Alchemist cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Alchemist: A Fable About Following Your Dream</p>
+                            <p class="book-author">Paulo Coelho</p>
+                            <p class="book-blurb">Combining magic, wisdom, and wonder into an inspiring tale of
+                                discovery, this is a
+                                modern classic narrated by the inimitable Jeremy Irons.</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B002V0Q4LG/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61+DEUOaZwL._SL200_.jpg"
+                            alt="Inheritance Games cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Inheritance Games</p>
+                            <p class="book-author">Jennifer Lynn Barnes</p>
+                            <p class="book-blurb">Avery Grambs has a plan for a better future: Survive high school, win
+                                a scholarship,
+                                and get out. But her fortunes change in an instant when billionaire Tobias Hawthorne
+                                dies and leaves
+                                Avery virtually his entire fortune. The catch? Avery has no idea why - or even who
+                                Tobias Hawthorne
+                                is....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/154916046X/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41UP+lT+xiL._SL200_.jpg" alt="Matched cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Matched: Book 1</p>
+                            <p class="book-author">Ally Condie</p>
+                            <p class="book-blurb">In the Society, Officials decide. Who you love. Where you work. When
+                                you die. Cassia
+                                has always trusted the Society’s choices. And when her best friend appears on the
+                                Matching screen, she
+                                is certain he’s the one - until she sees another face flash for an instant....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B004CTOWB8/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51DZbbHQESL._SL200_.jpg" alt="Choke cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Choke</p>
+                            <p class="book-author">Chuck Palahniuk</p>
+                            <p class="book-blurb">Victor Mancini, a medical school dropout, is an antihero for our
+                                deranged times.
+                                Needing to pay elder care for his mother, Victor has devised an ingenious scam: He
+                                pretends to choke on
+                                pieces of food while dining in upscale restaurants....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B002V0PTGW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51QKMPYbVcL._SL200_.jpg"
+                            alt="The Bonfire of the Vanities cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Bonfire of the Vanities</p>
+                            <p class="book-author">Tom Wolfe</p>
+                            <p class="book-blurb">Tom Wolfe's best-selling modern classic tells the story of Sherman
+                                McCoy, an elite
+                                Wall Street bond trader whose one wrong turn leads to a humiliating fall from grace....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8DJI4/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/511oi04Jv4L._SL200_.jpg" alt="Under the Dome cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Under the Dome: A Novel</p>
+                            <p class="book-author">Stephen King</p>
+                            <p class="book-blurb">On an entirely normal, beautiful fall day in Chester's Mill, Maine,
+                                the town is
+                                inexplicably and suddenly sealed off from the rest of the world by an invisible force
+                                field....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V0M190/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51sgU3xi12L._SL200_.jpg" alt="The Institute cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Institute: A Novel</p>
+                            <p class="book-author">Stephen King</p>
+                            <p class="book-blurb">From number one New York Times best-selling author Stephen King, the
+                                most riveting and
+                                unforgettable story of kids confronting evil since It....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/1508279071/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51XAGSFRQvL._SL200_.jpg"
+                            alt="One Flew Over the Cuckoo's Nest cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">One Flew Over the Cuckoo's Nest: 50th Anniversary Edition</p>
+                            <p class="book-author">Ken Kesey</p>
+                            <p class="book-blurb">Boisterous, ribald, and ultimately shattering, Ken Kesey's One Flew
+                                Over the Cuckoo's
+                                Nest has left an indelible mark on the literature of our time....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B008N1TVDU/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51HrCuHBn+L._SL200_.jpg"
+                            alt="To Kill a Mockingbird cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">To Kill a Mockingbird</p>
+                            <p class="book-author">Harper Lee</p>
+                            <p class="book-blurb">A great American classic with many invaluable teaching moments. It
+                                continues to touch
+                                hearts and minds.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00K1HQVOQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51bpmH8hvTL._SL200_.jpg"
+                            alt="The Most Dangerous Game cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Most Dangerous Game</p>
+                            <p class="book-author">Richard Connell</p>
+                            <p class="book-blurb">A mysterious island, shrouded in fear, evil, and darkness. Here the
+                                amoral General
+                                Zaroff hunts....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0050K0TNI/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51O2PjnBd7L._SL200_.jpg" alt="Uglies cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Uglies: Uglies, Book 1</p>
+                            <p class="book-author">Scott Westerfeld</p>
+                            <p class="book-blurb">Tally lives in a world where your 16th birthday brings aesthetic
+                                perfection: an
+                                operation that erases all your flaws, transforming you from an "Ugly" into a
+                                "Pretty"....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0117VPY5Q/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/419rQcegOyL._SL200_.jpg"
+                            alt="The Midnight Library cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Midnight Library: A GMA Book Club Pick (A Novel)</p>
+                            <p class="book-author">Matt Haig</p>
+                            <p class="book-blurb">Somewhere out beyond the edge of the universe there is a library that
+                                contains an
+                                infinite number of books, each one the story of another reality....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/059334023X/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51Uorf8f+3L._SL200_.jpg"
+                            alt="The Great Gatsby cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Great Gatsby</p>
+                            <p class="book-author">F. Scott Fitzgerald</p>
+                            <p class="book-blurb">This new audio edition, authorized by Fitzgerald's estate, is narrated
+                                by
+                                Oscar-nominated actor Jake Gyllenhaal....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00BWYDMK8/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51WR0HyEu9L._SL200_.jpg"
+                            alt="The Handmaid's Tale cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Handmaid's Tale</p>
+                            <p class="book-author">Margaret Atwood</p>
+                            <p class="book-blurb">A gripping vision of our society radically overturned by a theocratic
+                                revolution,
+                                Margaret Atwood’s The Handmaid's Tale has become one of the most powerful and most
+                                widely read novels of
+                                our time....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B008NB9GIU/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41TvVsAxffL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Infinite Jest</p>
+                            <p class="book-author">David Foster Wallace</p>
+                            <p class="book-blurb">A gargantuan, mind-altering comedy about the Pursuit of Happiness in
+                                America set in an
+                                addicts' halfway house and a tennis academy, and featuring the most endearingly
+                                screwed-up family to
+                                come along in recent fiction....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B007P00API/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51jzUtyUkYL._SL200_.jpg" alt="Palo Alto cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Palo Alto: Stories</p>
+                            <p class="book-author">James Franco</p>
+                            <p class="book-blurb">A fiercely vivid collection of stories about troubled California
+                                teenagers and misfits
+                                - violent and harrowing, from the astonishingly talented actor and artist James
+                                Franco....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B004AG361U/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="19429dca-9fc0-47e9-a69e-c44cbc701c35" class="category-heading">
+                    <h2>Non Fiction - Psychology / Sociology</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51frmShzuIL._SL200_.jpg"
+                            alt="The Great Mental Models cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Great Mental Models: General Thinking Concepts</p>
+                            <p class="book-author">Shane Parrish</p>
+                            <p class="book-blurb">The Great Mental Models: General Thinking Concepts is the first book
+                                in The Great
+                                Mental Models series designed to upgrade your thinking with the best, most useful and
+                                powerful tools so
+                                you always have the right one on hand....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07P7XYQK1/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51EPbqCHCmS._SL200_.jpg" alt="Wanting cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Wanting: The Power of Mimetic Desire in Everyday Life</p>
+                            <p class="book-author">Luke Burgis</p>
+                            <p class="book-blurb">A groundbreaking exploration of why we want what we want, Wanting
+                                provides a toolkit
+                                for freeing ourselves from chasing unfulfilling desires....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/1250802946/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41H6RyCz-dL._SL200_.jpg" alt="Determined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Determined: A Science of Life Without Free Will</p>
+                            <p class="book-author">Robert M. Sapolsky</p>
+                            <p class="book-blurb">One of our great behavioral scientists, the bestselling author of
+                                Behave, plumbs the
+                                depths of the science and philosophy of decision-making to mount a devastating case
+                                against free will,
+                                an argument with profound consequences.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0BVNNWFR5/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51TMc4FljBL._SL200_.jpg" alt="The Game cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Game: Penetrating the Secret Society of Pickup Artists</p>
+                            <p class="book-author">Neil Strauss</p>
+                            <p class="book-blurb">Hidden somewhere, in nearly every major city, is an underground
+                                seduction lair. And in
+                                these lairs, men trade devastatingly effective techniques ever invented to charm
+                                women....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V1K17I/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51pmZ9X8DVL._SL200_.jpg"
+                            alt="ADD in Intimate Relationships cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">ADD in Intimate Relationships: A Comprehensive Guide for Couples</p>
+                            <p class="book-author">Daniel G. Amen</p>
+                            <p class="book-blurb">Attention deficit disorder causes intense unhappiness....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00M7BYGBE/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51oo22ZkGCL._SL200_.jpg"
+                            alt="The Sociopath Next Door cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Sociopath Next Door</p>
+                            <p class="book-author">Martha Stout</p>
+                            <p class="book-blurb">We are accustomed to think of sociopaths as violent criminals, but in
+                                The Sociopath
+                                Next Door, Harvard psychologist Martha Stout reveals that a shocking 4 percent of
+                                ordinary people....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8MREQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51dtWltQlbL._SL200_.jpg" alt="Infidelity cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Infidelity: Why Men and Women Cheat</p>
+                            <p class="book-author">Kenneth Paul Rosenberg</p>
+                            <p class="book-blurb">What the latest science tells us about the brain's reward systems,
+                                love, and sex - and
+                                how to prevent an affair from destroying your life. Infidelity provides key insights to
+                                find your true
+                                sexual and romantic potential and advocates honesty, trust, and integrity....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07CXW44NW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51kQonCW+gL._SL200_.jpg" alt="Caste cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Caste: The Origins of Our Discontents</p>
+                            <p class="book-author">Isabel Wilkerson</p>
+                            <p class="book-blurb">The Pulitzer Prize-winning, bestselling author of The Warmth of Other
+                                Suns examines
+                                the unspoken caste system that has shaped America and shows how our lives today are
+                                still defined by a
+                                hierarchy of human divisions....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/0593339800/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/510Fk3kw7mL._SL200_.jpg"
+                            alt="The State of Affairs cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The State of Affairs: Rethinking Infidelity</p>
+                            <p class="book-author">Esther Perel</p>
+                            <p class="book-blurb">An affair: It can rob a couple of their relationship, their happiness,
+                                their very
+                                identity. And yet this extremely common human experience is so poorly understood....</p>
+                            <a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B072WBLT3K/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51yBQp8WuUL._SL200_.jpg" alt="The Truth cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Truth</p>
+                            <p class="book-author">Neil Strauss</p>
+                            <p class="book-blurb">A shockingly personal, surprisingly relatable, brutally honest memoir
+                                in which the
+                                celebrated dating expert confronts the greatest challenge he has ever faced....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00RMFLY88/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/5136M1Gap0L._SL200_.jpg"
+                            alt="The Undoing Project cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Undoing Project: A Friendship That Changed Our Minds</p>
+                            <p class="book-author">Michael Lewis</p>
+                            <p class="book-blurb">The Undoing Project is about the fascinating collaboration between two
+                                men who have
+                                the dimensions of great literary figures. They became heroes in the university....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01KBM825G/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51c9nmYKj+L._SL200_.jpg"
+                            alt="The Better Angels of Our Nature cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Better Angels of Our Nature: Why Violence Has Declined</p>
+                            <p class="book-author">Steven Pinker</p>
+                            <p class="book-blurb">Faced with the ceaseless stream of news about war, crime, and
+                                terrorism, one could
+                                easily think we live in the most violent age ever seen....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B005PP1ONW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41iQeiOBkzL._SL200_.jpg" alt="Modern Romance cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Modern Romance: An Investigation</p>
+                            <p class="book-author">Aziz Ansari</p>
+                            <p class="book-blurb">At some point, every one of us embarks on a journey to find love. We
+                                meet people,
+                                date, get into and out of relationships, all with the hope of finding someone with whom
+                                we share a deep
+                                connection. This seems standard now....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00UKEQK82/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51aXLppXsHL._SL200_.jpg"
+                            alt="The Ethical Slut cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Ethical Slut: A Practical Guide to Polyamory, Open Relationships,
+                                & Other
+                                Adventures</p>
+                            <p class="book-author">Janet W. Hardy</p>
+                            <p class="book-blurb">For anyone who has ever dreamed of love, sex, and companionship beyond
+                                the limits of
+                                traditional monogamy, this groundbreaking guide navigates the infinite possibilities
+                                that open
+                                relationships can offer....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00B1VIPX6/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51lMYH2xvdL._SL200_.jpg"
+                            alt="The Rational Optimist cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Rational Optimist: How Prosperity Evolves</p>
+                            <p class="book-author">Matt Ridley</p>
+                            <p class="book-blurb">Life is getting better at an accelerating rate. The pessimists insist
+                                that we will
+                                reach a turning point and things will get worse. But they have been saying this for 200
+                                years....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B003L25KGS/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/516W4IbHeML._SL200_.jpg"
+                            alt="Mating in Captivity cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Mating in Captivity: Reconciling the Erotic & the Domestic</p>
+                            <p class="book-author">Esther Perel</p>
+                            <p class="book-blurb">Esther Perel takes on tough questions, grappling with the obstacles
+                                and anxieties that
+                                arise when our quest for secure love conflicts with our pursuit of passion....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8HNWC/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41r-tlO+HWL._SL200_.jpg"
+                            alt="Rethinking Narcissism cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Rethinking Narcissism: The Bad - and Surprising Good - About Feeling
+                                Special</p>
+                            <p class="book-author">Dr. Craig Malkin</p>
+                            <p class="book-blurb">In Rethinking Narcissism listeners will learn that there's far more to
+                                narcissism than
+                                its reductive invective would imply....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00XD0CU0W/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51PWIy1rHUL._SL200_.jpg"
+                            alt="How to Win Friends &amp; Influence People cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">How to Win Friends & Influence People</p>
+                            <p class="book-author">Dale Carnegie</p>
+                            <p class="book-blurb">For over 60 years the rock-solid, time-tested advice in this audiobook
+                                has carried
+                                thousands of now-famous people up the ladder of success in their business and personal
+                                lives....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V5BV96/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51zvOkieKjL._SL200_.jpg"
+                            alt="Predictably Irrational cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Predictably Irrational: The Hidden Forces That Shape Our Decisions</p>
+                            <p class="book-author">Dan Ariely</p>
+                            <p class="book-blurb">In a series of illuminating, often surprising experiments, MIT
+                                behavioral economist
+                                Dan Ariely refutes the common assumption that we behave in fundamentally rational
+                                ways....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V0GCE0/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51Ez+y4yUBL._SL200_.jpg" alt="Influence cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Influence: Science and Practice, ePub, 5th Edition</p>
+                            <p class="book-author">Robert B. Cialdini</p>
+                            <p class="book-blurb">Widely used in classes, as well as sold to people operating
+                                successfully in the
+                                business world, the eagerly awaited revision of Influence reminds the listener of the
+                                power of
+                                persuasion....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00N346UYK/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51nYxKrlxAL._SL200_.jpg"
+                            alt="Gang Leader for a Day cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Gang Leader for a Day: A Rogue Sociologist Takes to the Streets</p>
+                            <p class="book-author">Sudhir Venkatesh</p>
+                            <p class="book-blurb">The story of the young sociologist who studied a Chicago crack-dealing
+                                gang from the
+                                inside captured the world's attention when it was first described in Freakonomics....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V0TJRW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41kRF4qWHyL._SL200_.jpg"
+                            alt="Bobos in Paradise cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Bobos in Paradise: The New Upper Class and How They Got There</p>
+                            <p class="book-author">David Brooks</p>
+                            <p class="book-blurb">It used to be pretty easy to distinguish between the bourgeois world
+                                of capitalism and
+                                the bohemian counterculture....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8HHFA/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/519VeDZE8qL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Old Money: The Mythology of Wealth in America</p>
+                            <p class="book-author">Nelson Aldrich</p>
+                            <p class="book-blurb">This insider's look at inherited wealth in the United States explores
+                                the complex
+                                meanings of money and success in American society....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B00B8ZZMP4/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="0228bcb3-c1c7-447c-9a99-7693bacb1977" class="category-heading">
+                    <h2>Non Fiction - History</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51IqQzORQML._SL200_.jpg" alt="Helter Skelter cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Helter Skelter: The True Story of the Manson Murders</p>
+                            <p class="book-author">Vincent Bugliosi</p>
+                            <p class="book-blurb">Prosecuting attorney in the Manson trial Vincent Bugliosi held a
+                                unique insider's
+                                position in one of the most baffling and horrifying cases of the 20th century....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B005KBQQZC/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51Ejp6zICNL._SL200_.jpg"
+                            alt="American Kingpin cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the
+                                Silk Road</p>
+                            <p class="book-author">Nick Bilton</p>
+                            <p class="book-blurb">In 2011, a 26-year-old libertarian programmer named Ross Ulbricht
+                                launched the
+                                ultimate free market: the Silk Road, a clandestine website hosted on the Dark Web where
+                                anyone could
+                                trade anything....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B06Y1RH224/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/514BmGWbq8L._SL200_.jpg" alt="Americana cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Americana: A 400-Year History of American Capitalism</p>
+                            <p class="book-author">Bhu Srinivasan</p>
+                            <p class="book-blurb">Americana takes us on a 400-year journey of the spirit of innovation
+                                and ambition
+                                through a series of Next Big Things....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07565H29V/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51PNKmohmFL._SL200_.jpg"
+                            alt="The Great Earthquake and Firestorms of 1906 cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Great Earthquake and Firestorms of 1906: How San Francisco Nearly
+                                Destroyed Itself
+                            </p>
+                            <p class="book-author">Philip L. Fradkin</p>
+                            <p class="book-blurb">The first indication of the prolonged terror that followed the 1906
+                                earthquake
+                                occurred when a ship steaming off San Francisco's Golden Gate "seemed to jump clear out
+                                of the
+                                water"....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B009KR70PW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51CL6-rTjhL._SL200_.jpg"
+                            alt="Who Killed Jane Stanford? cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Who Killed Jane Stanford?: A Gilded Age Tale of Murder, Deceit,
+                                Spirits and the Birth
+                                of a University</p>
+                            <p class="book-author">Richard White</p>
+                            <p class="book-blurb">Deftly sifting the scattered evidence and conflicting stories of
+                                suspects and
+                                witnesses, Richard White gives us the first full account of Jane Stanford's murder and
+                                its cover-up....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B09XY55D8F/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51g0A-V5q-L._SL200_.jpg" alt="Palo Alto cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Palo Alto: A History of California, Capitalism, and the World</p>
+                            <p class="book-author">Malcolm Harris</p>
+                            <p class="book-blurb">Palo Alto’s weather is temperate, its people are educated and
+                                enterprising, its
+                                corporations are spiritually and materially ambitious and demonstrably
+                                world-changing....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0BF16WTB5/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61FrIfgE4rL._SL200_.jpg"
+                            alt="The Electric Kool-Aid Acid Test cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Electric Kool-Aid Acid Test</p>
+                            <p class="book-author">Tom Wolfe</p>
+                            <p class="book-blurb">Tom Wolfe's classic The Electric Kool-Aid Acid Test, an unflinching
+                                portrait of Ken
+                                Kesey, his Merry Pranksters, LSD, and the 1960s, ushered in an era of New Journalism and
+                                defined a
+                                generation....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07N944QPK/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/511lAxQS6EL._SL200_.jpg"
+                            alt="The Great Influenza cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Great Influenza: The Epic Story of the Deadliest Plague in History
+                            </p>
+                            <p class="book-author">John M. Barry</p>
+                            <p class="book-blurb">In the winter of 1918, at the height of World War I, history's most
+                                lethal influenza
+                                virus erupted in an army camp in Kansas, moved east with American troops, then exploded,
+                                killing as many
+                                as 100 million people worldwide....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002UZLF8Y/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51ZEI-NjeRL._SL200_.jpg" alt="Countdown 1945 cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Countdown 1945: The Extraordinary Story of the Atomic Bomb and the 116
+                                Days That
+                                Changed the World</p>
+                            <p class="book-author">Chris Wallace</p>
+                            <p class="book-blurb">From Chris Wallace, the veteran journalist and anchor of Fox News
+                                Sunday comes a
+                                behind-the-scenes account of the 116 days leading up to the American attack on
+                                Hiroshima....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/1797105450/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51+dOikxcPL._SL200_.jpg" alt="The Pioneers cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Pioneers: The Heroic Story of the Settlers Who Brought the
+                                American Ideal West</p>
+                            <p class="book-author">David McCullough</p>
+                            <p class="book-blurb">The number one New York Times best seller by Pulitzer Prize-winning
+                                historian David
+                                McCullough rediscovers an important chapter in the American story that's "as resonant
+                                today as ever"
+                                (The Wall Street Journal) - the settling of the Northwest Territory....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B07L3B3D6G/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51DAuBDmxTL._SL200_.jpg"
+                            alt="The Last Days of Night cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Last Days of Night: A Novel</p>
+                            <p class="book-author">Graham Moore</p>
+                            <p class="book-blurb">New York, 1888. Gas lamps still flicker in the city streets, but the
+                                miracle of
+                                electric light is in its infancy. The person who controls the means to turn night into
+                                day will make
+                                history....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01JSJ6ZN4/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61yozG4sg+L._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">White Trash: The 400-Year Untold History of Class in America</p>
+                            <p class="book-author">Nancy Isenberg</p>
+                            <p class="book-blurb">The wretched and landless poor have existed from the time of the
+                                earliest British
+                                colonial settlement....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01H62F8G0/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61I+lVZw8yL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Sapiens: A Brief History of Humankind</p>
+                            <p class="book-author">Yuval Noah Harari</p>
+                            <p class="book-blurb">Sapiens integrates history and science to challenge everything we
+                                thought we knew
+                                about being human: our thoughts, our actions, our heritage...and our future....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00SXJF7J4/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de" class="category-heading">
+                    <h2>Non Fiction - Other</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41ucJrSCTUL._SL200_.jpg" alt="Nuclear War cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Nuclear War: A Scenario</p>
+                            <p class="book-author">Annie Jacobsen</p>
+                            <p class="book-blurb">There is only one scenario other than an asteroid strike that could
+                                end the world as
+                                we know it in a matter of hours: nuclear war. And one of the triggers for that war would
+                                be a nuclear
+                                missile inbound toward the United States.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0CF6R3R7W/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51gtnVvJyFL._SL200_.jpg"
+                            alt="Very Important People cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Very Important People: Status and Beauty in the Global Party Circuit
+                            </p>
+                            <p class="book-author">Ashley Mears</p>
+                            <p class="book-blurb">A sociologist and former fashion model takes listeners inside the
+                                elite global party
+                                circuit of "models and bottles" to reveal how beautiful young women are used to boost
+                                the status of
+                                men....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/1980089817/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/514bTcXstSL._SL200_.jpg"
+                            alt="The Right Stuff cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Right Stuff</p>
+                            <p class="book-author">Tom Wolfe</p>
+                            <p class="book-blurb">Tom Wolfe describes the inner life of astronauts with almost uncanny
+                                empathetic
+                                powers....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B077K8CR41/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/413PeRYmpKL._SL200_.jpg" alt="Troubled cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Troubled: The Failed Promise of America’s Behavioral Treatment
+                                Programs</p>
+                            <p class="book-author">Kenneth R. Rosen</p>
+                            <p class="book-blurb">An award-winning journalist’s breathtaking mosaic of the tough-love
+                                industry and the
+                                young adults it inevitably fails....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/1799771474/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51EE3GAdmfL._SL200_.jpg" alt="The Art of War cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Art of War</p>
+                            <p class="book-author">Sun Tzu</p>
+                            <p class="book-blurb">The 13 chapters of The Art of War, each devoted to one aspect of
+                                warfare, were
+                                compiled by the high-ranking Chinese military general, strategist, and philosopher
+                                Sun-Tzu....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00URXOQ1E/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/515AWhxHp9L._SL200_.jpg"
+                            alt="Misquoting Jesus cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Misquoting Jesus</p>
+                            <p class="book-author">Bart D. Ehrman</p>
+                            <p class="book-blurb">In Misquoting Jesus, Ehrman tells the story behind the mistakes and
+                                changes that
+                                ancient scribes made to the New Testament and shows the great impact they had upon the
+                                Bible we use
+                                today....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V1M3WY/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51i+ZbKIV3L._SL200_.jpg" alt="Mindhunter cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Mindhunter: Inside the FBI's Elite Serial Crime Unit</p>
+                            <p class="book-author">John E. Douglas</p>
+                            <p class="book-blurb">Discover the classic behind-the-scenes chronicle of John E. Douglas’
+                                25-year career in
+                                the FBI Investigative Support Unit, where he used psychological profiling....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B074Q1L6J6/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51SnsM+6S4L._SL200_.jpg"
+                            alt="American Radical cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">American Radical: Inside the World of an Undercover Muslim FBI Agent
+                            </p>
+                            <p class="book-author">Tamer Elnoury</p>
+                            <p class="book-blurb">The explosive memoir of a Muslim American FBI agent fighting terror
+                                from the
+                                inside....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B074F41J3Z/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51d2wR7k3GL._SL200_.jpg"
+                            alt="Billion Dollar Whale cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Billion Dollar Whale</p>
+                            <p class="book-author">Bradley Hope</p>
+                            <p class="book-blurb">Now a number-one international best seller, Billion Dollar Whale is
+                                "an epic tale of
+                                white-collar crime on a global scale" (Publishers Weekly), revealing how a young social
+                                climber from
+                                Malaysia pulled off one of the biggest heists in history....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/1478948000/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="40bf9cc1-4703-481a-9133-f6d5aa8cdaba" class="category-heading">
+                    <h2>Non Fiction - Biography</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41D8WGukI+L._SL200_.jpg"
+                            alt="The Trading Game cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Trading Game: A Confession</p>
+                            <p class="book-author">Gary Stevenson</p>
+                            <p class="book-blurb">The Trading Game is an outrageous, unvarnished, white-knuckle journey
+                                to the dark
+                                heart of an intoxicating world—the trading floor—from someone who survived the game and
+                                then blew it all
+                                wide open.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0CBZVSKY5/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51VEeZWAo-L._SL200_.jpg" alt="Einstein cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Einstein: His Life and Universe</p>
+                            <p class="book-author">Walter Isaacson</p>
+                            <p class="book-blurb">Based on the newly released personal letters of Albert Einstein,
+                                Walter Isaacson
+                                explores how an imaginative, impertinent patent clerk became the mind reader of the
+                                creator of the
+                                cosmos....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V1A1YQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/519diyDo0ML._SL200_.jpg" alt="Elon Musk cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Elon Musk</p>
+                            <p class="book-author">Walter Isaacson</p>
+                            <p class="book-blurb">When Elon Musk was a kid in South Africa, he was regularly beaten by
+                                bullies. One day
+                                a group pushed him down some concrete steps and kicked him until his face was a swollen
+                                ball of flesh.
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0BX4SCV1V/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41r6Xg98YJL._SL200_.jpg" alt="King: A Life cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">King: A Life</p>
+                            <p class="book-author">Jonathan Eig</p>
+                            <p class="book-blurb">Vividly written and exhaustively researched, Jonathan Eig’s King: A
+                                Life is the first
+                                major biography in decades of the civil rights icon Martin Luther King Jr.—and the first
+                                to include
+                                recently declassified FBI files.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0BJY44ST3/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41iaUFTequL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Paris: The Memoir</p>
+                            <p class="book-author">Paris Hilton</p>
+                            <p class="book-blurb">From the woman who is credited for launching what we know as the
+                                celebrity focused,
+                                “brand” driven, social media obsessed popular culture of today, comes an honest and
+                                surprising memoir
+                                that reckons with that truth, and shows that there is so much more to Paris Hilton than
+                                you might
+                                believe.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0BCHBZDPX/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61zcpKItWZL._SL200_.jpg"
+                            alt="Benjamin Franklin: An American Life cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Benjamin Franklin: An American Life</p>
+                            <p class="book-author">Walter Isaacson</p>
+                            <p class="book-blurb">Benjamin Franklin is the founding father who winks at us - an
+                                ambitious urban
+                                entrepreneur who rose up the social ladder, from leather-aproned shopkeeper to dining
+                                with kings....</p>
+                            <a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B004VA8ZVQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51VOPahycoL._SL200_.jpg" alt="Washington cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Washington: A Life</p>
+                            <p class="book-author">Ron Chernow</p>
+                            <p class="book-blurb">From National Book Award winner Ron Chernow, a landmark biography of
+                                George
+                                Washington....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0044EMDEO/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51bm1zi6z1L._SL200_.jpg"
+                            alt="Leland Stanford cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Leland Stanford: The Life and Legacy of the Railroad Executive Who
+                                Became California's
+                                Governor and the West's Most Famous Robber Baron</p>
+                            <p class="book-author">Charles River Editors</p>
+                            <p class="book-blurb">Leland Stanford: The Life and Legacy of the Railroad Executive Who
+                                Became California’s
+                                Governor and the West’s Most Famous Robber Baron chronicles the remarkable life of
+                                Stanford....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B082WN2MKV/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61gS6EWmWwL._SL200_.jpg" alt="Will cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Will</p>
+                            <p class="book-author">Will Smith</p>
+                            <p class="book-blurb">One of the most dynamic and globally recognized entertainment forces
+                                of our time opens
+                                up fully about his life, in a brave and inspiring book that traces his learning curve to
+                                a place where
+                                outer success, inner happiness, and human connection are aligned....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/0593146239/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41CMMz4RC8L._SL200_.jpg"
+                            alt="A Promised Land cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">A Promised Land</p>
+                            <p class="book-author">Barack Obama</p>
+                            <p class="book-blurb">In the stirring, highly anticipated first volume of his presidential
+                                memoirs, Barack
+                                Obama tells the story of his improbable odyssey from young man searching for his
+                                identity to leader of
+                                the free world....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/0525633723/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51H3v85MyKL._SL200_.jpg"
+                            alt="Washington's End cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Washington's End: The Final Years and Forgotten Struggle</p>
+                            <p class="book-author">Jonathan Horn</p>
+                            <p class="book-blurb">Popular historian and former White House speechwriter Jonathan Horn
+                                tells the
+                                astonishing true story of George Washington’s forgotten last years - the personalities,
+                                plotting, and
+                                private torment that unraveled America’s first post-presidency....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/1797111051/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/513Hl3HQa+L._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Picking Up: On the Streets and Behind the Trucks with the Sanitation
+                                Workers of New
+                                York City</p>
+                            <p class="book-author">Robin Nagle</p>
+                            <p class="book-blurb">America’s largest city generates garbage in torrents - 11,000 tons a
+                                day on average.
+                                But New Yorkers don’t give it much attention....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00BOU98I0/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51ok7zll9AL._SL200_.jpg"
+                            alt="Thank You for My Service cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Thank You for My Service</p>
+                            <p class="book-author">Mat Best</p>
+                            <p class="book-blurb">Members of the military’s special operations branches share a closely
+                                guarded secret:
+                                They love their jobs. They relish the opportunity to fight. They are thankful for it,
+                                even, and hopeful
+                                that maybe, possibly, they’ll also get to kill a bunch of bad guys while they’re at
+                                it....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/0593164407/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51NwvTgdAYL._SL200_.jpg" alt="My Own Words cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">My Own Words</p>
+                            <p class="book-author">Ruth Bader Ginsburg</p>
+                            <p class="book-blurb">A fascinating glimpse into the life of one of America's most
+                                influential women....</p>
+                            <a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01K3KUJ5C/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51Mc--F6zGL._SL200_.jpg" alt="Born a Crime cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Born a Crime: Stories from a South African Childhood</p>
+                            <p class="book-author">Trevor Noah</p>
+                            <p class="book-blurb">Comedian Trevor Noah offers listeners a glimpse into his childhood
+                                during apartheid in
+                                South Africa in this award-winning memoir.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01IW9TQPK/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61RIh9gAAFL._SL200_.jpg" alt="21 cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">21: Bringing Down the House: The Inside Story of Six M.I.T. Students
+                                Who Took Vegas
+                                for Millions</p>
+                            <p class="book-author">Ben Mezrich</p>
+                            <p class="book-blurb">In the midst of the Go-Go '90s, the culture of greed infused the MIT
+                                campus....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002V8MEZS/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61VMbkvRXUL._SL200_.jpg"
+                            alt="Leonardo da Vinci cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Leonardo da Vinci</p>
+                            <p class="book-author">Walter Isaacson</p>
+                            <p class="book-blurb">Leonardo da Vinci created the two most famous paintings in history,
+                                The Last Supper
+                                and the Mona Lisa. But in his own mind, he was just as much a man of science and
+                                engineering....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B071VTQZYT/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61jsqgBB+3L._SL200_.jpg" alt="The Operator cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Operator: Firing the Shots That Killed Osama Bin Laden and My
+                                Years as a SEAL Team
+                                Warrior</p>
+                            <p class="book-author">Robert O'Neill</p>
+                            <p class="book-blurb">Stirringly evocative, thought provoking, and often jaw dropping, The
+                                Operator ranges
+                                across SEAL Team Operator Robert O'Neill's awe-inspiring 400-mission career....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01N6XS0HX/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41CPS3JoO6L._SL200_.jpg"
+                            alt="Alexander Hamilton cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Alexander Hamilton</p>
+                            <p class="book-author">Ron Chernow</p>
+                            <p class="book-blurb">Historians have long told the story of America’s birth as the triumph
+                                of Jefferson’s
+                                democratic ideals over the aristocratic intentions of Hamilton....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B002UZLEFS/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/616eaUDkw9L._SL200_.jpg" alt="Lincoln cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Lincoln</p>
+                            <p class="book-author">David Herbert Donald</p>
+                            <p class="book-blurb">In the best-selling tradition of Truman, two-time Pulitzer
+                                Prize-winning biographer
+                                David Herbert Donald offers a new classic in American history and biography....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00A41XXRM/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61gzwAKgOnL._SL200_.jpg" alt="High Price cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">High Price: A Neuroscientist's Journey of Self-Discovery That
+                                Challenges Everything
+                                You Know About Drugs and Society</p>
+                            <p class="book-author">Carl Hart</p>
+                            <p class="book-blurb">A pioneering neuroscientist shares his story of growing up in one of
+                                Miami's toughest
+                                neighborhoods and how it led him to his groundbreaking work in drug addiction....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00GFSC4O6/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41Hw+cFHzKL._SL200_.jpg" alt="Pimp cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Pimp: The Story of My Life</p>
+                            <p class="book-author">Iceberg Slim</p>
+                            <p class="book-blurb">A blueprint. A bible. What Sun Tzu’s Art of War was to ancient China,
+                                Pimp is to the
+                                streets. As real as you can get without jumping in, this is the story of Iceberg Slim’s
+                                life as he saw,
+                                felt, tasted, and smelled it.</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B004ZXZROW/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41goWDE1PUL._SL200_.jpg" alt="Educated cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Educated: A Memoir</p>
+                            <p class="book-author">Tara Westover</p>
+                            <p class="book-blurb">Born to survivalists in the mountains of Idaho, Tara Westover was
+                                seventeen the first
+                                time she set foot in a classroom....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B075F8MBMQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51IQzkj0+NL._SL200_.jpg" alt="Elon Musk cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future</p>
+                            <p class="book-author">Ashlee Vance</p>
+                            <p class="book-blurb">Elon Musk is both an illuminating and authorized look at the
+                                extraordinary life of one
+                                of Silicon Valley's most exciting, unpredictable, and ambitious entrepreneurs....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00UX8ODPM/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="615e7c56-6f1f-4eb3-b319-6e893eff93af" class="category-heading">
+                    <h2>Non Fiction - Silicon Valley / Start-ups</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61MSZsYP-NL._SL200_.jpg"
+                            alt="Hackers &amp; Painters cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Hackers & Painters: Big Ideas from the Computer Age</p>
+                            <p class="book-author">Paul Graham</p>
+                            <p class="book-blurb">We are living in the computer age, in a world increasingly designed
+                                and engineered by
+                                computer programmers and software designers, by people who call themselves hackers. Who
+                                are these
+                                people, what motivates them, and why should you care? Find out....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B08Z4DVL45/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41M6f0yDCSL._SL200_.jpg"
+                            alt="Secrets of Sand Hill Road cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Secrets of Sand Hill Road: Venture Capital and How to Get It</p>
+                            <p class="book-author">Scott Kupor</p>
+                            <p class="book-blurb">In Secrets of Sand Hill Road, Kupor explains exactly how VCs decide
+                                where and how much
+                                to invest, and how entrepreneurs can get the best possible deal and make the most of
+                                their relationships
+                                with VCs....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/0593102797/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/416t7V93neL._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley
+                            </p>
+                            <p class="book-author">Antonio Garcia Martinez</p>
+                            <p class="book-blurb">Liar's Poker meets The Social Network in an irreverent exposé of life
+                                inside the tech
+                                bubble, from industry provocateur Antonio García Martinez....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B01EM3NTQ2/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51HzIZEePNL._SL200_.jpg" alt="Disrupted cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Disrupted: My Misadventure in the Start-Up Bubble</p>
+                            <p class="book-author">Dan Lyons</p>
+                            <p class="book-blurb">An instant New York Times best seller, Dan Lyons' "hysterical"
+                                (Recode) memoir, hailed
+                                by the Los Angeles Times as "the best book about Silicon Valley," takes listeners inside
+                                the maddening
+                                world of fad-chasing venture capitalists, sales bros, social climbers....</p><a
+                                class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B01DDV7SXY/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container" id="577243d0-1f8b-4aa6-95af-04dcf8050f66" class="category-heading">
+                    <h2>Non Fiction - Life Skills</h2>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/515aLpBOsyL._SL200_.jpg"
+                            alt="Law School for Everyone cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Law School for Everyone</p>
+                            <p class="book-author">The Great Courses</p>
+                            <p class="book-blurb">Over the span of 48 lectures, four experienced lawyers and teachers
+                                recreate key parts
+                                of the first-year law student experience....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B0758MV7WM/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51dekFVqy-L._SL200_.jpg" alt="The Republic cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Republic</p>
+                            <p class="book-author">Plato</p>
+                            <p class="book-blurb">Plato's The Republic is widely acknowledged as the cornerstone of
+                                Western
+                                philosophy....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B003D8W9CS/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/41dTDMW9IhL._SL200_.jpg"
+                            alt="48 Laws of Power cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">48 Laws of Power</p>
+                            <p class="book-author">Robert Greene</p>
+                            <p class="book-blurb">Amoral, cunning, ruthless, and instructive, this piercing work
+                                distills 3,000 years of
+                                the history of power into 48 well-explicated laws....</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B00WYDJ2YQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51EvZOmzf-L._SL200_.jpg" alt="Heads in Beds cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Heads in Beds: A Reckless Memoir of Hotels, Hustles, and So-Called
+                                Hospitality</p>
+                            <p class="book-author">Jacob Tomsky</p>
+                            <p class="book-blurb">In the tradition of Kitchen Confidential and Waiter Rant, a
+                                rollicking, eye-opening,
+                                fantastically indiscreet memoir of a life spent (and misspent) in the hotel industry....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B009PRICSQ/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51l4HGsEqyL._SL200_.jpg"
+                            alt="Never Split the Difference cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Never Split the Difference: Negotiating as if Your Life Depended on It
+                            </p>
+                            <p class="book-author">Chris Voss</p>
+                            <p class="book-blurb">A former FBI hostage negotiator offers a new, field-tested approach to
+                                high-stakes
+                                negotiations—whether in the boardroom or at home.</p><a class="book-link"
+                                target="_blank"
+                                href="http://www.audible.com/pd/B01CF5O89G/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/515dztuMvSL._SL200_.jpg"
+                            alt="400 Things Cops Know: Street-Smart Lessons From a Veteran Patrolman cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">400 Things Cops Know: Street-Smart Lessons From a Veteran Patrolman
+                            </p>
+                            <p class="book-author">Adam Plantinga</p>
+                            <p class="book-blurb">400 Things Cops Know shows police work on the inside, from the
+                                viewpoint of the
+                                regular cop on the beat....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00VS6CZUS/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/61nBw77qi6L._SL200_.jpg" alt="undefined cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">The Life-Changing Magic of Tidying Up: The Japanese Art of
+                                Decluttering and Organizing
+                            </p>
+                            <p class="book-author">Marie Kondo</p>
+                            <p class="book-blurb">Japanese cleaning consultant Marie Kondo takes tidying to a whole new
+                                level, promising
+                                that if you properly simplify and organize your home once, you'll never have to do it
+                                again....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00RC3M6OG/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51gzRqi-P0L._SL200_.jpg" alt="Law 101 cover"
+                            style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Law 101: Everything You Need to Know About American Law</p>
+                            <p class="book-author">Jay M. Feinman</p>
+                            <p class="book-blurb">Here is an exceptionally clear introduction to law, covering the main
+                                subjects found
+                                in the first year of law school, giving us a basic understanding of how it all works....
+                            </p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/B00GIN4FZE/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                            src="https://m.media-amazon.com/images/I/51XR1BJ1wuL._SL200_.jpg"
+                            alt="Arrest-Proof Yourself, Second Edition cover" style="margin-right: 10px;">
+                        <div class="book-details">
+                            <p class="book-title">Arrest-Proof Yourself, Second Edition</p>
+                            <p class="book-author">Dale C. Carson</p>
+                            <p class="book-blurb">This eye-opening book tells you everything you need to know about how
+                                cops operate,
+                                the little things that can get you in trouble, and how to stay free from the hungry jaws
+                                of the criminal
+                                justice system....</p><a class="book-link" target="_blank"
+                                href="http://www.audible.com/pd/197738174X/?ref=nosim&tag=brianhamachek-20">View On
+                                Amazon</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+
+        function changeCategory(category) {
+            var containers = document.getElementsByClassName('category-container');
+            for (let i = 0; i < containers.length; i++) {
+                if (category === "all") {
+                    containers[i].style.display = 'block';
+                } else {
+                    containers[i].style.display = 'none';
+                }
+            }
+
+            if (category !== "all") {
+                document.getElementById(category).style.display = 'block';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
