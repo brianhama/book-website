@@ -387,6 +387,13 @@
       "name": "Non Fiction - Silicon Valley & Tech",
       "books": [
         {
+          "title": "Fundraising",
+          "author": "Ryan Breslow",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/31bJjoMXq7L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B09DJ7JQJF/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "The Pragmatic Programmer: 20th Anniversary Edition, 2nd Edition: Your Journey to Mastery",
           "author": "David Thomas, Andrew Hunt",
           "blurb": "",
