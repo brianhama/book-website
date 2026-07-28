@@ -1,0 +1,36 @@
+name: Add a book
+description: Add a book to the site from its Audible page. A PR with the book's metadata will be opened automatically.
+title: "[Add Book]: "
+labels: ["add-book"]
+body:
+  - type: input
+    id: asin
+    attributes:
+      label: ASIN or Audible URL
+      description: "Paste the Audible product URL (audible.com/pd/…) or just the 10-character ASIN."
+      placeholder: "https://www.audible.com/pd/B01CF5O89G or B01CF5O89G"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Non Fiction - Business & Finance
+        - Non Fiction - Science
+        - Non Fiction - Psychology / Sociology
+        - Non Fiction - History
+        - Non Fiction - Biography
+        - Non Fiction - Silicon Valley / Start-ups
+        - Non Fiction - Life Skills
+        - Non Fiction - Other
+        - Fiction
+    validations:
+      required: true
+  - type: textarea
+    id: blurb
+    attributes:
+      label: Custom blurb (optional)
+      description: Leave blank to use the description from Audible.
+    validations:
+      required: false
