@@ -1,0 +1,37 @@
+name: Backfill missing blurbs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Backfill and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node scripts/backfill-blurbs.mjs
+          if git diff --quiet books.json; then
+            echo "Nothing to backfill."
+            exit 0
+          fi
+          for attempt in 1 2 3 4 5; do
+            git add books.json
+            git commit -q -m "Backfill missing book blurbs" || true
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Push rejected, rebasing and retrying ($attempt/5)..."
+            git fetch origin main
+            git rebase FETCH_HEAD || { git rebase --abort; git reset --hard FETCH_HEAD; node scripts/backfill-blurbs.mjs; }
+            sleep $attempt
+          done
+          exit 1
