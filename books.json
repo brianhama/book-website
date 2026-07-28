@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "January 23, 2025",
+  "lastUpdated": "July 28, 2026",
   "categories": [
     {
       "id": "2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf",
@@ -491,6 +491,13 @@
       "id": "0228bcb3-c1c7-447c-9a99-7693bacb1977",
       "name": "Non Fiction - History",
       "books": [
+        {
+          "title": "Israel: A Concise History of a Nation Reborn",
+          "author": "Daniel Gordis",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/613wcP8wooL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B01L7GUS70/?ref=nosim&tag=brianhamachek-20"
+        },
         {
           "title": "Helter Skelter: The True Story of the Manson Murders",
           "author": "Vincent Bugliosi",
