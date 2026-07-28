@@ -144,6 +144,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "Survivor",
+          "author": "Chuck Palahniuk",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/61tplGmoBOL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B09GBN6XV2/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Tempest: A Novel",
           "author": "Julie Cross",
           "blurb": "In Julie Cross' Tempest, the year is 2009. Nineteen-year-old Jackson Meyer is a normal guy… he's in college, has a girlfriend… and he can travel back through time. But it's not like the movies....",
