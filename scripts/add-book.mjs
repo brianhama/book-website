@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 // Adds a book to books.json by fetching its metadata from Audible.
 //
-// Usage: node scripts/add-book.mjs <ASIN> --category "Fiction" [--blurb "Custom blurb"]
+// Usage: node scripts/add-book.mjs <ASIN> --category "Fiction - Literary & Classics" [--blurb "Custom blurb"]
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { getMetadata } from './audible-meta.mjs';
 
 const BOOKS_JSON = join(dirname(fileURLToPath(import.meta.url)), '..', 'books.json');
 const AFFILIATE_TAG = 'brianhamachek-20';
@@ -24,119 +25,10 @@ function parseArgs(argv) {
     else rest.push(argv[i]);
   }
   if (rest.length !== 1) fail('usage: add-book.mjs <ASIN or Audible URL> --category "<name>"');
-  // Accept a bare ASIN or a full Audible/Amazon product URL.
   const m = rest[0].match(/(?:^|\/pd\/(?:[^/]+\/)?|\/dp\/)([A-Z0-9]{10})(?:[/?]|$)/i);
   if (!m) fail(`could not find an ASIN in "${rest[0]}"`);
   args.asin = m[1].toUpperCase();
   return args;
-}
-
-function decodeEntities(s) {
-  return s
-    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
-    .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#39;/g, "'")
-    .replace(/&rsquo;/g, '’').replace(/&lsquo;/g, '‘')
-    .replace(/&rdquo;/g, '”').replace(/&ldquo;/g, '“')
-    .replace(/&mdash;/g, '—').replace(/&ndash;/g, '–')
-    .replace(/&hellip;/g, '…').replace(/&nbsp;/g, ' ')
-    .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
-}
-
-function stripHtml(s) {
-  return decodeEntities(s.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
-}
-
-function truncateBlurb(s, max = 320) {
-  if (s.length <= max) return s;
-  const cut = s.slice(0, max);
-  return cut.slice(0, Math.max(cut.lastIndexOf('. ') + 1, cut.lastIndexOf(' '))).trim() + '...';
-}
-
-async function fetchWithRetry(url, options, attempts = 3) {
-  let lastErr;
-  for (let i = 0; i < attempts; i++) {
-    try {
-      const res = await fetch(url, options);
-      if (res.ok) return res;
-      lastErr = new Error(`HTTP ${res.status}`);
-      // Don't retry client errors other than rate limiting.
-      if (res.status < 500 && res.status !== 429) break;
-    } catch (e) {
-      lastErr = e;
-    }
-    await new Promise((r) => setTimeout(r, 1500 * (i + 1)));
-  }
-  throw lastErr;
-}
-
-// Primary source: Audible's public catalog API (JSON, no auth, not bot-gated
-// the way the website is).
-async function fetchFromApi(asin) {
-  const url = `https://api.audible.com/1.0/catalog/products/${asin}?response_groups=contributors,product_desc,media&image_sizes=500`;
-  const res = await fetchWithRetry(url, {
-    headers: { 'Accept': 'application/json', 'User-Agent': 'Audible/3.70 Android' },
-  });
-  const product = (await res.json()).product;
-  if (!product?.title) throw new Error('catalog API returned no product');
-  const title = product.subtitle ? `${product.title}: ${product.subtitle}` : product.title;
-  const author = (product.authors || []).map((a) => a.name).join(', ');
-  if (!author) throw new Error('catalog API returned no authors');
-  const images = product.product_images || {};
-  return {
-    title,
-    author,
-    blurb: truncateBlurb(stripHtml(product.publisher_summary || '')),
-    cover: images['500'] || Object.values(images)[0] || '',
-  };
-}
-
-async function fetchProductPage(asin) {
-  const url = `https://www.audible.com/pd/${asin}?ipRedirectOverride=true`;
-  const res = await fetchWithRetry(url, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36',
-      'Accept-Language': 'en-US,en;q=0.9',
-    },
-    redirect: 'follow',
-  }).catch((e) => fail(`Audible page fetch failed for ${url}: ${e.message}`));
-  return res.text();
-}
-
-function extractMetadata(html, asin) {
-  const meta = { title: null, author: null, blurb: null, cover: null };
-
-  // Primary source: JSON-LD blocks (Audible embeds an Audiobook/Book object).
-  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
-    let parsed;
-    try { parsed = JSON.parse(m[1]); } catch { continue; }
-    for (const obj of Array.isArray(parsed) ? parsed : [parsed]) {
-      if (!/Audiobook|Book|Product/.test(String(obj['@type']))) continue;
-      meta.title ||= obj.name;
-      meta.cover ||= Array.isArray(obj.image) ? obj.image[0] : obj.image;
-      if (!meta.blurb && obj.description) meta.blurb = stripHtml(obj.description);
-      if (!meta.author && obj.author) {
-        const authors = Array.isArray(obj.author) ? obj.author : [obj.author];
-        meta.author = authors.map((a) => (typeof a === 'string' ? a : a.name)).filter(Boolean).join(', ');
-      }
-    }
-  }
-
-  // Fallbacks: Open Graph tags and the <title>.
-  const og = (prop) => html.match(new RegExp(`<meta[^>]+property="og:${prop}"[^>]+content="([^"]+)"`))?.[1];
-  meta.title ||= og('title')?.replace(/ \| Audible.*$/i, '');
-  meta.cover ||= og('image');
-  meta.blurb ||= html.match(/<meta[^>]+name="description"[^>]+content="([^"]+)"/)?.[1];
-
-  if (!meta.title || !meta.author) {
-    fail(`could not extract metadata for ${asin} — the page layout may have changed or the ASIN may be invalid`);
-  }
-  meta.title = decodeEntities(meta.title).trim();
-  meta.author = decodeEntities(meta.author).trim();
-  meta.blurb = truncateBlurb(stripHtml(meta.blurb || ''));
-  // Normalize cover to the 200px rendition used across the site.
-  meta.cover = (meta.cover || '').replace(/\._SL\d+_\./, '._SL200_.').replace(/(\.jpg)$/i, '$1');
-  return meta;
 }
 
 const { asin, category, blurb } = parseArgs(process.argv.slice(2));
@@ -156,27 +48,22 @@ if (dup) fail(`"${dup.title}" (${asin}) is already on the site`);
 
 let meta;
 try {
-  meta = await fetchFromApi(asin);
+  meta = await getMetadata(asin);
 } catch (e) {
-  console.error(`Catalog API lookup failed (${e.message}); falling back to page scrape.`);
-  const html = await fetchProductPage(asin);
-  meta = extractMetadata(html, asin);
+  fail(e.message);
 }
-// Normalize cover to the 200px rendition used across the site.
-meta.cover = (meta.cover || '').replace(/\._SL\d+_\./, '._SL200_.');
 if (blurb) meta.blurb = blurb;
 
-const book = {
+cat.books.unshift({
   title: meta.title,
   author: meta.author,
   blurb: meta.blurb,
   cover: meta.cover,
   link: `http://www.audible.com/pd/${asin}/?ref=nosim&tag=${AFFILIATE_TAG}`,
-};
-cat.books.unshift(book);
+});
 data.lastUpdated = new Date().toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Los_Angeles',
 });
 
 writeFileSync(BOOKS_JSON, JSON.stringify(data, null, 2) + '\n');
-console.log(`Added "${book.title}" by ${book.author} to "${cat.name}".`);
+console.log(`Added "${meta.title}" by ${meta.author} to "${cat.name}".`);

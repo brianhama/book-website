@@ -57,9 +57,9 @@ jobs:
           }
 
           STATUS=1
-          for attempt in 1 2 3; do
+          for attempt in 1 2 3 4 5; do
             git fetch origin main --quiet
-            git reset --hard origin/main --quiet
+            git reset --hard FETCH_HEAD --quiet
             OUTPUT=$(run_script)
             STATUS=$?
             echo "$OUTPUT"
@@ -70,7 +70,8 @@ jobs:
               STATUS=0
               break
             fi
-            echo "Push rejected (concurrent update), retrying ($attempt/3)..."
+            echo "Push rejected (concurrent update), retrying ($attempt/5)..."
+            OUTPUT="Push to main kept failing after retries — reopen the issue to try again."
             STATUS=1
             sleep $((attempt * 3))
           done
