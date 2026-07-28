@@ -9,8 +9,22 @@ permissions:
   issues: write
 
 jobs:
+  # Only the repo owner may use the issue pipeline; close everything else.
+  close-unauthorized:
+    if: github.event.issue.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close and lock issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" \
+            --body "Thanks for your interest! This repo doesn't accept issues from other users — if you have a book recommendation, please reach out to me directly instead."
+          gh issue close "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --reason "not planned"
+          gh issue lock "${{ github.event.issue.number }}" --repo "${{ github.repository }}"
+
   add-book:
-    if: contains(github.event.issue.labels.*.name, 'add-book')
+    if: contains(github.event.issue.labels.*.name, 'add-book') && github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
