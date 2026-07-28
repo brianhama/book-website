@@ -212,16 +212,16 @@
             }
         }
 
-        new IntersectionObserver(function (entries) {
-            var e = entries[0];
-            var scrolledPast = !e.isIntersecting && e.boundingClientRect.top < 0;
-            document.querySelector('.filter-bar').classList.toggle('stuck', scrolledPast);
-        }, { threshold: 0 }).observe(document.getElementById('filter-sentinel'));
-
-        window.addEventListener('scroll', function () {
+        function onScroll() {
             var btn = document.getElementById('back-to-top');
             btn.classList.toggle('visible', window.scrollY > 600);
-        });
+            var sentinel = document.getElementById('filter-sentinel');
+            var stuck = sentinel.getBoundingClientRect().top < 0;
+            document.querySelector('.filter-bar').classList.toggle('stuck', stuck);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll);
+        onScroll();
 
         fetch('books.json')
             .then(function (r) { return r.json(); })

@@ -473,7 +473,7 @@ main {
 /* Hide the genre pills while scrolled into the book list; the sticky bar
    collapses to just the search box. */
 .genre-pills {
-  max-height: 200px;
+  max-height: 400px;
   overflow: hidden;
   transition: max-height 0.25s ease, opacity 0.2s ease, margin 0.25s ease;
 }
