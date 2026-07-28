@@ -200,6 +200,13 @@
       "name": "Fiction - Literary & Classics",
       "books": [
         {
+          "title": "Fight Club",
+          "author": "Chuck Palahniuk",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/61GTIqq6yzL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B002V1BFI2/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "The Overstory",
           "author": "Richard Powers",
           "blurb": "",
