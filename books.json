@@ -144,6 +144,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "One Second After",
+          "author": "William R. Forstchen",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51-NrYdr3iL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B002V1O7UU/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "11-22-63: A Novel",
           "author": "Stephen King",
           "blurb": "",
