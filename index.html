@@ -55,9 +55,6 @@
         <section>
             <div class="story-card">
                 <h3 class="section-heading">About this website</h3>
-                <p>Outside of books assigned for school, I was never much of a reader growing up. Back in 2012, I
-                    decided to change that and set a goal of reading one book a month for a year. I got hooked. Since
-                    then, I've read over 1,500 books.</p>
                 <p>This website is a collection of the best books I've read. Nearly all of my reading happens in audiobook form, and every book recommended here is available as an audiobook. I've organized them by category and added a
                     short description of each book. I don't necessarily agree with the premise of every book here, but I find seeing things from multiple perspectives interesting. My hope is that someone is able to get as much from these books as I
                     have. Also, if you have any recommendations, please let me know!</p>
@@ -70,7 +67,6 @@
                 <p class="last-updated" id="last-updated">Last updated January 23, 2025</p>
             </div>
 
-            <div id="filter-sentinel" style="height: 1px;"></div>
             <div class="filter-bar">
                 <div class="search-wrap">
                     <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -212,16 +208,10 @@
             }
         }
 
-        function onScroll() {
+        window.addEventListener('scroll', function () {
             var btn = document.getElementById('back-to-top');
             btn.classList.toggle('visible', window.scrollY > 600);
-            var sentinel = document.getElementById('filter-sentinel');
-            var stuck = sentinel.getBoundingClientRect().top < 0;
-            document.querySelector('.filter-bar').classList.toggle('stuck', stuck);
-        }
-        window.addEventListener('scroll', onScroll, { passive: true });
-        window.addEventListener('resize', onScroll);
-        onScroll();
+        }, { passive: true });
 
         fetch('books.json')
             .then(function (r) { return r.json(); })
