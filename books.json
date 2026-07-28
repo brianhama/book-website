@@ -6,6 +6,13 @@
       "name": "Fiction - Sci-Fi & Dystopian",
       "books": [
         {
+          "title": "Wool: The Silo Saga, Book 1",
+          "author": "Hugh Howey",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51wvy7jratL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0BKR3Y6SP/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "We Are Legion (We Are Bob): Bobiverse, Book 1",
           "author": "Dennis E. Taylor",
           "blurb": "",
