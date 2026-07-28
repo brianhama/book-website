@@ -254,15 +254,6 @@ main {
   margin-top: 24px;
 }
 
-.category-container h2 {
-  font-family: var(--serif);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5em;
-  margin: 0 0 4px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--accent-soft);
-}
 
 /* ============ Book items ============ */
 .book {
@@ -417,52 +408,5 @@ main {
     margin: 0 -14px;
     border-left: none;
     border-right: none;
-  }
-}
-
-/* ============ Collapsible categories (mobile) ============ */
-.cat-count {
-  float: right;
-  font-family: var(--sans);
-  font-size: 0.6em;
-  font-weight: 500;
-  color: var(--ink-soft);
-  background: var(--accent-soft);
-  border-radius: 100px;
-  padding: 3px 10px;
-  margin-top: 3px;
-}
-
-@media (max-width: 768px) {
-  .category-container h2.cat-toggle {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .category-container h2.cat-toggle::before {
-    content: "▾";
-    display: inline-block;
-    margin-right: 8px;
-    color: var(--accent);
-    transition: transform 0.2s ease;
-  }
-
-  .category-container.collapsed h2.cat-toggle::before {
-    transform: rotate(-90deg);
-  }
-
-  .category-container.collapsed .book {
-    display: none !important;
-  }
-
-  .category-container.collapsed {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  .category-container.collapsed h2 {
-    margin: 0;
-    padding-bottom: 0;
-    border-bottom: none;
   }
 }
