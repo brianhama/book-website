@@ -849,6 +849,13 @@
       "name": "Non Fiction - Biography & Memoir",
       "books": [
         {
+          "title": "Source Code: My Beginnings",
+          "author": "Bill Gates",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41OBdC3PYML._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0D5KLQZQV/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Vanderbilt: The Rise and Fall of an American Dynasty",
           "author": "Anderson Cooper, Katherine Howe",
           "blurb": "",
