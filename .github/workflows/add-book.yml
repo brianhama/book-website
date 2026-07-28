@@ -6,8 +6,12 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
   issues: write
+
+# Serialize runs so simultaneous add-book issues don't race pushing to main.
+concurrency:
+  group: add-book
+  cancel-in-progress: false
 
 jobs:
   add-book:
@@ -39,21 +43,43 @@ jobs:
             echo "BLURB_EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: Add the book
+      - name: Add the book and push to main
         id: add
         env:
           ASIN: ${{ steps.parse.outputs.asin }}
           CATEGORY: ${{ steps.parse.outputs.category }}
           BLURB: ${{ steps.parse.outputs.blurb }}
         run: |
-          set +e
-          if [ -n "$BLURB" ]; then
-            OUTPUT=$(node scripts/add-book.mjs "$ASIN" --category "$CATEGORY" --blurb "$BLURB" 2>&1)
-          else
-            OUTPUT=$(node scripts/add-book.mjs "$ASIN" --category "$CATEGORY" 2>&1)
-          fi
-          STATUS=$?
-          echo "$OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          run_script() {
+            if [ -n "$BLURB" ]; then
+              node scripts/add-book.mjs "$ASIN" --category "$CATEGORY" --blurb "$BLURB" 2>&1
+            else
+              node scripts/add-book.mjs "$ASIN" --category "$CATEGORY" 2>&1
+            fi
+          }
+
+          STATUS=1
+          for attempt in 1 2 3; do
+            git fetch origin main --quiet
+            git reset --hard origin/main --quiet
+            OUTPUT=$(run_script)
+            STATUS=$?
+            echo "$OUTPUT"
+            [ $STATUS -ne 0 ] && break
+            git add books.json
+            git commit -q -m "Add book $ASIN (requested in #${{ github.event.issue.number }})"
+            if git push origin HEAD:main; then
+              STATUS=0
+              break
+            fi
+            echo "Push rejected (concurrent update), retrying ($attempt/3)..."
+            STATUS=1
+            sleep $((attempt * 3))
+          done
+
           {
             echo "message<<OUT_EOF"
             echo "$OUTPUT"
@@ -61,42 +87,29 @@ jobs:
           } >> "$GITHUB_OUTPUT"
           exit $STATUS
 
-      - name: Open pull request
-        id: pr
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: add-book/issue-${{ github.event.issue.number }}
-          title: "Add book: ${{ steps.parse.outputs.asin }} (closes #${{ github.event.issue.number }})"
-          commit-message: |
-            Add book ${{ steps.parse.outputs.asin }} from issue #${{ github.event.issue.number }}
-          body: |
-            ${{ steps.add.outputs.message }}
-
-            Requested in #${{ github.event.issue.number }}.
-
-            Closes #${{ github.event.issue.number }}
-          delete-branch: true
-
-      - name: Comment success on issue
+      - name: Comment and close issue
         if: success()
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" \
-            --body "✅ ${{ steps.add.outputs.message }}
+          BODY: |
+            ✅ ${{ steps.add.outputs.message }}
 
-          Review and merge ${{ steps.pr.outputs.pull-request-url }} to publish it."
+            It's committed to `main` and will be live on the site in a minute or two.
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "$BODY"
+          gh issue close "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --reason completed
 
       - name: Comment failure on issue
         if: failure()
         env:
           GH_TOKEN: ${{ github.token }}
+          BODY: |
+            ❌ Could not add this book automatically:
+
+            ```
+            ${{ steps.add.outputs.message || 'Failed before metadata lookup — check the workflow logs.' }}
+            ```
+
+            Double-check the ASIN/URL and reopen this issue to retry, or add it to books.json manually.
         run: |
-          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" \
-            --body "❌ Could not add this book automatically:
-
-          \`\`\`
-          ${{ steps.add.outputs.message || 'Failed before metadata lookup — check the workflow logs.' }}
-          \`\`\`
-
-          Double-check the ASIN/URL and try again, or add it to books.json manually."
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "$BODY"
