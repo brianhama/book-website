@@ -200,6 +200,13 @@
       "name": "Fiction - Literary & Classics",
       "books": [
         {
+          "title": "Flesh: A Novel",
+          "author": "David Szalay",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41ya0kmyZ3L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0D7WGQ22R/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Fight Club",
           "author": "Chuck Palahniuk",
           "blurb": "",
