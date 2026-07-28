@@ -8,11 +8,6 @@ permissions:
   contents: write
   issues: write
 
-# Serialize runs so simultaneous add-book issues don't race pushing to main.
-concurrency:
-  group: add-book
-  cancel-in-progress: false
-
 jobs:
   add-book:
     if: contains(github.event.issue.labels.*.name, 'add-book')
