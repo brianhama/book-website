@@ -895,6 +895,13 @@
       "name": "Non Fiction - Silicon Valley / Start-ups",
       "books": [
         {
+          "title": "How to Rule the World: An Education in Power at Stanford University",
+          "author": "Theo Baker",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41c38uoI4gL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0G7KH1W3F/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Hackers & Painters: Big Ideas from the Computer Age",
           "author": "Paul Graham",
           "blurb": "We are living in the computer age, in a world increasingly designed and engineered by computer programmers and software designers, by people who call themselves hackers. Who are these people, what motivates them, and why should you care? Find out....",
