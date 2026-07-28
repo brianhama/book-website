@@ -53,16 +53,53 @@ function truncateBlurb(s, max = 320) {
   return cut.slice(0, Math.max(cut.lastIndexOf('. ') + 1, cut.lastIndexOf(' '))).trim() + '...';
 }
 
+async function fetchWithRetry(url, options, attempts = 3) {
+  let lastErr;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const res = await fetch(url, options);
+      if (res.ok) return res;
+      lastErr = new Error(`HTTP ${res.status}`);
+      // Don't retry client errors other than rate limiting.
+      if (res.status < 500 && res.status !== 429) break;
+    } catch (e) {
+      lastErr = e;
+    }
+    await new Promise((r) => setTimeout(r, 1500 * (i + 1)));
+  }
+  throw lastErr;
+}
+
+// Primary source: Audible's public catalog API (JSON, no auth, not bot-gated
+// the way the website is).
+async function fetchFromApi(asin) {
+  const url = `https://api.audible.com/1.0/catalog/products/${asin}?response_groups=contributors,product_desc,media&image_sizes=500`;
+  const res = await fetchWithRetry(url, {
+    headers: { 'Accept': 'application/json', 'User-Agent': 'Audible/3.70 Android' },
+  });
+  const product = (await res.json()).product;
+  if (!product?.title) throw new Error('catalog API returned no product');
+  const title = product.subtitle ? `${product.title}: ${product.subtitle}` : product.title;
+  const author = (product.authors || []).map((a) => a.name).join(', ');
+  if (!author) throw new Error('catalog API returned no authors');
+  const images = product.product_images || {};
+  return {
+    title,
+    author,
+    blurb: truncateBlurb(stripHtml(product.publisher_summary || '')),
+    cover: images['500'] || Object.values(images)[0] || '',
+  };
+}
+
 async function fetchProductPage(asin) {
   const url = `https://www.audible.com/pd/${asin}?ipRedirectOverride=true`;
-  const res = await fetch(url, {
+  const res = await fetchWithRetry(url, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36',
       'Accept-Language': 'en-US,en;q=0.9',
     },
     redirect: 'follow',
-  });
-  if (!res.ok) fail(`Audible returned HTTP ${res.status} for ${url}`);
+  }).catch((e) => fail(`Audible page fetch failed for ${url}: ${e.message}`));
   return res.text();
 }
 
@@ -117,8 +154,16 @@ if (!cat) {
 const dup = data.categories.flatMap((c) => c.books).find((b) => b.link.includes(asin));
 if (dup) fail(`"${dup.title}" (${asin}) is already on the site`);
 
-const html = await fetchProductPage(asin);
-const meta = extractMetadata(html, asin);
+let meta;
+try {
+  meta = await fetchFromApi(asin);
+} catch (e) {
+  console.error(`Catalog API lookup failed (${e.message}); falling back to page scrape.`);
+  const html = await fetchProductPage(asin);
+  meta = extractMetadata(html, asin);
+}
+// Normalize cover to the 200px rendition used across the site.
+meta.cover = (meta.cover || '').replace(/\._SL\d+_\./, '._SL200_.');
 if (blurb) meta.blurb = blurb;
 
 const book = {
