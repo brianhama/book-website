@@ -25,7 +25,7 @@ export function distillBlurb(raw, { min = 280, max = 700 } = {}) {
   const sentences = text.match(/[^.!?]+[.!?]+["'”’)\]]*\s*/g) || [text];
   const isBoilerplate = (s) =>
     (s.length < 90 && /best\s?seller|winner of|named a best|now a major|soon to be a|a gma book club|pulitzer prize|booker prize|from the author of/i.test(s)) ||
-    /^\s*(watch|stream|now streaming|now an? |soon to be|coming soon)\b.*\b(series|film|movie|apple tv|netflix|hbo|hulu|prime video)/i.test(s);
+    /^\s*(watch|stream|now streaming|now an? |soon to be|coming soon)\b.*\b(series|docuseries|film|movie|motion picture|apple tv|netflix|hbo|hulu|prime video|pbs)\b/i.test(s);
   let start = 0;
   while (start < sentences.length - 1 && isBoilerplate(sentences[start])) start++;
   let out = '';
