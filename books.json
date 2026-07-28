@@ -401,6 +401,13 @@
       "name": "Non Fiction - Silicon Valley & Tech",
       "books": [
         {
+          "title": "The Accidental Billionaires: The Founding of Facebook: A Tale of Sex, Money, Genius and Betrayal",
+          "author": "Ben Mezrich",
+          "blurb": "The high-energy tale of how two socially awkward Ivy Leaguers, trying to increase their chances with the opposite sex, ended up creating Facebook. Eduardo Saverin and Mark Zuckerberg were Harvard undergraduates and best friends–outsiders at a school filled with polished prep-school grads and long-time legacies. They...",
+          "cover": "https://m.media-amazon.com/images/I/51kBkjaRRnL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B002V1NRNS/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Fundraising",
           "author": "Ryan Breslow",
           "blurb": "",
