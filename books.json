@@ -506,6 +506,13 @@
       "name": "Non Fiction - History",
       "books": [
         {
+          "title": "King of Kings: The Fall of the Shah and the Revolution That Forged Modern Iran",
+          "author": "Scott Anderson",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51F0AWIw9RL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0F1QGD5LP/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Sapiens: A Brief History of Humankind",
           "author": "Yuval Noah Harari",
           "blurb": "",
