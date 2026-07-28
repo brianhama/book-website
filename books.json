@@ -200,6 +200,13 @@
       "name": "Fiction - Literary & Classics",
       "books": [
         {
+          "title": "The Overstory",
+          "author": "Richard Powers",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/61VCVNtbg5L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B078PJ2TY4/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Forrest Gump",
           "author": "Winston Groom",
           "blurb": "",
