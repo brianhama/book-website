@@ -380,6 +380,13 @@
       "name": "Non Fiction - Silicon Valley & Tech",
       "books": [
         {
+          "title": "Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism",
+          "author": "Sarah Wynn-Williams",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41IYSK55MZL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0DZ8PC43P/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
           "author": "John Carreyrou",
           "blurb": "In 2014, Theranos founder and CEO Elizabeth Holmes was widely seen as the next Steve Jobs: a brilliant Stanford dropout whose startup “unicorn” promised to revolutionize the medical industry with its breakthrough device....",
