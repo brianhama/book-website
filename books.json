@@ -151,6 +151,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "The Man in the High Castle",
+          "author": "Philip K. Dick",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51Mf5AxLaBL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0DZKNRHT4/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Project Hail Mary",
           "author": "Andy Weir",
           "blurb": "",
