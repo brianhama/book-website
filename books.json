@@ -151,6 +151,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "Project Hail Mary",
+          "author": "Andy Weir",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B08G9PRS1K/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "The Man in the High Castle: Das Orakel vom Berge",
           "author": "Philip K. Dick",
           "blurb": "",
