@@ -16,15 +16,19 @@ body:
     attributes:
       label: Category
       options:
+        - Fiction - Sci-Fi & Dystopian
+        - Fiction - Thrillers & Horror
+        - Fiction - Literary & Classics
         - Non Fiction - Business & Finance
-        - Non Fiction - Science
-        - Non Fiction - Psychology / Sociology
+        - Non Fiction - Silicon Valley & Tech
+        - Non Fiction - Science & Medicine
+        - Non Fiction - Psychology & the Mind
+        - Non Fiction - Love & Relationships
+        - Non Fiction - Society & Culture
         - Non Fiction - History
-        - Non Fiction - Biography
-        - Non Fiction - Silicon Valley / Start-ups
-        - Non Fiction - Life Skills
-        - Non Fiction - Other
-        - Fiction
+        - Non Fiction - True Crime
+        - Non Fiction - Biography & Memoir
+        - Non Fiction - Life Skills & Philosophy
     validations:
       required: true
   - type: textarea
