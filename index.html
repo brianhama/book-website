@@ -4,23 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Brian Hamachek's Book Recommendations</title>
+    <meta name="description"
+        content="A curated collection of the best books I've read — over 600 books distilled into personal favorites across business, science, history, fiction, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <header>
-        <h1>Brian Hamachek's Book Recommendations</h1>
-
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="hero-eyebrow">📚 600+ books read · the best made this list</p>
+            <h1>Brian Hamachek's<br>Book Recommendations</h1>
+            <p class="hero-tagline">A personally curated shelf of the books worth your time.</p>
+        </div>
     </header>
 
     <main>
         <section>
 
             <div class="about-me">
-                <div style="display: flex; align-items: flex-start;">
-                    <img src="me.jpg" alt="Brian Hamachek" class="profile-photo" style="margin-right: 15px;" />
+                <div class="about-me-flex">
+                    <img src="me.jpg" alt="Brian Hamachek" class="profile-photo" />
                     <div>
                         <p class="intro">I am a software engineer and entrepreneur living in Palo Alto, CA.</p>
                         <p>
@@ -42,41 +52,66 @@
         </section>
 
         <section>
-            <h3>About this website</h2>
+            <div class="story-card">
+                <h3 class="section-heading">About this website</h3>
                 <p>Outside of books assigned for school, I was never much of a reader growing up. Back in 2012, I
                     decided to change that and set a goal of reading one book a month for a year. I got hooked. Since
                     then, I've read over 600 books.</p>
                 <p>This website is a collection of the best books I've read. I've organized them by category and added a
                     short description of each book. My hope is that someone is able to get as much from these books as I
                     have. Also, if you have any recommendations, please let me know!</p>
+            </div>
         </section>
 
         <section id="books">
-            <h3>The Books (last update 1/23/2025)</h2>
+            <div class="books-header">
+                <h3 class="section-heading">The Books</h3>
+                <p class="last-updated">Last updated January 23, 2025</p>
+            </div>
 
-                <div>
-                    <label for="genre-select">Genre:</label>
-                    <select id="genre-select" onChange="changeCategory(this.value)">
-                        <option value="all">All</option>
-                        <option value="2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf">Non Fiction - Business & Finance</option>
-                        <option value="af857ea6-45a5-4966-9354-508e2f13ab61">Non Fiction - Science</option>
-                        <option value="19429dca-9fc0-47e9-a69e-c44cbc701c35">Non Fiction - Psychology / Sociology
-                        </option>
-                        <option value="0228bcb3-c1c7-447c-9a99-7693bacb1977">Non Fiction - History</option>
-                        <option value="40bf9cc1-4703-481a-9133-f6d5aa8cdaba">Non Fiction - Biography</option>
-                        <option value="615e7c56-6f1f-4eb3-b319-6e893eff93af">Non Fiction - Silicon Valley / Start-ups
-                        </option>
-                        <option value="577243d0-1f8b-4aa6-95af-04dcf8050f66">Non Fiction - Life Skills</option>
-                        <option value="d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de">Non Fiction - Other</option>
-                        <option value="061be80a-f4e8-4522-9672-5859fe2fc02e">Fiction</option>
-                    </select>
+            <div class="filter-bar">
+                <div class="search-wrap">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="search" id="book-search" placeholder="Search by title or author…"
+                        aria-label="Search books" oninput="applyFilters()">
                 </div>
+                <div class="genre-pills" id="genre-pills" role="group" aria-label="Filter by genre">
+                    <button class="pill active" data-category="all" onclick="changeCategory('all', this)">All</button>
+                    <button class="pill" data-category="2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf"
+                        onclick="changeCategory('2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf', this)">Business &amp;
+                        Finance</button>
+                    <button class="pill" data-category="af857ea6-45a5-4966-9354-508e2f13ab61"
+                        onclick="changeCategory('af857ea6-45a5-4966-9354-508e2f13ab61', this)">Science</button>
+                    <button class="pill" data-category="19429dca-9fc0-47e9-a69e-c44cbc701c35"
+                        onclick="changeCategory('19429dca-9fc0-47e9-a69e-c44cbc701c35', this)">Psychology &amp;
+                        Sociology</button>
+                    <button class="pill" data-category="0228bcb3-c1c7-447c-9a99-7693bacb1977"
+                        onclick="changeCategory('0228bcb3-c1c7-447c-9a99-7693bacb1977', this)">History</button>
+                    <button class="pill" data-category="40bf9cc1-4703-481a-9133-f6d5aa8cdaba"
+                        onclick="changeCategory('40bf9cc1-4703-481a-9133-f6d5aa8cdaba', this)">Biography</button>
+                    <button class="pill" data-category="615e7c56-6f1f-4eb3-b319-6e893eff93af"
+                        onclick="changeCategory('615e7c56-6f1f-4eb3-b319-6e893eff93af', this)">Silicon Valley &amp;
+                        Start-ups</button>
+                    <button class="pill" data-category="577243d0-1f8b-4aa6-95af-04dcf8050f66"
+                        onclick="changeCategory('577243d0-1f8b-4aa6-95af-04dcf8050f66', this)">Life Skills</button>
+                    <button class="pill" data-category="d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de"
+                        onclick="changeCategory('d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de', this)">Other Non
+                        Fiction</button>
+                    <button class="pill" data-category="061be80a-f4e8-4522-9672-5859fe2fc02e"
+                        onclick="changeCategory('061be80a-f4e8-4522-9672-5859fe2fc02e', this)">Fiction</button>
+                </div>
+                <p class="result-count" id="result-count" aria-live="polite"></p>
+            </div>
 
                 <div class="category-container" id="2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf" class="category-heading">
                     <h2>Non Fiction - Business & Finance</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41rF4ELp2fL._SL200_.jpg"
-                            alt="The Great Mental Models, Volume 4 cover" style="margin-right: 10px;">
+                            alt="The Great Mental Models, Volume 4 cover">
                         <div class="book-details">
                             <p class="book-title">The Great Mental Models, Volume 4: Economics and Art</p>
                             <p class="book-author">Shane Parrish</p>
@@ -90,9 +125,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41gXbzUGOeL._SL200_.jpg"
-                            alt="Systems and Mathematics cover" style="margin-right: 10px;">
+                            alt="Systems and Mathematics cover">
                         <div class="book-details">
                             <p class="book-title">Systems and Mathematics: The Great Mental Models, Volume 3</p>
                             <p class="book-author">Shane Parrish</p>
@@ -105,9 +140,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51andNpgyfL._SL200_.jpg"
-                            alt="Poor Charlie&rsquo;s Almanack cover" style="margin-right: 10px;">
+                            alt="Poor Charlie&rsquo;s Almanack cover">
                         <div class="book-details">
                             <p class="book-title">Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T.
                                 Munger</p>
@@ -122,9 +157,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41GqbVAnxeL._SL200_.jpg" alt="$100M Offers cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">$100M Offers: How to Make Offers So Good People Feel Stupid Saying No
                             </p>
@@ -138,9 +173,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51fHDWvvp-L._SL200_.jpg" alt="Liar's Poker cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Liar's Poker: Rising Through the Wreckage on Wall Street</p>
                             <p class="book-author">Michael Lewis</p>
@@ -152,9 +187,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51WrTBKEW5L._SL200_.jpg"
-                            alt="Way of the Wolf cover" style="margin-right: 10px;">
+                            alt="Way of the Wolf cover">
                         <div class="book-details">
                             <p class="book-title">Way of the Wolf: Straight Line Selling: Master the Art of Persuasion,
                                 Influence, and
@@ -169,9 +204,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41AbpgAXGoL._SL200_.jpg" alt="Bad Blood cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Bad Blood: Secrets and Lies in a Silicon Valley Startup</p>
                             <p class="book-author">John Carreyrou</p>
@@ -184,9 +219,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51CUvlxvifL._SL200_.jpg" alt="Freakonomics cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Freakonomics: Revised Edition</p>
                             <p class="book-author">Steven D. Levitt</p>
@@ -199,9 +234,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41jenCaS2JL._SL200_.jpg"
-                            alt="Capital in the Twenty-First Century cover" style="margin-right: 10px;">
+                            alt="Capital in the Twenty-First Century cover">
                         <div class="book-details">
                             <p class="book-title">Capital in the Twenty-First Century</p>
                             <p class="book-author">Thomas Piketty</p>
@@ -214,9 +249,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51yotsewD6L._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Flash Boys: A Wall Street Revolt</p>
                             <p class="book-author">Michael Lewis</p>
@@ -228,9 +263,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61SirCakIDL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Big Short: Inside the Doomsday Machine</p>
                             <p class="book-author">Michael Lewis</p>
@@ -241,9 +276,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41gYz97UXNL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The New New Thing: A Silicon Valley Story</p>
                             <p class="book-author">Michael Lewis</p>
@@ -258,9 +293,9 @@
                 </div>
                 <div class="category-container" id="af857ea6-45a5-4966-9354-508e2f13ab61" class="category-heading">
                     <h2>Non Fiction - Science</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41EWW5oVlyL._SL200_.jpg"
-                            alt="Physics, Chemistry, and Biology cover" style="margin-right: 10px;">
+                            alt="Physics, Chemistry, and Biology cover">
                         <div class="book-details">
                             <p class="book-title">Physics, Chemistry, and Biology: The Great Mental Models, Volume 2</p>
                             <p class="book-author">Shane Parrish</p>
@@ -272,9 +307,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51cSqb2gqLL._SL200_.jpg"
-                            alt="The Demon-Haunted World cover" style="margin-right: 10px;">
+                            alt="The Demon-Haunted World cover">
                         <div class="book-details">
                             <p class="book-title">The Demon-Haunted World: Science as a Candle in the Dark</p>
                             <p class="book-author">Carl Sagan</p>
@@ -287,9 +322,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51ufQTWPmgS._SL200_.jpg"
-                            alt="The Interpretation of Dreams cover" style="margin-right: 10px;">
+                            alt="The Interpretation of Dreams cover">
                         <div class="book-details">
                             <p class="book-title">The Interpretation of Dreams</p>
                             <p class="book-author">Sigmund Freud</p>
@@ -301,9 +336,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51iqpxo43PL._SL200_.jpg"
-                            alt="The Selfish Gene cover" style="margin-right: 10px;">
+                            alt="The Selfish Gene cover">
                         <div class="book-details">
                             <p class="book-title">The Selfish Gene</p>
                             <p class="book-author">Richard Dawkins</p>
@@ -316,9 +351,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61J0IGoDviL._SL200_.jpg" alt="Genome cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Genome: The Autobiography of a Species in 23 Chapters</p>
                             <p class="book-author">Matt Ridley</p>
@@ -331,9 +366,9 @@
                 </div>
                 <div class="category-container" id="061be80a-f4e8-4522-9672-5859fe2fc02e" class="category-heading">
                     <h2>Fiction</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/516ZTsyU2HL._SL200_.jpg" alt="Tempest cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Tempest: A Novel</p>
                             <p class="book-author">Julie Cross</p>
@@ -346,9 +381,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41Sd-dVwqdL._SL200_.jpg" alt="2001 cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">2001: A Space Odyssey</p>
                             <p class="book-author">Arthur C. Clarke</p>
@@ -361,9 +396,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51mcI6b3HuL._SL200_.jpg"
-                            alt="Stranger in a Strange Land cover" style="margin-right: 10px;">
+                            alt="Stranger in a Strange Land cover">
                         <div class="book-details">
                             <p class="book-title">Stranger in a Strange Land</p>
                             <p class="book-author">Robert A. Heinlein</p>
@@ -375,9 +410,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41aet8OqUJL._SL200_.jpg" alt="Haunted cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Haunted</p>
                             <p class="book-author">Chuck Palahniuk</p>
@@ -389,9 +424,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51cUtigL-HL._SL200_.jpg" alt="I Am Legend cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">I Am Legend</p>
                             <p class="book-author">Richard Matheson</p>
@@ -403,9 +438,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51LyHqei7mL._SL200_.jpg" alt="Sphere cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Sphere</p>
                             <p class="book-author">Michael Crichton</p>
@@ -419,9 +454,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/31ZCuVSfdBL._SL200_.jpg" alt="Timeline cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Timeline: A Novel</p>
                             <p class="book-author">Michael Crichton</p>
@@ -435,9 +470,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51CPc-I0+vL._SL200_.jpg" alt="Jurassic Park cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Jurassic Park: A Novel</p>
                             <p class="book-author">Michael Crichton</p>
@@ -449,9 +484,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41ca2pXECyL._SL200_.jpg" alt="Seveneves cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Seveneves: A Novel</p>
                             <p class="book-author">Neal Stephenson</p>
@@ -465,9 +500,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51bCgl4RT5L._SL200_.jpg"
-                            alt="The Three-Body Problem cover" style="margin-right: 10px;">
+                            alt="The Three-Body Problem cover">
                         <div class="book-details">
                             <p class="book-title">The Three-Body Problem</p>
                             <p class="book-author">Cixin Liu</p>
@@ -478,9 +513,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/517pfctTa9L._SL200_.jpg" alt="The Alchemist cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Alchemist: A Fable About Following Your Dream</p>
                             <p class="book-author">Paulo Coelho</p>
@@ -492,9 +527,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61+DEUOaZwL._SL200_.jpg"
-                            alt="Inheritance Games cover" style="margin-right: 10px;">
+                            alt="Inheritance Games cover">
                         <div class="book-details">
                             <p class="book-title">Inheritance Games</p>
                             <p class="book-author">Jennifer Lynn Barnes</p>
@@ -509,9 +544,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41UP+lT+xiL._SL200_.jpg" alt="Matched cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Matched: Book 1</p>
                             <p class="book-author">Ally Condie</p>
@@ -525,9 +560,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51DZbbHQESL._SL200_.jpg" alt="Choke cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Choke</p>
                             <p class="book-author">Chuck Palahniuk</p>
@@ -541,9 +576,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51QKMPYbVcL._SL200_.jpg"
-                            alt="The Bonfire of the Vanities cover" style="margin-right: 10px;">
+                            alt="The Bonfire of the Vanities cover">
                         <div class="book-details">
                             <p class="book-title">The Bonfire of the Vanities</p>
                             <p class="book-author">Tom Wolfe</p>
@@ -555,9 +590,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/511oi04Jv4L._SL200_.jpg" alt="Under the Dome cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Under the Dome: A Novel</p>
                             <p class="book-author">Stephen King</p>
@@ -569,9 +604,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51sgU3xi12L._SL200_.jpg" alt="The Institute cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Institute: A Novel</p>
                             <p class="book-author">Stephen King</p>
@@ -583,9 +618,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51XAGSFRQvL._SL200_.jpg"
-                            alt="One Flew Over the Cuckoo's Nest cover" style="margin-right: 10px;">
+                            alt="One Flew Over the Cuckoo's Nest cover">
                         <div class="book-details">
                             <p class="book-title">One Flew Over the Cuckoo's Nest: 50th Anniversary Edition</p>
                             <p class="book-author">Ken Kesey</p>
@@ -597,9 +632,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51HrCuHBn+L._SL200_.jpg"
-                            alt="To Kill a Mockingbird cover" style="margin-right: 10px;">
+                            alt="To Kill a Mockingbird cover">
                         <div class="book-details">
                             <p class="book-title">To Kill a Mockingbird</p>
                             <p class="book-author">Harper Lee</p>
@@ -610,9 +645,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51bpmH8hvTL._SL200_.jpg"
-                            alt="The Most Dangerous Game cover" style="margin-right: 10px;">
+                            alt="The Most Dangerous Game cover">
                         <div class="book-details">
                             <p class="book-title">The Most Dangerous Game</p>
                             <p class="book-author">Richard Connell</p>
@@ -623,9 +658,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51O2PjnBd7L._SL200_.jpg" alt="Uglies cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Uglies: Uglies, Book 1</p>
                             <p class="book-author">Scott Westerfeld</p>
@@ -637,9 +672,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/419rQcegOyL._SL200_.jpg"
-                            alt="The Midnight Library cover" style="margin-right: 10px;">
+                            alt="The Midnight Library cover">
                         <div class="book-details">
                             <p class="book-title">The Midnight Library: A GMA Book Club Pick (A Novel)</p>
                             <p class="book-author">Matt Haig</p>
@@ -651,9 +686,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51Uorf8f+3L._SL200_.jpg"
-                            alt="The Great Gatsby cover" style="margin-right: 10px;">
+                            alt="The Great Gatsby cover">
                         <div class="book-details">
                             <p class="book-title">The Great Gatsby</p>
                             <p class="book-author">F. Scott Fitzgerald</p>
@@ -664,9 +699,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51WR0HyEu9L._SL200_.jpg"
-                            alt="The Handmaid's Tale cover" style="margin-right: 10px;">
+                            alt="The Handmaid's Tale cover">
                         <div class="book-details">
                             <p class="book-title">The Handmaid's Tale</p>
                             <p class="book-author">Margaret Atwood</p>
@@ -679,9 +714,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41TvVsAxffL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Infinite Jest</p>
                             <p class="book-author">David Foster Wallace</p>
@@ -694,9 +729,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51jzUtyUkYL._SL200_.jpg" alt="Palo Alto cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Palo Alto: Stories</p>
                             <p class="book-author">James Franco</p>
@@ -711,9 +746,9 @@
                 </div>
                 <div class="category-container" id="19429dca-9fc0-47e9-a69e-c44cbc701c35" class="category-heading">
                     <h2>Non Fiction - Psychology / Sociology</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51frmShzuIL._SL200_.jpg"
-                            alt="The Great Mental Models cover" style="margin-right: 10px;">
+                            alt="The Great Mental Models cover">
                         <div class="book-details">
                             <p class="book-title">The Great Mental Models: General Thinking Concepts</p>
                             <p class="book-author">Shane Parrish</p>
@@ -726,9 +761,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51EPbqCHCmS._SL200_.jpg" alt="Wanting cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Wanting: The Power of Mimetic Desire in Everyday Life</p>
                             <p class="book-author">Luke Burgis</p>
@@ -740,9 +775,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41H6RyCz-dL._SL200_.jpg" alt="Determined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Determined: A Science of Life Without Free Will</p>
                             <p class="book-author">Robert M. Sapolsky</p>
@@ -755,9 +790,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51TMc4FljBL._SL200_.jpg" alt="The Game cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Game: Penetrating the Secret Society of Pickup Artists</p>
                             <p class="book-author">Neil Strauss</p>
@@ -769,9 +804,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51pmZ9X8DVL._SL200_.jpg"
-                            alt="ADD in Intimate Relationships cover" style="margin-right: 10px;">
+                            alt="ADD in Intimate Relationships cover">
                         <div class="book-details">
                             <p class="book-title">ADD in Intimate Relationships: A Comprehensive Guide for Couples</p>
                             <p class="book-author">Daniel G. Amen</p>
@@ -781,9 +816,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51oo22ZkGCL._SL200_.jpg"
-                            alt="The Sociopath Next Door cover" style="margin-right: 10px;">
+                            alt="The Sociopath Next Door cover">
                         <div class="book-details">
                             <p class="book-title">The Sociopath Next Door</p>
                             <p class="book-author">Martha Stout</p>
@@ -796,9 +831,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51dtWltQlbL._SL200_.jpg" alt="Infidelity cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Infidelity: Why Men and Women Cheat</p>
                             <p class="book-author">Kenneth Paul Rosenberg</p>
@@ -812,9 +847,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51kQonCW+gL._SL200_.jpg" alt="Caste cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Caste: The Origins of Our Discontents</p>
                             <p class="book-author">Isabel Wilkerson</p>
@@ -827,9 +862,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/510Fk3kw7mL._SL200_.jpg"
-                            alt="The State of Affairs cover" style="margin-right: 10px;">
+                            alt="The State of Affairs cover">
                         <div class="book-details">
                             <p class="book-title">The State of Affairs: Rethinking Infidelity</p>
                             <p class="book-author">Esther Perel</p>
@@ -841,9 +876,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51yBQp8WuUL._SL200_.jpg" alt="The Truth cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Truth</p>
                             <p class="book-author">Neil Strauss</p>
@@ -855,9 +890,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/5136M1Gap0L._SL200_.jpg"
-                            alt="The Undoing Project cover" style="margin-right: 10px;">
+                            alt="The Undoing Project cover">
                         <div class="book-details">
                             <p class="book-title">The Undoing Project: A Friendship That Changed Our Minds</p>
                             <p class="book-author">Michael Lewis</p>
@@ -869,9 +904,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51c9nmYKj+L._SL200_.jpg"
-                            alt="The Better Angels of Our Nature cover" style="margin-right: 10px;">
+                            alt="The Better Angels of Our Nature cover">
                         <div class="book-details">
                             <p class="book-title">The Better Angels of Our Nature: Why Violence Has Declined</p>
                             <p class="book-author">Steven Pinker</p>
@@ -883,9 +918,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41iQeiOBkzL._SL200_.jpg" alt="Modern Romance cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Modern Romance: An Investigation</p>
                             <p class="book-author">Aziz Ansari</p>
@@ -898,9 +933,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51aXLppXsHL._SL200_.jpg"
-                            alt="The Ethical Slut cover" style="margin-right: 10px;">
+                            alt="The Ethical Slut cover">
                         <div class="book-details">
                             <p class="book-title">The Ethical Slut: A Practical Guide to Polyamory, Open Relationships,
                                 & Other
@@ -915,9 +950,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51lMYH2xvdL._SL200_.jpg"
-                            alt="The Rational Optimist cover" style="margin-right: 10px;">
+                            alt="The Rational Optimist cover">
                         <div class="book-details">
                             <p class="book-title">The Rational Optimist: How Prosperity Evolves</p>
                             <p class="book-author">Matt Ridley</p>
@@ -929,9 +964,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/516W4IbHeML._SL200_.jpg"
-                            alt="Mating in Captivity cover" style="margin-right: 10px;">
+                            alt="Mating in Captivity cover">
                         <div class="book-details">
                             <p class="book-title">Mating in Captivity: Reconciling the Erotic & the Domestic</p>
                             <p class="book-author">Esther Perel</p>
@@ -943,9 +978,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41r-tlO+HWL._SL200_.jpg"
-                            alt="Rethinking Narcissism cover" style="margin-right: 10px;">
+                            alt="Rethinking Narcissism cover">
                         <div class="book-details">
                             <p class="book-title">Rethinking Narcissism: The Bad - and Surprising Good - About Feeling
                                 Special</p>
@@ -957,9 +992,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51PWIy1rHUL._SL200_.jpg"
-                            alt="How to Win Friends &amp; Influence People cover" style="margin-right: 10px;">
+                            alt="How to Win Friends &amp; Influence People cover">
                         <div class="book-details">
                             <p class="book-title">How to Win Friends & Influence People</p>
                             <p class="book-author">Dale Carnegie</p>
@@ -971,9 +1006,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51zvOkieKjL._SL200_.jpg"
-                            alt="Predictably Irrational cover" style="margin-right: 10px;">
+                            alt="Predictably Irrational cover">
                         <div class="book-details">
                             <p class="book-title">Predictably Irrational: The Hidden Forces That Shape Our Decisions</p>
                             <p class="book-author">Dan Ariely</p>
@@ -985,9 +1020,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51Ez+y4yUBL._SL200_.jpg" alt="Influence cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Influence: Science and Practice, ePub, 5th Edition</p>
                             <p class="book-author">Robert B. Cialdini</p>
@@ -1000,9 +1035,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51nYxKrlxAL._SL200_.jpg"
-                            alt="Gang Leader for a Day cover" style="margin-right: 10px;">
+                            alt="Gang Leader for a Day cover">
                         <div class="book-details">
                             <p class="book-title">Gang Leader for a Day: A Rogue Sociologist Takes to the Streets</p>
                             <p class="book-author">Sudhir Venkatesh</p>
@@ -1014,9 +1049,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41kRF4qWHyL._SL200_.jpg"
-                            alt="Bobos in Paradise cover" style="margin-right: 10px;">
+                            alt="Bobos in Paradise cover">
                         <div class="book-details">
                             <p class="book-title">Bobos in Paradise: The New Upper Class and How They Got There</p>
                             <p class="book-author">David Brooks</p>
@@ -1027,9 +1062,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/519VeDZE8qL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Old Money: The Mythology of Wealth in America</p>
                             <p class="book-author">Nelson Aldrich</p>
@@ -1044,9 +1079,9 @@
                 </div>
                 <div class="category-container" id="0228bcb3-c1c7-447c-9a99-7693bacb1977" class="category-heading">
                     <h2>Non Fiction - History</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51IqQzORQML._SL200_.jpg" alt="Helter Skelter cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Helter Skelter: The True Story of the Manson Murders</p>
                             <p class="book-author">Vincent Bugliosi</p>
@@ -1058,9 +1093,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51Ejp6zICNL._SL200_.jpg"
-                            alt="American Kingpin cover" style="margin-right: 10px;">
+                            alt="American Kingpin cover">
                         <div class="book-details">
                             <p class="book-title">American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the
                                 Silk Road</p>
@@ -1074,9 +1109,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/514BmGWbq8L._SL200_.jpg" alt="Americana cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Americana: A 400-Year History of American Capitalism</p>
                             <p class="book-author">Bhu Srinivasan</p>
@@ -1087,9 +1122,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51PNKmohmFL._SL200_.jpg"
-                            alt="The Great Earthquake and Firestorms of 1906 cover" style="margin-right: 10px;">
+                            alt="The Great Earthquake and Firestorms of 1906 cover">
                         <div class="book-details">
                             <p class="book-title">The Great Earthquake and Firestorms of 1906: How San Francisco Nearly
                                 Destroyed Itself
@@ -1104,9 +1139,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51CL6-rTjhL._SL200_.jpg"
-                            alt="Who Killed Jane Stanford? cover" style="margin-right: 10px;">
+                            alt="Who Killed Jane Stanford? cover">
                         <div class="book-details">
                             <p class="book-title">Who Killed Jane Stanford?: A Gilded Age Tale of Murder, Deceit,
                                 Spirits and the Birth
@@ -1121,9 +1156,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51g0A-V5q-L._SL200_.jpg" alt="Palo Alto cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Palo Alto: A History of California, Capitalism, and the World</p>
                             <p class="book-author">Malcolm Harris</p>
@@ -1135,9 +1170,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61FrIfgE4rL._SL200_.jpg"
-                            alt="The Electric Kool-Aid Acid Test cover" style="margin-right: 10px;">
+                            alt="The Electric Kool-Aid Acid Test cover">
                         <div class="book-details">
                             <p class="book-title">The Electric Kool-Aid Acid Test</p>
                             <p class="book-author">Tom Wolfe</p>
@@ -1150,9 +1185,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/511lAxQS6EL._SL200_.jpg"
-                            alt="The Great Influenza cover" style="margin-right: 10px;">
+                            alt="The Great Influenza cover">
                         <div class="book-details">
                             <p class="book-title">The Great Influenza: The Epic Story of the Deadliest Plague in History
                             </p>
@@ -1166,9 +1201,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51ZEI-NjeRL._SL200_.jpg" alt="Countdown 1945 cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Countdown 1945: The Extraordinary Story of the Atomic Bomb and the 116
                                 Days That
@@ -1182,9 +1217,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51+dOikxcPL._SL200_.jpg" alt="The Pioneers cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Pioneers: The Heroic Story of the Settlers Who Brought the
                                 American Ideal West</p>
@@ -1199,9 +1234,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51DAuBDmxTL._SL200_.jpg"
-                            alt="The Last Days of Night cover" style="margin-right: 10px;">
+                            alt="The Last Days of Night cover">
                         <div class="book-details">
                             <p class="book-title">The Last Days of Night: A Novel</p>
                             <p class="book-author">Graham Moore</p>
@@ -1214,9 +1249,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61yozG4sg+L._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">White Trash: The 400-Year Untold History of Class in America</p>
                             <p class="book-author">Nancy Isenberg</p>
@@ -1227,9 +1262,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61I+lVZw8yL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Sapiens: A Brief History of Humankind</p>
                             <p class="book-author">Yuval Noah Harari</p>
@@ -1244,9 +1279,9 @@
                 </div>
                 <div class="category-container" id="d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de" class="category-heading">
                     <h2>Non Fiction - Other</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41ucJrSCTUL._SL200_.jpg" alt="Nuclear War cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Nuclear War: A Scenario</p>
                             <p class="book-author">Annie Jacobsen</p>
@@ -1259,9 +1294,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51gtnVvJyFL._SL200_.jpg"
-                            alt="Very Important People cover" style="margin-right: 10px;">
+                            alt="Very Important People cover">
                         <div class="book-details">
                             <p class="book-title">Very Important People: Status and Beauty in the Global Party Circuit
                             </p>
@@ -1275,9 +1310,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/514bTcXstSL._SL200_.jpg"
-                            alt="The Right Stuff cover" style="margin-right: 10px;">
+                            alt="The Right Stuff cover">
                         <div class="book-details">
                             <p class="book-title">The Right Stuff</p>
                             <p class="book-author">Tom Wolfe</p>
@@ -1288,9 +1323,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/413PeRYmpKL._SL200_.jpg" alt="Troubled cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Troubled: The Failed Promise of America’s Behavioral Treatment
                                 Programs</p>
@@ -1302,9 +1337,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51EE3GAdmfL._SL200_.jpg" alt="The Art of War cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Art of War</p>
                             <p class="book-author">Sun Tzu</p>
@@ -1316,9 +1351,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/515AWhxHp9L._SL200_.jpg"
-                            alt="Misquoting Jesus cover" style="margin-right: 10px;">
+                            alt="Misquoting Jesus cover">
                         <div class="book-details">
                             <p class="book-title">Misquoting Jesus</p>
                             <p class="book-author">Bart D. Ehrman</p>
@@ -1331,9 +1366,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51i+ZbKIV3L._SL200_.jpg" alt="Mindhunter cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Mindhunter: Inside the FBI's Elite Serial Crime Unit</p>
                             <p class="book-author">John E. Douglas</p>
@@ -1345,9 +1380,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51SnsM+6S4L._SL200_.jpg"
-                            alt="American Radical cover" style="margin-right: 10px;">
+                            alt="American Radical cover">
                         <div class="book-details">
                             <p class="book-title">American Radical: Inside the World of an Undercover Muslim FBI Agent
                             </p>
@@ -1359,9 +1394,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51d2wR7k3GL._SL200_.jpg"
-                            alt="Billion Dollar Whale cover" style="margin-right: 10px;">
+                            alt="Billion Dollar Whale cover">
                         <div class="book-details">
                             <p class="book-title">Billion Dollar Whale</p>
                             <p class="book-author">Bradley Hope</p>
@@ -1378,9 +1413,9 @@
                 </div>
                 <div class="category-container" id="40bf9cc1-4703-481a-9133-f6d5aa8cdaba" class="category-heading">
                     <h2>Non Fiction - Biography</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41D8WGukI+L._SL200_.jpg"
-                            alt="The Trading Game cover" style="margin-right: 10px;">
+                            alt="The Trading Game cover">
                         <div class="book-details">
                             <p class="book-title">The Trading Game: A Confession</p>
                             <p class="book-author">Gary Stevenson</p>
@@ -1393,9 +1428,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51VEeZWAo-L._SL200_.jpg" alt="Einstein cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Einstein: His Life and Universe</p>
                             <p class="book-author">Walter Isaacson</p>
@@ -1408,9 +1443,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/519diyDo0ML._SL200_.jpg" alt="Elon Musk cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Elon Musk</p>
                             <p class="book-author">Walter Isaacson</p>
@@ -1423,9 +1458,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41r6Xg98YJL._SL200_.jpg" alt="King: A Life cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">King: A Life</p>
                             <p class="book-author">Jonathan Eig</p>
@@ -1438,9 +1473,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41iaUFTequL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Paris: The Memoir</p>
                             <p class="book-author">Paris Hilton</p>
@@ -1455,9 +1490,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61zcpKItWZL._SL200_.jpg"
-                            alt="Benjamin Franklin: An American Life cover" style="margin-right: 10px;">
+                            alt="Benjamin Franklin: An American Life cover">
                         <div class="book-details">
                             <p class="book-title">Benjamin Franklin: An American Life</p>
                             <p class="book-author">Walter Isaacson</p>
@@ -1470,9 +1505,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51VOPahycoL._SL200_.jpg" alt="Washington cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Washington: A Life</p>
                             <p class="book-author">Ron Chernow</p>
@@ -1483,9 +1518,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51bm1zi6z1L._SL200_.jpg"
-                            alt="Leland Stanford cover" style="margin-right: 10px;">
+                            alt="Leland Stanford cover">
                         <div class="book-details">
                             <p class="book-title">Leland Stanford: The Life and Legacy of the Railroad Executive Who
                                 Became California's
@@ -1499,9 +1534,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61gS6EWmWwL._SL200_.jpg" alt="Will cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Will</p>
                             <p class="book-author">Will Smith</p>
@@ -1515,9 +1550,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41CMMz4RC8L._SL200_.jpg"
-                            alt="A Promised Land cover" style="margin-right: 10px;">
+                            alt="A Promised Land cover">
                         <div class="book-details">
                             <p class="book-title">A Promised Land</p>
                             <p class="book-author">Barack Obama</p>
@@ -1530,9 +1565,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51H3v85MyKL._SL200_.jpg"
-                            alt="Washington's End cover" style="margin-right: 10px;">
+                            alt="Washington's End cover">
                         <div class="book-details">
                             <p class="book-title">Washington's End: The Final Years and Forgotten Struggle</p>
                             <p class="book-author">Jonathan Horn</p>
@@ -1546,9 +1581,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/513Hl3HQa+L._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Picking Up: On the Streets and Behind the Trucks with the Sanitation
                                 Workers of New
@@ -1561,9 +1596,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51ok7zll9AL._SL200_.jpg"
-                            alt="Thank You for My Service cover" style="margin-right: 10px;">
+                            alt="Thank You for My Service cover">
                         <div class="book-details">
                             <p class="book-title">Thank You for My Service</p>
                             <p class="book-author">Mat Best</p>
@@ -1577,9 +1612,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51NwvTgdAYL._SL200_.jpg" alt="My Own Words cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">My Own Words</p>
                             <p class="book-author">Ruth Bader Ginsburg</p>
@@ -1590,9 +1625,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51Mc--F6zGL._SL200_.jpg" alt="Born a Crime cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Born a Crime: Stories from a South African Childhood</p>
                             <p class="book-author">Trevor Noah</p>
@@ -1603,9 +1638,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61RIh9gAAFL._SL200_.jpg" alt="21 cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">21: Bringing Down the House: The Inside Story of Six M.I.T. Students
                                 Who Took Vegas
@@ -1617,9 +1652,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61VMbkvRXUL._SL200_.jpg"
-                            alt="Leonardo da Vinci cover" style="margin-right: 10px;">
+                            alt="Leonardo da Vinci cover">
                         <div class="book-details">
                             <p class="book-title">Leonardo da Vinci</p>
                             <p class="book-author">Walter Isaacson</p>
@@ -1631,9 +1666,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61jsqgBB+3L._SL200_.jpg" alt="The Operator cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Operator: Firing the Shots That Killed Osama Bin Laden and My
                                 Years as a SEAL Team
@@ -1647,9 +1682,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41CPS3JoO6L._SL200_.jpg"
-                            alt="Alexander Hamilton cover" style="margin-right: 10px;">
+                            alt="Alexander Hamilton cover">
                         <div class="book-details">
                             <p class="book-title">Alexander Hamilton</p>
                             <p class="book-author">Ron Chernow</p>
@@ -1661,9 +1696,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/616eaUDkw9L._SL200_.jpg" alt="Lincoln cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Lincoln</p>
                             <p class="book-author">David Herbert Donald</p>
@@ -1675,9 +1710,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61gzwAKgOnL._SL200_.jpg" alt="High Price cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">High Price: A Neuroscientist's Journey of Self-Discovery That
                                 Challenges Everything
@@ -1691,9 +1726,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41Hw+cFHzKL._SL200_.jpg" alt="Pimp cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Pimp: The Story of My Life</p>
                             <p class="book-author">Iceberg Slim</p>
@@ -1706,9 +1741,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41goWDE1PUL._SL200_.jpg" alt="Educated cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Educated: A Memoir</p>
                             <p class="book-author">Tara Westover</p>
@@ -1719,9 +1754,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51IQzkj0+NL._SL200_.jpg" alt="Elon Musk cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future</p>
                             <p class="book-author">Ashlee Vance</p>
@@ -1736,9 +1771,9 @@
                 </div>
                 <div class="category-container" id="615e7c56-6f1f-4eb3-b319-6e893eff93af" class="category-heading">
                     <h2>Non Fiction - Silicon Valley / Start-ups</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61MSZsYP-NL._SL200_.jpg"
-                            alt="Hackers &amp; Painters cover" style="margin-right: 10px;">
+                            alt="Hackers &amp; Painters cover">
                         <div class="book-details">
                             <p class="book-title">Hackers & Painters: Big Ideas from the Computer Age</p>
                             <p class="book-author">Paul Graham</p>
@@ -1752,9 +1787,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41M6f0yDCSL._SL200_.jpg"
-                            alt="Secrets of Sand Hill Road cover" style="margin-right: 10px;">
+                            alt="Secrets of Sand Hill Road cover">
                         <div class="book-details">
                             <p class="book-title">Secrets of Sand Hill Road: Venture Capital and How to Get It</p>
                             <p class="book-author">Scott Kupor</p>
@@ -1767,9 +1802,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/416t7V93neL._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley
                             </p>
@@ -1782,9 +1817,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51HzIZEePNL._SL200_.jpg" alt="Disrupted cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Disrupted: My Misadventure in the Start-Up Bubble</p>
                             <p class="book-author">Dan Lyons</p>
@@ -1801,9 +1836,9 @@
                 </div>
                 <div class="category-container" id="577243d0-1f8b-4aa6-95af-04dcf8050f66" class="category-heading">
                     <h2>Non Fiction - Life Skills</h2>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/515aLpBOsyL._SL200_.jpg"
-                            alt="Law School for Everyone cover" style="margin-right: 10px;">
+                            alt="Law School for Everyone cover">
                         <div class="book-details">
                             <p class="book-title">Law School for Everyone</p>
                             <p class="book-author">The Great Courses</p>
@@ -1814,9 +1849,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51dekFVqy-L._SL200_.jpg" alt="The Republic cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Republic</p>
                             <p class="book-author">Plato</p>
@@ -1827,9 +1862,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/41dTDMW9IhL._SL200_.jpg"
-                            alt="48 Laws of Power cover" style="margin-right: 10px;">
+                            alt="48 Laws of Power cover">
                         <div class="book-details">
                             <p class="book-title">48 Laws of Power</p>
                             <p class="book-author">Robert Greene</p>
@@ -1841,9 +1876,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51EvZOmzf-L._SL200_.jpg" alt="Heads in Beds cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Heads in Beds: A Reckless Memoir of Hotels, Hustles, and So-Called
                                 Hospitality</p>
@@ -1856,9 +1891,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51l4HGsEqyL._SL200_.jpg"
-                            alt="Never Split the Difference cover" style="margin-right: 10px;">
+                            alt="Never Split the Difference cover">
                         <div class="book-details">
                             <p class="book-title">Never Split the Difference: Negotiating as if Your Life Depended on It
                             </p>
@@ -1871,10 +1906,10 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/515dztuMvSL._SL200_.jpg"
                             alt="400 Things Cops Know: Street-Smart Lessons From a Veteran Patrolman cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">400 Things Cops Know: Street-Smart Lessons From a Veteran Patrolman
                             </p>
@@ -1886,9 +1921,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/61nBw77qi6L._SL200_.jpg" alt="undefined cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">The Life-Changing Magic of Tidying Up: The Japanese Art of
                                 Decluttering and Organizing
@@ -1902,9 +1937,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51gzRqi-P0L._SL200_.jpg" alt="Law 101 cover"
-                            style="margin-right: 10px;">
+                           >
                         <div class="book-details">
                             <p class="book-title">Law 101: Everything You Need to Know About American Law</p>
                             <p class="book-author">Jay M. Feinman</p>
@@ -1916,9 +1951,9 @@
                                 Amazon</a>
                         </div>
                     </div>
-                    <div class="book" style="display: flex; align-items: center;"><img class="cover-image"
+                    <div class="book"><img class="cover-image" loading="lazy"
                             src="https://m.media-amazon.com/images/I/51XR1BJ1wuL._SL200_.jpg"
-                            alt="Arrest-Proof Yourself, Second Edition cover" style="margin-right: 10px;">
+                            alt="Arrest-Proof Yourself, Second Edition cover">
                         <div class="book-details">
                             <p class="book-title">Arrest-Proof Yourself, Second Edition</p>
                             <p class="book-author">Dale C. Carson</p>
@@ -1935,22 +1970,68 @@
         </section>
     </main>
 
+    <footer class="site-footer">
+        <p>Made with ☕ and a lot of audiobook hours by <a target="_blank"
+                href="https://www.linkedin.com/in/brianhamachek/">Brian Hamachek</a>.</p>
+        <p class="footer-note">Links go to Audible/Amazon. Happy reading!</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
     <script type="text/javascript">
 
-        function changeCategory(category) {
+        var activeCategory = "all";
+
+        function changeCategory(category, pillEl) {
+            activeCategory = category;
+            var pills = document.querySelectorAll('.pill');
+            pills.forEach(function (p) { p.classList.remove('active'); });
+            if (pillEl) { pillEl.classList.add('active'); }
+            applyFilters();
+        }
+
+        function applyFilters() {
+            var query = document.getElementById('book-search').value.trim().toLowerCase();
             var containers = document.getElementsByClassName('category-container');
-            for (let i = 0; i < containers.length; i++) {
-                if (category === "all") {
-                    containers[i].style.display = 'block';
-                } else {
-                    containers[i].style.display = 'none';
+            var visibleBooks = 0;
+
+            for (var i = 0; i < containers.length; i++) {
+                var container = containers[i];
+                var inCategory = (activeCategory === "all" || container.id === activeCategory);
+                var books = container.getElementsByClassName('book');
+                var visibleInContainer = 0;
+
+                for (var j = 0; j < books.length; j++) {
+                    var book = books[j];
+                    var matches = true;
+                    if (query) {
+                        var title = (book.querySelector('.book-title') || {}).textContent || '';
+                        var author = (book.querySelector('.book-author') || {}).textContent || '';
+                        matches = (title + ' ' + author).toLowerCase().indexOf(query) !== -1;
+                    }
+                    var show = inCategory && matches;
+                    book.style.display = show ? '' : 'none';
+                    if (show) { visibleInContainer++; }
                 }
+
+                container.style.display = visibleInContainer > 0 ? '' : 'none';
+                visibleBooks += visibleInContainer;
             }
 
-            if (category !== "all") {
-                document.getElementById(category).style.display = 'block';
+            var count = document.getElementById('result-count');
+            if (visibleBooks === 0) {
+                count.textContent = 'No books match — try a different search or genre.';
+            } else {
+                count.textContent = 'Showing ' + visibleBooks + ' book' + (visibleBooks === 1 ? '' : 's');
             }
         }
+
+        window.addEventListener('scroll', function () {
+            var btn = document.getElementById('back-to-top');
+            btn.classList.toggle('visible', window.scrollY > 600);
+        });
+
+        applyFilters();
 
     </script>
 
