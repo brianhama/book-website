@@ -387,6 +387,13 @@
       "name": "Non Fiction - Silicon Valley & Tech",
       "books": [
         {
+          "title": "The Pragmatic Programmer: 20th Anniversary Edition, 2nd Edition: Your Journey to Mastery",
+          "author": "David Thomas, Andrew Hunt",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51A8l+FxFNL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0833FMYH9/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism",
           "author": "Sarah Wynn-Williams",
           "blurb": "",
