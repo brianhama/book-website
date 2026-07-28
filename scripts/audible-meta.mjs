@@ -16,10 +16,24 @@ export function stripHtml(s) {
   return decodeEntities(String(s).replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
 }
 
-export function truncateBlurb(s, max = 320) {
-  if (s.length <= max) return s;
-  const cut = s.slice(0, max);
-  return cut.slice(0, Math.max(cut.lastIndexOf('. ') + 1, cut.lastIndexOf(' '))).trim() + '...';
+// Distill a full (possibly multi-paragraph) description into one clean
+// paragraph: whole sentences from the start, skipping leading award/bestseller
+// boilerplate, ending at a sentence boundary — no mid-sentence ellipsis.
+export function distillBlurb(raw, { min = 280, max = 700 } = {}) {
+  const text = stripHtml(raw);
+  if (!text) return '';
+  const sentences = text.match(/[^.!?]+[.!?]+["'”’)\]]*\s*/g) || [text];
+  const isBoilerplate = (s) =>
+    s.length < 90 && /best\s?seller|winner of|named a best|now a major|soon to be a|a gma book club|pulitzer prize|booker prize|from the author of/i.test(s);
+  let start = 0;
+  while (start < sentences.length - 1 && isBoilerplate(sentences[start])) start++;
+  let out = '';
+  for (let i = start; i < sentences.length; i++) {
+    if (out && out.length + sentences[i].length > max) break;
+    out += sentences[i];
+    if (out.length >= min) break;
+  }
+  return out.trim();
 }
 
 export async function fetchWithRetry(url, options = {}, attempts = 3) {
@@ -51,7 +65,7 @@ export async function fromCatalogApi(asin) {
   return {
     title: product.subtitle ? `${product.title}: ${product.subtitle}` : product.title,
     author: (product.authors || []).map((a) => a.name).join(', '),
-    blurb: truncateBlurb(stripHtml(product.publisher_summary || product.merchandising_summary || '')),
+    blurb: distillBlurb(product.publisher_summary || product.merchandising_summary || ""),
     cover: images['500'] || Object.values(images)[0] || '',
   };
 }
@@ -66,7 +80,7 @@ export async function fromAudnex(asin) {
   return {
     title: book.subtitle ? `${book.title}: ${book.subtitle}` : book.title,
     author: (book.authors || []).map((a) => a.name).join(', '),
-    blurb: truncateBlurb(stripHtml(book.summary || book.description || '')),
+    blurb: distillBlurb(book.summary || book.description || ""),
     cover: book.image || '',
   };
 }
@@ -89,7 +103,7 @@ export async function fromProductPage(asin) {
       if (!/Audiobook|Book|Product/.test(String(obj['@type']))) continue;
       meta.title ||= obj.name;
       meta.cover ||= Array.isArray(obj.image) ? obj.image[0] : obj.image;
-      if (!meta.blurb && obj.description) meta.blurb = truncateBlurb(stripHtml(obj.description));
+      if (!meta.blurb && obj.description) meta.blurb = distillBlurb(obj.description);
       if (!meta.author && obj.author) {
         const authors = Array.isArray(obj.author) ? obj.author : [obj.author];
         meta.author = authors.map((a) => (typeof a === 'string' ? a : a.name)).filter(Boolean).join(', ');
