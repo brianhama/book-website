@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Brian Hamachek's Book Recommendations</title>
     <meta name="description"
-        content="A curated collection of the best books I've read — over 600 books distilled into personal favorites across business, science, history, fiction, and more.">
+        content="A curated collection of the best books I've read — over 1,500 books distilled into personal favorites across business, science, history, fiction, and more. Every pick is available as an audiobook.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,9 +19,9 @@
 
     <header class="hero">
         <div class="hero-inner">
-            <p class="hero-eyebrow">📚 600+ books read · the best made this list</p>
+            <p class="hero-eyebrow">📚 1,500+ books read · the best made this list</p>
             <h1>Brian Hamachek's<br>Book Recommendations</h1>
-            <p class="hero-tagline">A personally curated shelf of the books worth your time.</p>
+            <p class="hero-tagline">A personally curated shelf of the books worth your time — every one of them available as an audiobook.</p>
         </div>
     </header>
 
@@ -56,8 +56,8 @@
                 <h3 class="section-heading">About this website</h3>
                 <p>Outside of books assigned for school, I was never much of a reader growing up. Back in 2012, I
                     decided to change that and set a goal of reading one book a month for a year. I got hooked. Since
-                    then, I've read over 600 books.</p>
-                <p>This website is a collection of the best books I've read. I've organized them by category and added a
+                    then, I've read over 1,500 books.</p>
+                <p>This website is a collection of the best books I've read. Nearly all of my reading happens in audiobook form, and every book recommended here is available as an audiobook. I've organized them by category and added a
                     short description of each book. My hope is that someone is able to get as much from these books as I
                     have. Also, if you have any recommendations, please let me know!</p>
             </div>
@@ -81,28 +81,6 @@
                 </div>
                 <div class="genre-pills" id="genre-pills" role="group" aria-label="Filter by genre">
                     <button class="pill active" data-category="all" onclick="changeCategory('all', this)">All</button>
-                    <button class="pill" data-category="2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf"
-                        onclick="changeCategory('2a8ac59c-ee2b-4a39-8c83-9ad2ce15e0cf', this)">Business &amp;
-                        Finance</button>
-                    <button class="pill" data-category="af857ea6-45a5-4966-9354-508e2f13ab61"
-                        onclick="changeCategory('af857ea6-45a5-4966-9354-508e2f13ab61', this)">Science</button>
-                    <button class="pill" data-category="19429dca-9fc0-47e9-a69e-c44cbc701c35"
-                        onclick="changeCategory('19429dca-9fc0-47e9-a69e-c44cbc701c35', this)">Psychology &amp;
-                        Sociology</button>
-                    <button class="pill" data-category="0228bcb3-c1c7-447c-9a99-7693bacb1977"
-                        onclick="changeCategory('0228bcb3-c1c7-447c-9a99-7693bacb1977', this)">History</button>
-                    <button class="pill" data-category="40bf9cc1-4703-481a-9133-f6d5aa8cdaba"
-                        onclick="changeCategory('40bf9cc1-4703-481a-9133-f6d5aa8cdaba', this)">Biography</button>
-                    <button class="pill" data-category="615e7c56-6f1f-4eb3-b319-6e893eff93af"
-                        onclick="changeCategory('615e7c56-6f1f-4eb3-b319-6e893eff93af', this)">Silicon Valley &amp;
-                        Start-ups</button>
-                    <button class="pill" data-category="577243d0-1f8b-4aa6-95af-04dcf8050f66"
-                        onclick="changeCategory('577243d0-1f8b-4aa6-95af-04dcf8050f66', this)">Life Skills</button>
-                    <button class="pill" data-category="d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de"
-                        onclick="changeCategory('d0d5b91d-6d4f-4ec2-8645-50e23dc1b8de', this)">Other Non
-                        Fiction</button>
-                    <button class="pill" data-category="061be80a-f4e8-4522-9672-5859fe2fc02e"
-                        onclick="changeCategory('061be80a-f4e8-4522-9672-5859fe2fc02e', this)">Fiction</button>
                 </div>
                 <p class="result-count" id="result-count" aria-live="polite"></p>
             </div>
@@ -146,6 +124,15 @@
                 return '<div class="category-container" id="' + esc(cat.id) + '"><h2>' + esc(cat.name) + '</h2>' + books + '</div>';
             });
             listEl.innerHTML = htmlParts.join('');
+            var pillsEl = document.getElementById('genre-pills');
+            data.categories.forEach(function (cat) {
+                var btn = document.createElement('button');
+                btn.className = 'pill';
+                btn.dataset.category = cat.id;
+                btn.textContent = cat.name.replace(/^(Non Fiction|Fiction) - /, '');
+                btn.onclick = function () { changeCategory(cat.id, btn); };
+                pillsEl.appendChild(btn);
+            });
             var updated = document.getElementById('last-updated');
             if (updated && data.lastUpdated) {
                 updated.textContent = 'Last updated ' + data.lastUpdated;
