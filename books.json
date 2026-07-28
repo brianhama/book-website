@@ -144,6 +144,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "Recursion: A Novel",
+          "author": "Blake Crouch",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41kTCl6OwHL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/1984886878/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Pines: Wayward Pines: 1",
           "author": "Blake Crouch",
           "blurb": "",
