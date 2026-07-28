@@ -144,6 +144,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "Alas, Babylon",
+          "author": "Pat Frank",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51lvpowGhJL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B004BOGF3W/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Recursion: A Novel",
           "author": "Blake Crouch",
           "blurb": "",
