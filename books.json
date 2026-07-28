@@ -930,6 +930,13 @@
       "name": "Non Fiction - Silicon Valley / Start-ups",
       "books": [
         {
+          "title": "Brotopia: Breaking Up the Boys' Club of Silicon Valley",
+          "author": "Emily Chang",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51uwir71K9L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B078SBP23C/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "How to Rule the World: An Education in Power at Stanford University",
           "author": "Theo Baker",
           "blurb": "",
