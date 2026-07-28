@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Brian Hamachek's Book Recommendations</title>
     <meta name="description"
-        content="A curated collection of the best books I've read — over 1,500 books distilled into personal favorites across business, science, history, fiction, and more. Every pick is available as an audiobook.">
+        content="A curated collection of the best books I've read: over 1,500 books distilled into personal favorites across business, science, history, fiction, and more. Every pick is available as an audiobook.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,9 +19,9 @@
 
     <header class="hero">
         <div class="hero-inner">
-            <p class="hero-eyebrow">📚 1,500+ books read · the best made this list</p>
+            <p class="hero-eyebrow">📚 1,500+ books read</p>
             <h1>Brian Hamachek's<br>Book Recommendations</h1>
-            <p class="hero-tagline">A personally curated shelf of the books worth your time — every one of them available as an audiobook.</p>
+            <p class="hero-tagline">A personally curated shelf of the books worth your time. Every one of them is available as an audiobook.</p>
         </div>
     </header>
 
@@ -59,7 +59,7 @@
                     decided to change that and set a goal of reading one book a month for a year. I got hooked. Since
                     then, I've read over 1,500 books.</p>
                 <p>This website is a collection of the best books I've read. Nearly all of my reading happens in audiobook form, and every book recommended here is available as an audiobook. I've organized them by category and added a
-                    short description of each book. My hope is that someone is able to get as much from these books as I
+                    short description of each book. I don't necessarily agree with the premise of every book here, but I find seeing things from multiple perspectives interesting. My hope is that someone is able to get as much from these books as I
                     have. Also, if you have any recommendations, please let me know!</p>
             </div>
         </section>
@@ -104,6 +104,12 @@
     <script type="text/javascript">
 
         var activeCategory = "all";
+        var isMobile = window.matchMedia('(max-width: 768px)');
+
+        function toggleCategory(id) {
+            if (!isMobile.matches) { return; }
+            document.getElementById(id).classList.toggle('collapsed');
+        }
 
         function esc(s) {
             var d = document.createElement('div');
@@ -124,9 +130,29 @@
                         '<a class="book-link" target="_blank" rel="noopener" href="' + esc(b.link) + '">View On Amazon</a>' +
                         '</div></div>';
                 }).join('');
-                return '<div class="category-container" id="' + esc(cat.id) + '"><h2>' + esc(cat.name) + '</h2>' + books + '</div>';
+                return '<div class="category-container" id="' + esc(cat.id) + '">' +
+                    '<h2 class="cat-toggle" onclick="toggleCategory(\'' + esc(cat.id) + '\')">' + esc(cat.name) +
+                    '<span class="cat-count">' + cat.books.length + '</span></h2>' + books + '</div>';
             });
             listEl.innerHTML = htmlParts.join('');
+            var collage = document.createElement('div');
+            collage.id = 'cover-collage';
+            collage.setAttribute('aria-hidden', 'true');
+            data.categories.forEach(function (cat) {
+                cat.books.forEach(function (b) {
+                    var img = document.createElement('img');
+                    img.src = b.cover;
+                    img.alt = '';
+                    img.loading = 'lazy';
+                    collage.appendChild(img);
+                });
+            });
+            document.body.prepend(collage);
+            if (isMobile.matches) {
+                document.querySelectorAll('.category-container').forEach(function (c) {
+                    c.classList.add('collapsed');
+                });
+            }
             var pillsEl = document.getElementById('genre-pills');
             data.categories.forEach(function (cat) {
                 var btn = document.createElement('button');
@@ -156,6 +182,17 @@
             var containers = document.getElementsByClassName('category-container');
             var visibleBooks = 0;
 
+            if (isMobile.matches) {
+                for (var k = 0; k < containers.length; k++) {
+                    var isActive = containers[k].id === activeCategory;
+                    if (query || isActive) {
+                        containers[k].classList.remove('collapsed');
+                    } else if (activeCategory === 'all' && !query) {
+                        containers[k].classList.add('collapsed');
+                    }
+                }
+            }
+
             for (var i = 0; i < containers.length; i++) {
                 var container = containers[i];
                 var inCategory = (activeCategory === "all" || container.id === activeCategory);
@@ -181,7 +218,7 @@
 
             var count = document.getElementById('result-count');
             if (visibleBooks === 0) {
-                count.textContent = 'No books match — try a different search or genre.';
+                count.textContent = 'No books match. Try a different search or genre.';
             } else {
                 count.textContent = 'Showing ' + visibleBooks + ' book' + (visibleBooks === 1 ? '' : 's');
             }

@@ -8,28 +8,31 @@
         {
           "title": "Wool: The Silo Saga, Book 1",
           "author": "Hugh Howey",
-          "blurb": "The first book in the acclaimed, New York Times bestselling trilogy, Wool is the story of mankind clawing for survival. The world outside has grown toxic, the view of it limited, talk of it forbidden. The remnants of humanity live underground in a single silo. But there are always those who hope, who dream.",
+          "blurb": "Humanity's last survivors live in a giant underground silo, told the air outside is lethal and questions about it are forbidden. When a mechanic from the down deep is unexpectedly made sheriff, she starts pulling at threads the silo's rulers would rather stay buried. A slow-burn mystery wrapped in a dystopia that keeps re-justifying its own paranoia.",
           "cover": "https://m.media-amazon.com/images/I/51wvy7jratL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BKR3Y6SP/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BKR3Y6SP/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "We Are Legion (We Are Bob): Bobiverse, Book 1",
           "author": "Dennis E. Taylor",
-          "blurb": "There's a reason We Are Legion (We Are Bob) was named Audible's Best Science Fiction Book of 2016: Its irresistibly irreverent wit! Bob Johansson has just sold his software company for a small fortune and is looking forward to a life of leisure. The first item on his to-do list: Spending his newfound windfall.",
+          "blurb": "Bob signs up to have his head cryogenically frozen, dies in a car accident, and wakes up a century later as a computer emulation drafted into piloting a self-replicating space probe. What follows is a funny, nerdy take on interstellar exploration where the hero keeps making copies of himself, each with a slightly different personality.",
           "cover": "https://m.media-amazon.com/images/I/51yMirAE25L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01L082HJ2/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01L082HJ2/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Man in the High Castle",
           "author": "Philip K. Dick",
-          "blurb": "In this Hugo Award–winning alternative history classic—the basis for the Amazon Original series—the United States lost World War II and was subsequently divided between the Germans in the East and the Japanese in the West. It’s America in 1962. Slavery is legal once again. The few Jews who still survive hide under assumed names.",
+          "blurb": "An alternate 1962 in which Germany and Japan won World War II and split America between them. Dick is less interested in the war than in what occupation does to identity and truth, layering in a forbidden novel that imagines the Allies won. Strange, unsettling, and unlike any other alt-history.",
           "cover": "https://m.media-amazon.com/images/I/51Mf5AxLaBL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0DZKNRHT4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0DZKNRHT4/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Project Hail Mary",
           "author": "Andy Weir",
-          "blurb": "Ryland Grace is the sole survivor on a desperate, last-chance mission — and if he fails, humanity and the earth itself will perish. Except that right now, he doesn't know that. He can't even remember his own name, let alone the nature of his assignment or how to complete it. All he knows is that he's been asleep for a very, very long time, and he's just been awakened to find himself millions of miles from home, with nothing but two corpses for company.",
+          "blurb": "A man wakes up alone on a spaceship with no memory of who he is or why he's there, and pieces together that he is humanity's last shot at stopping a microbe that is dimming the sun. Equal parts science puzzle and unlikely friendship story, and probably the most purely fun audiobook on this list.",
           "cover": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL200_.jpg",
           "link": "http://www.audible.com/pd/B08G9PRS1K/?ref=nosim&tag=brianhamachek-20",
           "blurbLocked": true
@@ -37,86 +40,98 @@
         {
           "title": "One Second After",
           "author": "William R. Forstchen",
-          "blurb": "A post-apocalyptic thriller of the after effects in the United States after a terrifying terrorist attack using electromagnetic pulse weapons. In a small North Carolina town, one man struggles to save his family after America loses a war that will send it back to the Dark Ages. Already cited on the floor of Congress and discussed in the corridors of the Pentagon as a book all Americans should read, One Second After is the story of a war scenario that could become all too terrifyingly real.",
+          "blurb": "An EMP attack instantly kills every modern electronic in America, and a small North Carolina town has to figure out food, medicine, and order as the country collapses around it. Grim and occasionally preachy, but it will change how you think about how fragile the systems we rely on really are.",
           "cover": "https://m.media-amazon.com/images/I/51-NrYdr3iL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1O7UU/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1O7UU/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Alas, Babylon",
           "author": "Pat Frank",
-          "blurb": "This true modern masterpiece is built around the two fateful words that make up the title and herald the end - “Alas, Babylon.” When a nuclear holocaust ravages the United States, a thousand years of civilization are stripped away overnight, and tens of millions of people are killed instantly.",
+          "blurb": "Written in 1959 at the height of Cold War dread, it follows a small Florida town that survives a Soviet nuclear strike and has to rebuild a functioning community from scratch. One of the earliest and still one of the best entries in the post-apocalypse genre.",
           "cover": "https://m.media-amazon.com/images/I/51lvpowGhJL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004BOGF3W/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004BOGF3W/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Recursion: A Novel",
           "author": "Blake Crouch",
-          "blurb": "NEW YORK TIMES BESTSELLER • From thebestselling author of Dark Matter and the Wayward Pines trilogy comes a relentless thriller about time, identity, and memory—his most mind-boggling, irresistible work to date, and the inspiration for Shondaland’s upcoming Netflix film. “Gloriously twisting .",
+          "blurb": "A detective investigates a syndrome that leaves people grieving lives they never lived, while a scientist builds a chair that can map and restore memories. Crouch turns a clever memory-travel premise into an escalating catastrophe that keeps topping itself.",
           "cover": "https://m.media-amazon.com/images/I/41kTCl6OwHL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1984886878/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1984886878/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Pines: Wayward Pines: 1",
           "author": "Blake Crouch",
-          "blurb": "The first book of the smash-hit Wayward Pines trilogy, from the New York Times bestselling author of Dark Matter, Recursion, and Upgrade One way in. No way out. Secret Service agent Ethan Burke arrives in Wayward Pines, Idaho, with a mission: locate two federal agents who went missing in the bucolic town one month earlier.",
+          "blurb": "A Secret Service agent wakes up in a picture-perfect Idaho town he cannot leave, where the phones don't reach anyone and the residents seem to be performing their lives. The reveal behind Wayward Pines is genuinely audacious, and the ride there is fast.",
           "cover": "https://m.media-amazon.com/images/I/51ThceTXTuL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B09VNFV4XF/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B09VNFV4XF/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Tempest: A Novel",
           "author": "Julie Cross",
-          "blurb": "In Julie Cross' Tempest , the year is 2009. Nineteen-year-old Jackson Meyer is a normal guy… he's in college, has a girlfriend… and he can travel back through time. But it's not like the movies – nothing changes in the present after his jumps, there's no space-time continuum issues or broken flux capacitors – it's just harmless fun.",
+          "blurb": "A nineteen-year-old discovers he can jump backward through time, and when his girlfriend is shot by mysterious agents, he retreats two years into the past to unravel who is hunting him. Light, fast YA time travel with a romance at its center.",
           "cover": "https://m.media-amazon.com/images/I/516ZTsyU2HL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B006YK2VPW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B006YK2VPW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "2001: A Space Odyssey",
           "author": "Arthur C. Clarke",
-          "blurb": "It has been more than forty years since the publication of this classic science fiction novel that changed the way we look at the stars and ourselves. From the savannas of Africa at the dawn of mankind to the rings of Saturn as man adventures to the outer rim of our solar system, 2001: A Space Odyssey is a journey unlike any other.",
+          "blurb": "From the dawn of man to a monolith orbiting Saturn, Clarke's novel follows an expedition accompanied by HAL, the ship's calmly homicidal computer. Written alongside the Kubrick film, the book explains what the movie leaves opaque, and the ideas about evolution and intelligence still land.",
           "cover": "https://m.media-amazon.com/images/I/41Sd-dVwqdL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002UZJGYY/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002UZJGYY/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Stranger in a Strange Land",
           "author": "Robert A. Heinlein",
-          "blurb": "Stranger in a Strange Land is the epic saga of an earthling, Valentine Michael Smith, born and educated on Mars, who arrives on our planet with “psi” powers—telepathy, clairvoyance, precognition, telekinesis, teleportation, pyrolysis, and the ability to take control of the minds of others—and complete innocence regarding the mores of man.",
+          "blurb": "Valentine Michael Smith, raised on Mars by Martians, arrives on Earth as an adult and views human religion, money, and jealousy as an alien would. Heinlein uses him to poke at every social convention of the 1960s. Dated in places, but a genuinely influential piece of science fiction.",
           "cover": "https://m.media-amazon.com/images/I/51mcI6b3HuL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8MUYI/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8MUYI/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Seveneves: A Novel",
           "author": "Neal Stephenson",
-          "blurb": "From the #1 New York Times bestselling author of Anathem , Reamde , and Cryptonomicon comes an exciting and thought-provoking science fiction epic - a grand story of annihilation and survival spanning five thousand years. What would happen if the world were ending? A catastrophic event renders the earth a ticking time bomb.",
+          "blurb": "The moon breaks apart, and humanity has two years before the fragments turn the sky into fire. Stephenson spends the first two-thirds on the desperate engineering scramble to get a fragment of civilization into orbit, then jumps five thousand years to see what those choices became. Dense, technical, and epic in the true sense.",
           "cover": "https://m.media-amazon.com/images/I/41ca2pXECyL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00WNBF0RM/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00WNBF0RM/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Three-Body Problem",
           "author": "Cixin Liu",
-          "blurb": "The inspiration for the Netflix series 3 Body Problem ! WINNER OF THE HUGO AWARD FOR BEST NOVEL Over 1 million copies sold in North America “A mind-bending epic.” — The New York Times • “ War of the Worlds for the 21st century.” — The Wall Street Journal • “Fascinating.” — TIME • “Extraordinary.”",
+          "blurb": "During China's Cultural Revolution, a physicist makes contact with an alien civilization whose home world is being torn apart by three suns, and quietly invites them to Earth. The first book of a trilogy that scales from historical trauma to some of the biggest ideas in modern science fiction.",
           "cover": "https://m.media-amazon.com/images/I/51bCgl4RT5L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00P0277C2/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00P0277C2/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Matched: Book 1",
           "author": "Ally Condie",
-          "blurb": "“[A] superb dystopian romance.” – The Wall Street Journal “Strong feminist ideals and impressive writing that’s bound to captivate.” – The Los Angeles Times In the Society, Officials decide. Who you love. Where you work. When you die. Cassia has always trusted the Society’s choices.",
+          "blurb": "In the Society, officials decide who you love, where you work, and when you die. Cassia trusts the system until the wrong face flashes on her matching screen for an instant. YA dystopia focused on quiet control rather than spectacle.",
           "cover": "https://m.media-amazon.com/images/I/41UP+lT+xiL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004CTOWB8/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004CTOWB8/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Uglies: Uglies, Book 1",
           "author": "Scott Westerfeld",
-          "blurb": "The first installment of Scott Westerfeld’s New York Times bestselling and award-winning Uglies series—a global phenomenon that started the dystopian trend. Tally is about to turn sixteen, and she can’t wait. In just a few weeks she’ll have the operation that will turn her from a repellent ugly into a stunningly attractive pretty.",
+          "blurb": "Everyone gets an operation at sixteen that makes them beautiful, and Tally can't wait for hers until she meets someone who plans to refuse it. A YA series with a sharper point than its premise suggests, about what conformity costs and who benefits from it.",
           "cover": "https://m.media-amazon.com/images/I/51O2PjnBd7L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0117VPY5Q/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0117VPY5Q/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Handmaid's Tale",
           "author": "Margaret Atwood",
-          "blurb": "Audie Award, Fiction, 2013 Margaret Atwood's popular dystopian novel The Handmaid's Tale explores a broad range of issues relating to power, gender, and religious politics. Multiple Golden Globe award-winner Claire Danes ( Romeo and Juliet, The Hours ) gives a stirring performance of this classic in speculative fiction, one of the most powerful and widely read novels of our time.",
+          "blurb": "In the Republic of Gilead, a theocratic coup has stripped women of property, reading, and their own names, and Offred survives as a handmaid whose only sanctioned purpose is bearing children. Atwood claims she invented nothing that hasn't happened somewhere, which is exactly what makes it linger.",
           "cover": "https://m.media-amazon.com/images/I/51WR0HyEu9L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B008NB9GIU/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B008NB9GIU/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -127,72 +142,82 @@
         {
           "title": "11-22-63: A Novel",
           "author": "Stephen King",
-          "blurb": "THE #1 NEW YORK TIMES BESTSELLER AND MODERN CLASSIC FROM MASTER STORYTELLER STEPHEN KING A NEW YORK TIMES BOOK REVIEW TOP TEN BOOK OF THE YEAR WINNER OF THE LOS ANGELES TIMES BOOK PRIZE On November 22, 1963, three shots rang out in Dallas, President Kennedy died, and the world changed.",
+          "blurb": "A high school teacher finds a portal to 1958 and takes on the ultimate what-if: living in the past for five years to stop the Kennedy assassination. King's best latter-day book, as much a love story about a vanished America as a time-travel thriller. The past, he warns, does not want to be changed.",
           "cover": "https://m.media-amazon.com/images/I/51b3MJwd2YL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B005UR3VFO/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B005UR3VFO/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Haunted",
           "author": "Chuck Palahniuk",
-          "blurb": "Haunted by Chuck Palahniuk is a novel made up of stories: Twenty-three of them, to be precise. Twenty-three of the most horrifying, hilarious, mind-blowing, stomach-churning tales you’ll ever encounter—sometimes all at once. They are told by people who have answered an ad headlined “Writers’ Retreat: Abandon Your Life for Three Months,” and who are led to believe that here they will leave behind all the distractions of “real life” that are keeping them from creating the masterpiece that is in them.",
+          "blurb": "Writers answer an ad for a secluded retreat and end up locked in a decaying theater, each telling the story that ruined them while the group sabotages its own survival for the sake of a better narrative. Contains some of the most notorious short stories Palahniuk has written. Not for the faint of stomach.",
           "cover": "https://m.media-amazon.com/images/I/41aet8OqUJL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8N7FE/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8N7FE/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "I Am Legend",
           "author": "Richard Matheson",
-          "blurb": "The basis for the film starring Academy Award nominee Will Smith, I Am Legend is a classic of horror and suspense. In I Am Legend , a terrible plague has decimated the world, and those who were unfortunate enough to survive are transformed into bloodthirsty creatures of the night.",
+          "blurb": "Robert Neville is the last man in a world where a plague has turned everyone else into vampiric creatures, and he spends his days hunting them and his nights barricaded in his house. The ending inverts the entire genre, and the title is the punchline.",
           "cover": "https://m.media-amazon.com/images/I/51cUtigL-HL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1CB2Q/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1CB2Q/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Sphere",
           "author": "Michael Crichton",
-          "blurb": "“Ingenious and beguiling.” - Time “Crichton keeps us guessing at every turn in his best work since The Andromeda Strain .” - Los Angeles Times “ Sphere may be Crichton’s best novel, but even if it ranked only second or third, it would be a must for suspense fans.” - Miami Herald A classic thriller from #1 New York Times bestselling author Michael Crichton, Sphere is a bravura demonstration of what he does better than anyone: riveting storytelling that combines frighteningly plausible, cutting-edge science and technology with pulse-pounding action and serious chills.",
+          "blurb": "A psychologist is helicoptered to the middle of the Pacific, where the Navy has found a spacecraft on the ocean floor that appears to be three hundred years old. What the team finds inside starts granting wishes nobody should have. Crichton at his claustrophobic best.",
           "cover": "https://m.media-amazon.com/images/I/51LyHqei7mL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00ZJQ8D8Q/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00ZJQ8D8Q/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Timeline: A Novel",
           "author": "Michael Crichton",
-          "blurb": "In an Arizona desert a man wanders in a daze, speaking words that make no sense. Within twenty-four hours he is dead, his body swiftly cremated by his only known associates. Halfway around the world archaeologists make a shocking discovery at a medieval site. Suddenly they are swept off to the headquarters of a secretive multinational corporation that has developed an astounding technology.",
+          "blurb": "Archaeologists use quantum technology to travel to fourteenth-century France, where the past turns out to be considerably better armed than expected. A historical adventure wearing a sci-fi costume, with Crichton's usual knack for making the science feel plausible.",
           "cover": "https://m.media-amazon.com/images/I/31ZCuVSfdBL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002VA96S4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002VA96S4/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Jurassic Park: A Novel",
           "author": "Michael Crichton",
-          "blurb": "#1 NEW YORK TIMES BESTSELLER • From the author of Timeline, Sphere, and Congo, this is the classic thriller of science run amok that took the world by storm. Nominated as one of America’s best-loved novels by PBS’s The Great American Read “[Michael] Crichton’s dinosaurs are genuinely frightening.”",
+          "blurb": "A billionaire clones dinosaurs from fossilized DNA and builds a theme park around them, confident that the systems keeping them contained cannot fail. The book is darker and more cynical than the movie, and its argument about complexity and hubris holds up better every year.",
           "cover": "https://m.media-amazon.com/images/I/51CPc-I0+vL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00U7UORMU/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00U7UORMU/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Inheritance Games",
           "author": "Jennifer Lynn Barnes",
-          "blurb": "OVER 2 MILLION COPIES SOLD OF THE #1 BESTSELLING SERIES! Don't miss this New York Times bestselling \"impossible to put down\" (Buzzfeed) novel with deadly stakes, thrilling twists, and juicy secrets--perfect for fans of One of Us is Lying and Knives Out . Avery Grambs has a plan for a better future: survive high school, win a scholarship, and get out.",
+          "blurb": "A broke teenager inherits billions from a stranger, on the condition that she move into his mansion alongside the family he disinherited, including four grandsons who want to know why. A puzzle-box YA mystery built on riddles and games.",
           "cover": "https://m.media-amazon.com/images/I/61+DEUOaZwL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/154916046X/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/154916046X/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Under the Dome: A Novel",
           "author": "Stephen King",
-          "blurb": "The “propulsively intriguing, staggeringly addictive” ( USA TODAY ) novel from master storyteller Stephen King—a #1 New York Times bestseller. It is a typical October morning in Chester’s Mill, Maine: glorious weather, a perfectly blue sky, and quiet. Then, all hell breaks loose.",
+          "blurb": "An invisible barrier seals a Maine town off from the world in an instant, and the real horror turns out to be the local politician who sees opportunity in the crisis. King uses the sci-fi premise as a pressure cooker for a study of small-town power.",
           "cover": "https://m.media-amazon.com/images/I/511oi04Jv4L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V0M190/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V0M190/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Institute: A Novel",
           "author": "Stephen King",
-          "blurb": "2020 THRILLER/SUSPENSE AUDIE AWARD WINNER! Now an MGM+ Original Series! From #1 New York Times bestselling author Stephen King, the most riveting and unforgettable story of kids confronting evil since It. “This is King at his best” ( St. Louis Post-Dispatch ). In the middle of the night, in a house on a quiet street in suburban Minneapolis, intruders silently murder Luke Ellis’s parents and load him into a black SUV.",
+          "blurb": "Children with faint psychic abilities are kidnapped and warehoused in a facility that harvests what's in their heads, until one unusually smart boy arrives. Classic King territory: institutional evil, resilient kids, and the slow assembly of a rebellion.",
           "cover": "https://m.media-amazon.com/images/I/51sgU3xi12L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1508279071/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1508279071/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Most Dangerous Game",
           "author": "Richard Connell",
-          "blurb": "A mysterious island, shrouded in fear, evil, and darkness. Here the amoral General Zaroff hunts. And what, you ask, is the most dangerous game? It is the manner and substance of his nightly killings.",
+          "blurb": "A big-game hunter falls off a yacht and swims to an island owned by a Russian aristocrat who has grown bored of hunting animals. The 1924 short story that launched a hundred imitations, still tense at under an hour.",
           "cover": "https://m.media-amazon.com/images/I/51bpmH8hvTL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0050K0TNI/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0050K0TNI/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -203,105 +228,119 @@
         {
           "title": "Flesh: A Novel",
           "author": "David Szalay",
-          "blurb": "WINNER OF THE 2025 BOOKER PRIZE AND A NATIONAL BESTSELLER Finalist for the Kirkus Prize | Longlisted for the Carnegie Medal for Excellence From “the shrewdest writer on contemporary masculinity we have” ( Esquire ), a “captivating...hypnotic...virtuosic” ( The Baffler ) novel about a man whose life veers off course due to a series of unforeseen circumstances.",
+          "blurb": "A Hungarian teenager drifts from a small apartment block to the army to the orbit of London's ultra-rich, his life shaped by events he barely speaks about. Szalay tells an entire life in spare, flat prose where everything important happens between the lines. Winner of the Booker Prize.",
           "cover": "https://m.media-amazon.com/images/I/41ya0kmyZ3L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0D7WGQ22R/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0D7WGQ22R/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Fight Club",
           "author": "Chuck Palahniuk",
-          "blurb": "Every weekend, in basements and car parks across the country, young men with good white-collar jobs and absent fathers take off their shoes and shirts and fight each other barehanded. Then they go back to those jobs with blackened eyes and loosened teeth and the sense that they can handle anything.",
+          "blurb": "An insomniac office drone meets Tyler Durden, and together they invent a bare-knuckle ritual that metastasizes into something much bigger and stranger. The novel is leaner and meaner than the film, a satire of consumer masculinity that got adopted by the people it was mocking.",
           "cover": "https://m.media-amazon.com/images/I/61GTIqq6yzL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1BFI2/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1BFI2/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Overstory",
           "author": "Richard Powers",
-          "blurb": "Pulitzer Prize, Fiction, 2019 A monumental novel about reimagining our place in the living world, by one of our most \"prodigiously talented\" novelists ( New York Times Book Review ). The Overstory unfolds in concentric rings of interlocking fable that range from antebellum New York to the late 20th-century Timber Wars of the Pacific Northwest and beyond.",
+          "blurb": "Nine strangers, each marked by a tree somewhere in their past, converge on the fight over America's last old-growth forests. Powers makes trees feel like characters operating on a timescale we can barely perceive. A Pulitzer winner that genuinely changes how you look out a window.",
           "cover": "https://m.media-amazon.com/images/I/61VCVNtbg5L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B078PJ2TY4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B078PJ2TY4/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Forrest Gump",
           "author": "Winston Groom",
-          "blurb": "Meet Forrest Gump, the lovable, hurculean, and surprisingly savy hero of this remarkable comic odyssey. After accidentally becoming the star of Univerity of Alabama's football team, Forrest goes on to become a Vietnam War hero, a worl-class Ping-Pong player, a villainous wrestler, and a business tycoon -- as he wonders with cildlike wisdome at the insanity all around him.",
+          "blurb": "The novel behind the movie is rougher, raunchier, and stranger: Forrest goes to space, plays chess professionally, and wrestles under the name The Dunce. Groom's hero narrates his improbable sweep through American history with the same guileless deadpan throughout.",
           "cover": "https://m.media-amazon.com/images/I/51dRrii4AFL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004VFKPOG/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004VFKPOG/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "North Woods: A Novel",
           "author": "Daniel Mason",
-          "blurb": "NATIONAL BESTSELLER • A NEW YORK TIMES BOOK REVIEW TOP TEN BOOK OF THE YEAR A WASHINGTON POST TOP TEN BOOK OF THE YEAR • FINALIST FOR THE NATIONAL BOOK CRITICS CIRCLE AWARD AND THE MARK TWAIN AMERICAN VOICE IN LITERATURE AWARD A sweeping novel about a single house in the woods of New England, told through the lives of those who inhabit it across the centuries—“a time-spanning, genre-blurring work of storytelling magic” ( The Washington Post ) from the Pulitzer Prize finalist and author of The Piano Tuner and The Winter Soldier .",
+          "blurb": "A single plot of land in New England, followed for four centuries through everyone and everything that inhabits it: colonists, an apple grower, painters, ghosts, a mountain lion. A novel about time and place where the house is the protagonist. Quietly brilliant.",
           "cover": "https://m.media-amazon.com/images/I/61Sbyv+tf1L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BWSLHZ59/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BWSLHZ59/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Survivor",
           "author": "Chuck Palahniuk",
-          "blurb": "Tender Branson - last surviving member of the so-called \"Creedish Death Cult\" - is dictating his incredible life story into the flight recorder of Flight 2039, cruising on autopilot at 39,000 feet somewhere over the Pacific Ocean. He is all alone in the plane, which will shortly reach terminal velocity and crash into the vast Australian outback.",
+          "blurb": "The last member of a death cult dictates his life story into the black box of a hijacked 747 as it runs out of fuel. Palahniuk's satire of celebrity religion, self-help culture, and manufactured messiahs, told in chapters that count down to impact.",
           "cover": "https://m.media-amazon.com/images/I/61tplGmoBOL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B09GBN6XV2/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B09GBN6XV2/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Alchemist: A Fable About Following Your Dream",
           "author": "Paulo Coelho",
-          "blurb": "AN INTERNATIONAL BESTSELLER • OVER 120 MILLION COPIES SOLD WORLDWIDE • PUBLISHED IN 89 LANGUAGES “Teaches us about dreams, destiny, and the reason we are all here.”",
+          "blurb": "A young Andalusian shepherd sells his flock to chase a recurring dream about treasure at the Egyptian pyramids, and the journey becomes the point. A simple fable about listening to what you actually want. You'll either find it profound or slight; either way it takes an afternoon.",
           "cover": "https://m.media-amazon.com/images/I/517pfctTa9L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V0Q4LG/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V0Q4LG/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Choke",
           "author": "Chuck Palahniuk",
-          "blurb": "NEW YORK TIMES BESTSELLER • From the bestselling author of the generation-defining classic Fight Club comes a powerful (and hilarious) novel about the addictive power of sex, the terrors of aging, the ugly truth about historical theme parks, and much else ... “Sheer, anarchic fierceness of imagination .",
+          "blurb": "A med-school dropout finances his mother's care by pretending to choke in restaurants, letting strangers save him and then letting them feel responsible for his life. Palahniuk's twisted take on addiction, con artistry, and the need to be needed.",
           "cover": "https://m.media-amazon.com/images/I/51DZbbHQESL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V0PTGW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V0PTGW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Bonfire of the Vanities",
           "author": "Tom Wolfe",
-          "blurb": "This bitingly hilarious American satire will forever define late twentieth-century New York style. Tom Wolfe’s bestselling modern classic tells the story of Sherman McCoy, an elite Wall Street bond trader who has it all: wealth, power, prestige, a Park Avenue apartment, a beautiful wife, and an even more beautiful mistress, until one wrong turn sends Sherman spiraling downward in a humiliating fall from grace.",
+          "blurb": "A Wall Street bond trader takes a wrong turn in the Bronx, and the resulting accident becomes fuel for prosecutors, activists, and tabloids that each need him to be a villain. Wolfe's giant satire of 1980s New York, where every character is performing for an audience.",
           "cover": "https://m.media-amazon.com/images/I/51QKMPYbVcL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8DJI4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8DJI4/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "One Flew Over the Cuckoo's Nest: 50th Anniversary Edition",
           "author": "Ken Kesey",
-          "blurb": "A fiftieth-anniversary edition of Ken Kesey's searing American classic. Boisterous, ribald, and ultimately shattering, Ken Kesey's One Flew Over the Cuckoo's Nest has left an indelible mark on the literature of our time. Turning conventional notions of sanity and insanity on their heads, the novel tells the unforgettable story of a mental ward and its inhabitants, especially tyrannical Big Nurse Ratched and Randle Patrick McMurphy, the brawling, fun-loving new inmate who resolves to oppose her.",
+          "blurb": "Randle McMurphy fakes insanity to serve his sentence in a psychiatric hospital and collides with Nurse Ratched, who runs the ward through procedure and quiet humiliation. A novel about institutional control that reads as fresh as the day it was published.",
           "cover": "https://m.media-amazon.com/images/I/51XAGSFRQvL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B008N1TVDU/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B008N1TVDU/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "To Kill a Mockingbird",
           "author": "Harper Lee",
-          "blurb": "READ BY SISSY SPACEK Voted America's Best-Loved Novel in PBS's The Great American Read \"One of the most—if not the most—beloved of American novels.\" — The New Yorker Harper Lee's Pulitzer Prize-winning masterwork of honor and injustice in the deep South—and the heroism of one man in the face of blind and violent hatred One of the most cherished stories of all time, To Kill a Mockingbird has been translated into more than forty languages, sold more than fifty million copies worldwide, and was voted one of the best novels of the twentieth century by librarians across the country.",
+          "blurb": "Scout Finch watches her father defend a Black man falsely accused in Depression-era Alabama, and learns how her town actually works. A great American classic that earns the label, told through a child's eyes without childishness.",
           "cover": "https://m.media-amazon.com/images/I/51HrCuHBn+L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00K1HQVOQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00K1HQVOQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Midnight Library: A GMA Book Club Pick (A Novel)",
           "author": "Matt Haig",
-          "blurb": "The #1 New York Times bestselling WORLDWIDE phenomenon Winner of the Goodreads Choice Award for Fiction | A Good Morning America Book Club Pick | Independent ( London) Ten Best Books of the Year \"A feel-good book guaranteed to lift your spirits.\" —The Washington Post The dazzling reader-favorite about the choices that go into a life well lived.",
+          "blurb": "Between life and death sits a library where every book is a version of your life had you chosen differently, and Nora Seed gets to try them. A gentle thought experiment about regret that wears its philosophy lightly.",
           "cover": "https://m.media-amazon.com/images/I/419rQcegOyL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/059334023X/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/059334023X/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Great Gatsby",
           "author": "F. Scott Fitzgerald",
-          "blurb": "Audie Award Finalist, Classic, 2014 F. Scott Fitzgerald’s classic American novel of the Roaring Twenties is beloved by generations of readers and stands as his crowning work. This new audio edition, authorized by the Fitzgerald estate, is narrated by Oscar-nominated actor Jake Gyllenhaal ( Brokeback Mountain ).",
+          "blurb": "Jay Gatsby builds a fortune and a mansion across the bay from the woman he lost, believing money can buy back the past. Fitzgerald's short, perfect novel about reinvention and the hollowness underneath it. The Gyllenhaal narration is excellent.",
           "cover": "https://m.media-amazon.com/images/I/51Uorf8f+3L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00BWYDMK8/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00BWYDMK8/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Infinite Jest",
           "author": "David Foster Wallace",
-          "blurb": "A gargantuan, mind-altering comedy about the Pursuit of Happiness in America Set in an addicts' halfway house and a tennis academy, and featuring the most endearingly screwed-up family to come along in recent fiction, Infinite Jest explores essential questions about what entertainment is and why it has come to so dominate our lives; about how our desire for entertainment affects our need to connect with other people; and about what the pleasures we choose say about who we are.",
+          "blurb": "Set between a tennis academy and a halfway house, it orbits a film so entertaining that anyone who watches it loses the will to do anything else. Wallace's enormous novel about addiction and entertainment demands real commitment and repays a surprising amount of it.",
           "cover": "https://m.media-amazon.com/images/I/41TvVsAxffL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B007P00API/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B007P00API/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Palo Alto: Stories",
           "author": "James Franco",
-          "blurb": "A fiercely vivid collection of stories about troubled California teenagers and misfits, set in the suburban wasteland of Palo Alto. In linked tales that are equal parts humor and heartbreak, James Franco draws on his own adolescence to render the lives of teenagers dabbling in vice and boredom, drawn to each other and driven to acts of cruelty and unexpected tenderness.",
+          "blurb": "Linked short stories about aimless Palo Alto teenagers drifting through parties, cruelty, and boredom in the shadow of a town known for ambition. Franco draws on his own adolescence here; bleak, but it captures something true about growing up numb in a wealthy suburb.",
           "cover": "https://m.media-amazon.com/images/I/51jzUtyUkYL._SL200_.jpg",
           "link": "http://www.audible.com/pd/B004AG361U/?ref=nosim&tag=brianhamachek-20",
           "blurbLocked": true
@@ -309,9 +348,10 @@
         {
           "title": "The Last Days of Night: A Novel",
           "author": "Graham Moore",
-          "blurb": "NEW YORK TIMES BESTSELLER • “A world of invention and skulduggery, populated by the likes of Edison, Westinghouse, and Tesla.”—Erik Larson “A model of superior historical fiction .  . an exciting, sometimes astonishing story.”— The Washington Post From Graham Moore, the Oscar-winning screenwriter of The Imitation Game and New York Times bestselling author of The Sherlockian , comes a thrilling novel—based on actual events—about the nature of genius, the cost of ambition, and the battle to electrify America.",
+          "blurb": "A young lawyer takes on Thomas Edison on behalf of George Westinghouse in the patent war over the light bulb, with Nikola Tesla wandering brilliantly through the middle. A fictionalized but well-researched account of the current wars, paced like a thriller.",
           "cover": "https://m.media-amazon.com/images/I/51DAuBDmxTL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01JSJ6ZN4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01JSJ6ZN4/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -322,79 +362,90 @@
         {
           "title": "1929: Inside the Greatest Crash in Wall Street History--and How It Shattered a Nation",
           "author": "Andrew Ross Sorkin",
-          "blurb": "— The Wall Street Journal A New York Times Notable Book of 2025 • One of Barack Obama's Favorite Books of 2025 • Named a BEST BOOK OF 2025 by The Washington Post , TIME , The Economist , Air Mail , Bloomberg , Fast Company , Katie Couric Media, and History From the bestselling author of Too Big to Fail , “the definitive history of the 2008 banking crisis,” ( The Atlantic ) comes a riveting narrative of the most infamous stock market crash in history—one with ripple effects that still shape our society today.",
+          "blurb": "Sorkin reconstructs the crash of 1929 through the bankers, promoters, and politicians who inflated the bubble and then scrambled to survive it. Reads like a novel and doubles as a warning: every generation believes it has outgrown the mistakes this book documents.",
           "cover": "https://m.media-amazon.com/images/I/41x2t5jMDEL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0DXQH752D/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0DXQH752D/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Great Mental Models, Volume 4: Economics and Art",
           "author": "Shane Parrish",
-          "blurb": "From the New York Times bestselling author of Clear Thinking and Farnam Street founder, Shane Parrish. The fourth and final installment in the timeless Great Mental Models series. Time and time again, great thinkers such as Charlie Munger and Warren Buffett have credited their success to mental models–representations of how something works that can scale onto other fields.",
+          "blurb": "The fourth Mental Models volume pulls its ideas from economics and art: incentives, scarcity, supply and demand, audience, and framing. Like the whole series, it's a toolbox of ways to think rather than a set of answers.",
           "cover": "https://m.media-amazon.com/images/I/41rF4ELp2fL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0CTNLCDG6?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0CTNLCDG6?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Systems and Mathematics: The Great Mental Models, Volume 3",
           "author": "Shane Parrish",
-          "blurb": "From the New York Times bestselling author of Clear Thinking and Farnam Street founder, Shane Parrish. The third book in the timeless Great Mental Models series. Time and time again, great thinkers such as Charlie Munger and Warren Buffett have credited their success to mental models–representations of how something works that can scale onto other fields.",
+          "blurb": "Feedback loops, equilibrium, compounding, distributions, and the other load-bearing ideas from systems thinking and math, explained without requiring any of the underlying technical machinery. Volume 3 of the Mental Models series.",
           "cover": "https://m.media-amazon.com/images/I/41gXbzUGOeL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0D3VS9YJ9/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0D3VS9YJ9/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T. Munger",
           "author": "Charles T. Munger",
-          "blurb": "From the legendary vice-chairman of Berkshire Hathaway, lessons in investment strategy, philanthropy, and living a rational and ethical life. \"Spend each day trying to be a little wiser than you were when you woke up,\" Charles T. Munger advises in Poor Charlie’s Almanack . Originally published in 2005, this compendium of 11 talks, delivered by the legendary Berkshire Hathaway vice-chairman between 1986 and 2007, has become a touchstone for a generation of investors and entrepreneurs seeking to absorb the enduring wit and wisdom of one of the great minds of the 20th and 21st centuries.",
+          "blurb": "A compendium of Charlie Munger's talks, most famously The Psychology of Human Misjudgment, stitched together with his biography and his one-liners. The core idea: collect the big ideas from every discipline and use them as a checklist against your own stupidity.",
           "cover": "https://m.media-amazon.com/images/I/51andNpgyfL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0CMDCLDTP/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0CMDCLDTP/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "$100M Offers: How to Make Offers So Good People Feel Stupid Saying No",
           "author": "Alex Hormozi",
-          "blurb": "I took home more in a year than the CEOs of McDonald's, IKEA, Ford, Motorola, and Yahoo combined as a kid in my 20s using the $100M Offers method. It works. And it will work for you. Not that long ago, though, my business had gotten so bad that I literally couldn’t even give my services away for free.",
+          "blurb": "Hormozi's formula for building an offer so lopsided with value that saying no feels foolish: raise the dream outcome, raise certainty, cut time and effort, then stack guarantees. Direct, tactical, and refreshingly free of filler.",
           "cover": "https://m.media-amazon.com/images/I/41GqbVAnxeL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B09BK57L5W/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B09BK57L5W/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Liar's Poker: Rising Through the Wreckage on Wall Street",
           "author": "Michael Lewis",
-          "blurb": "The classic Michael Lewis book that defined an era of greed, gluttony, and outrageous fortune, available for the first time unabridged and read by the author. In 1986, before Michael Lewis became the best-selling author of The Big Short , Moneyball , and Flash Boys , he landed a job at Salomon Brothers, one of Wall Street’s premier investment firms.",
+          "blurb": "Lewis's memoir of stumbling into Salomon Brothers in the mid-1980s, where trainees were graded on nerve and mortgage traders threw phones. He wrote it as a warning about Wall Street; a generation read it as a recruiting brochure.",
           "cover": "https://m.media-amazon.com/images/I/51fHDWvvp-L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B09R3X66PP/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B09R3X66PP/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Way of the Wolf: Straight Line Selling: Master the Art of Persuasion, Influence, and Success",
           "author": "Jordan Belfort",
-          "blurb": "Jordan Belfort—immortalized by Leonardo DiCaprio in the hit movie The Wolf of Wall Street —reveals the step-by-step sales and persuasion system proven to turn anyone into a sales-closing, money-earning rock star. For the first time ever, Jordan Belfort opens his playbook and gives you access to his exclusive step-by-step system—the same system he used to create massive wealth for himself, his clients, and his sales teams.",
+          "blurb": "Jordan Belfort teaches the Straight Line, the sales system he drilled into brokers: control tone, build certainty in the product, the salesperson, and the firm, and keep the conversation on a line toward the close. Read it as a masterclass or as a warning; it works as both.",
           "cover": "https://m.media-amazon.com/images/I/51WrTBKEW5L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07235B2FT/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07235B2FT/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Freakonomics: Revised Edition",
           "author": "Steven D. Levitt",
-          "blurb": "The legendary bestseller that encouraged millions of readers to look at the hidden side of everything | Read by author Stephen J. Dubner! Which is more dangerous: a gun or a swimming pool? Why do drug dealers still live with their moms? What do real estate agents and the KKK have in common?",
+          "blurb": "Levitt and Dubner apply an economist's toolkit to cheating teachers, sumo wrestlers, drug-gang finances, and baby names, always hunting for the incentive underneath the behavior. The book that made thinking in incentives mainstream.",
           "cover": "https://m.media-amazon.com/images/I/51CUvlxvifL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V5GOHA/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V5GOHA/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Capital in the Twenty-First Century",
           "author": "Thomas Piketty",
-          "blurb": "What are the grand dynamics that drive the accumulation and distribution of capital? Questions about the long-term evolution of inequality, the concentration of wealth, and the prospects for economic growth lie at the heart of political economy. But satisfactory answers have been hard to find for lack of adequate data and clear guiding theories.",
+          "blurb": "Piketty assembles two centuries of data across twenty countries to argue that returns on capital tend to outrun economic growth, concentrating wealth absent deliberate intervention. Long and data-dense, but the argument reshaped how inequality gets debated.",
           "cover": "https://m.media-amazon.com/images/I/41jenCaS2JL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00K33KA7M/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00K33KA7M/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Flash Boys: A Wall Street Revolt",
           "author": "Michael Lewis",
-          "blurb": "2015 Audie Award Finalist for Non-Fiction From the number-one New York Times best-selling author of Liar's Poker and \"one of the country's most popular business journalists\" ( The New York Times ) Michael Lewis, comes an engaging new book about Wall Street. Michael Lewis, the best-selling author of Boomerang, The Big Short, The Blind Side, Moneyball , and many others, returns to the financial world to give listeners a ringside seat as the biggest news story in years prepares to hit Wall Street.",
+          "blurb": "A small group of traders discovers that the US stock market has been quietly rewired so that high-frequency firms can see orders microseconds early, and decides to build an exchange that makes the advantage worthless. Lewis at his best: a rigged system explained through the people who refused to accept it.",
           "cover": "https://m.media-amazon.com/images/I/51yotsewD6L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00ICRLMWI/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00ICRLMWI/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Big Short: Inside the Doomsday Machine",
           "author": "Michael Lewis",
-          "blurb": "Featuring an exclusive audio interview with Michael Lewis When the crash of the U.S. stock market became public knowledge in the fall of 2008, it was already old news. The real crash, the silent crash, had taken place over the previous year, in bizarre feeder markets where the sun doesn’t shine, and the SEC doesn’t dare, or bother, to tread: the bond and real-estate derivative markets, where geeks invent impenetrable securities to profit from the misery of lower- and middle-class Americans who can’t pay their debts.",
+          "blurb": "The financial crisis of 2008 told through the handful of misfits who read the mortgage bonds, realized the system was insolvent, and bet against it while being laughed at. Nobody explains complex finance through character better than Lewis.",
           "cover": "https://m.media-amazon.com/images/I/61SirCakIDL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B003B2ZV8K/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B003B2ZV8K/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -405,86 +456,98 @@
         {
           "title": "The Accidental Billionaires: The Founding of Facebook: A Tale of Sex, Money, Genius and Betrayal",
           "author": "Ben Mezrich",
-          "blurb": "The high-energy tale of how two socially awkward Ivy Leaguers, trying to increase their chances with the opposite sex, ended up creating Facebook. Eduardo Saverin and Mark Zuckerberg were Harvard undergraduates and best friends–outsiders at a school filled with polished prep-school grads and long-time legacies.",
+          "blurb": "Mezrich's dramatized account of Facebook's founding at Harvard: the deal between Zuckerberg and Saverin, the Winklevoss dispute, and the friendship that dissolved as the company grew. The book that became The Social Network. Take the dialogue with salt; the arc is real.",
           "cover": "https://m.media-amazon.com/images/I/51kBkjaRRnL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1NRNS/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1NRNS/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Fundraising",
           "author": "Ryan Breslow",
-          "blurb": "The founder and CEO of one of Silicon Valley’s most successful companies pulls back the curtain on the startup fundraising process in this essential playbook. Mastering the art of fundraising is key to every new company’s success. But the process itself is too often shrouded in mystery.",
+          "blurb": "Breslow, who raised at a multi-billion valuation for Bolt, compresses the startup fundraising playbook into about an hour: run a tight process, create parallel demand, control the narrative, and understand what investors actually optimize for. Short enough to re-listen before every raise.",
           "cover": "https://m.media-amazon.com/images/I/31bJjoMXq7L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B09DJ7JQJF/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B09DJ7JQJF/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Pragmatic Programmer: 20th Anniversary Edition, 2nd Edition: Your Journey to Mastery",
           "author": "David Thomas, Andrew Hunt",
-          "blurb": "The Pragmatic Programmer is one of those rare tech audiobooks you’ll listen, re-listen, and listen to again over the years. Whether you’re new to the field or an experienced practitioner, you’ll come away with fresh insights each and every time. Dave Thomas and Andy Hunt wrote the first edition of this influential book in 1999 to help their clients create better software and rediscover the joy of coding.",
+          "blurb": "The rare software book that survives decades: tracer bullets, the DRY principle, fixing broken windows, and owning your craft. The 20th-anniversary rewrite keeps it current. If you write code for a living, this one earns its place.",
           "cover": "https://m.media-amazon.com/images/I/51A8l+FxFNL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0833FMYH9/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0833FMYH9/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism",
           "author": "Sarah Wynn-Williams",
-          "blurb": "NAMED A BEST BOOK OF THE YEAR BY TIME , THE NEW YORKER , NPR , AP , THE ECONOMIST , SLATE , THE GLOBE AND MAIL , SCIENTIFIC AMERICAN, AND MORE! “ Careless People is darkly funny and genuinely shocking...Not only does [Sarah Wynn-Williams] have the storytelling chops to unspool a gripping narrative; she also delivers the goods.\"",
+          "blurb": "A former Facebook policy executive describes seven years inside the company's leadership, from diplomatic absurdities to decisions with body counts attached. Meta tried to suppress the book, which tells you something. Scathing, funny, and sad in equal measure.",
           "cover": "https://m.media-amazon.com/images/I/41IYSK55MZL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0DZ8PC43P/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0DZ8PC43P/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
           "author": "John Carreyrou",
-          "blurb": "NATIONAL BESTSELLER • The gripping story of Elizabeth Holmes and Theranos—one of the biggest corporate frauds in history—a tale of ambition and hubris set amid the bold promises of Silicon Valley, rigorously reported by the prize-winning journalist. With a new Afterword. “Chilling ...",
+          "blurb": "Carreyrou's investigation of Theranos, the blood-testing startup that ran on fake demos and intimidation while putting patients at risk. The definitive account of how far charisma and a good story can carry a fraud in the Valley, and what it takes to stop one.",
           "cover": "https://m.media-amazon.com/images/I/41AbpgAXGoL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07C8GVTB5/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07C8GVTB5/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The New New Thing: A Silicon Valley Story",
           "author": "Michael Lewis",
-          "blurb": "In the weird glow of the dying millennium, Michael Lewis sets out on a safari through Silicon Valley to find the world's most important technology entrepreneur, the man who embodies the spirit of the coming age. He finds him in Jim Clark, who is about to create his third, separate, billion-dollar company: first Silicon Graphics, then Netscape - which launched the Information Age - and now Healtheon, a startup that may turn the $1 trillion healthcare industry on its head.",
+          "blurb": "Lewis profiles Jim Clark, the restless founder of Silicon Graphics, Netscape, and Healtheon, as he chases the next big thing on a computerized sailboat. A snapshot of the exact moment Silicon Valley figured out that stories about the future could mint billions.",
           "cover": "https://m.media-amazon.com/images/I/41gYz97UXNL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002UZMXFI/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002UZMXFI/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Brotopia: Breaking Up the Boys' Club of Silicon Valley",
           "author": "Emily Chang",
-          "blurb": "— San Francisco Chronicle Silicon Valley is a modern utopia where anyone can change the world. Unless you're a woman. It's time to break up the boys' club. Incisive, powerful, and a fierce rallying cry, Emily Chang shows us how to fix Silicon Valley’s toxic culture--to bring down Brotopia, once and for all.",
+          "blurb": "Chang traces how an industry that once employed a large share of women programmers narrowed into a boys' club, from the PDP-era personality test that screened for antisocial men to the modern funding gap. Reported, specific, and hard to wave away.",
           "cover": "https://m.media-amazon.com/images/I/51uwir71K9L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B078SBP23C/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B078SBP23C/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "How to Rule the World: An Education in Power at Stanford University",
           "author": "Theo Baker",
-          "blurb": "Brought to you by Penguin. A searing critique of the crony-capitalist, talent-scraping culture of the Stanford elites, by a brilliant young journalist When seventeen-year old Theo Baker arrived at Stanford University one brisk September morning, its manicured lawns, palm trees and sparkling fountains, all under azure Californian skies, provoked in him both wonderment and a sense of anticipation.",
+          "blurb": "Baker, the youngest Polk Award winner, spent his Stanford years investigating his own university: its president's flawed research, its ties to money and power, and the machinery that grooms students for influence. A sharp inside look at the institution that feeds Silicon Valley.",
           "cover": "https://m.media-amazon.com/images/I/41c38uoI4gL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0G7KH1W3F/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0G7KH1W3F/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Hackers & Painters: Big Ideas from the Computer Age",
           "author": "Paul Graham",
-          "blurb": "\"The computer world is like an intellectual Wild West, in which you can shoot anyone you wish with your ideas, if you're willing to risk the consequences. \" (from Hackers & Painters: Big Ideas from the Computer Age , by Paul Graham) We are living in the computer age, in a world increasingly designed and engineered by computer programmers and software designers, by people who call themselves hackers.",
+          "blurb": "Graham's essays on why nerds lose at high school and win afterward, why great hackers resemble artists more than engineers, and how wealth actually gets created. Opinionated in the best way; half the essays will convince you and the other half will start arguments.",
           "cover": "https://m.media-amazon.com/images/I/61MSZsYP-NL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B08Z4DVL45/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B08Z4DVL45/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Secrets of Sand Hill Road: Venture Capital and How to Get It",
           "author": "Scott Kupor",
-          "blurb": "What are venture capitalists saying about your startup behind closed doors? And what can you do to influence that conversation? If Silicon Valley is the greatest wealth-generating machine in the world, Sand Hill Road is its humming engine. That's where you'll find the biggest names in venture capital, including famed VC firm Andreessen Horowitz, where lawyer-turned-entrepreneur-turned-VC Scott Kupor serves as managing partner.",
+          "blurb": "Kupor, a longtime Andreessen Horowitz partner, explains venture capital from the inside: how funds work, what LPs expect, how term sheets actually allocate power, and what that means when you're the founder across the table. The clearest single primer on the VC game.",
           "cover": "https://m.media-amazon.com/images/I/41M6f0yDCSL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/0593102797/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/0593102797/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley",
           "author": "Antonio Garcia Martinez",
-          "blurb": "Liar's Poker meets The Social Network in an irreverent exposé of life inside the tech bubble, from industry provocateur Antonio García Martínez, a former Twitter advisor, Facebook product manager, and start-up founder/CEO. The reality is, Silicon Valley capitalism is very simple: Investors are people with more money than time.",
+          "blurb": "Garcia Martinez sells his startup, lands at Facebook, and narrates the ads-platform wars with the candor of a man burning every bridge behind him. Cynical, score-settling, and one of the most honest books about how the money side of the Valley actually operates.",
           "cover": "https://m.media-amazon.com/images/I/416t7V93neL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01EM3NTQ2/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01EM3NTQ2/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Disrupted: My Misadventure in the Start-Up Bubble",
           "author": "Dan Lyons",
-          "blurb": "An instant New York Times bestseller, Dan Lyons' \"hysterical\" (Recode) memoir, hailed by the Los Angeles Times as \"the best book about Silicon Valley,\" takes readers inside the maddening world of fad-chasing venture capitalists, sales bros, social climbers, and sociopaths at today's tech startups.",
+          "blurb": "Lyons, laid off from Newsweek at 52, joins a hot marketing startup and finds a candy-wall cult of mandatory positivity where employees are graded on culture fit and fired by euphemism. The funniest book written about startup life, with a real critique underneath.",
           "cover": "https://m.media-amazon.com/images/I/51HzIZEePNL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01DDV7SXY/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01DDV7SXY/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -495,44 +558,50 @@
         {
           "title": "The Genome Odyssey: Medical Mysteries and the Incredible Quest to Solve Them",
           "author": "Euan Angus Ashley",
-          "blurb": "This program is read by the author. In The Genome Odyssey , Dr. Euan Ashley, Stanford professor of medicine and genetics, brings the breakthroughs of precision medicine to vivid life through the real diagnostic journeys of his patients and the tireless efforts of his fellow doctors and scientists as they hunt to prevent, predict, and beat disease.",
+          "blurb": "Ashley, a Stanford cardiologist, tells the stories of patients whose mystery diseases were finally cracked by genome sequencing, and of the teams racing to make that routine. Medicine's shift from symptoms to code, told through actual cases.",
           "cover": "https://m.media-amazon.com/images/I/518luwnBn2L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1250792150/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1250792150/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Physics, Chemistry, and Biology: The Great Mental Models, Volume 2",
           "author": "Shane Parrish",
-          "blurb": "From the New York Times bestselling author of Clear Thinking and Farnam Street founder, Shane Parrish. The second book in the timeless Great Mental Models series. Time and time again, great thinkers such as Charlie Munger and Warren Buffett have credited their success to mental models–representations of how something works that can scale onto other fields.",
+          "blurb": "Relativity, reciprocity, thermodynamics, inertia, evolution, and other bedrock scientific concepts repurposed as thinking tools for everyday decisions. Volume 2 of the Mental Models series.",
           "cover": "https://m.media-amazon.com/images/I/41EWW5oVlyL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0D3VSZR1Z/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0D3VSZR1Z/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Demon-Haunted World: Science as a Candle in the Dark",
           "author": "Carl Sagan",
-          "blurb": "A prescient warning of a future we now inhabit, where fake news stories and Internet conspiracy theories play to a disaffected American populace “A glorious book... A spirited defense of science... From the first page to the last, this book is a manifesto for clear thought.” - Los Angeles Times How can we make intelligent decisions about our increasingly technology-driven lives if we don’t understand the difference between the myths of pseudoscience and the testable hypotheses of science?",
+          "blurb": "Sagan's defense of skepticism as a survival skill, complete with his baloney-detection kit for evaluating claims. Written in 1995, it predicted the misinformation era with uncomfortable precision. The chapter on the dragon in the garage alone is worth the book.",
           "cover": "https://m.media-amazon.com/images/I/51cSqb2gqLL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B06XTZZLZ8/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B06XTZZLZ8/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Selfish Gene",
           "author": "Richard Dawkins",
-          "blurb": "Richard Dawkins' brilliant reformulation of the theory of natural selection has the rare distinction of having provoked as much excitement and interest outside the scientific community as within it. His theories have helped change the whole nature of the study of social biology, and have forced thousands to rethink their beliefs about life.",
+          "blurb": "Dawkins reframes evolution from the gene's point of view: bodies are vehicles genes build to copy themselves, and altruism, parenting, and cooperation all fall out of that arithmetic. One of the rare science books that permanently rearranges how you see living things.",
           "cover": "https://m.media-amazon.com/images/I/51iqpxo43PL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004QDTA9Y/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004QDTA9Y/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Genome: The Autobiography of a Species in 23 Chapters",
           "author": "Matt Ridley",
-          "blurb": "“Ridley leaps from chromosome to chromosome in a handy summation of our ever increasing understanding of the roles that genes play in disease, behavior, sexual differences, and even intelligence.  .  . He addresses not only the ethical quandaries faced by contemporary scientists but the reductionist danger in equating inheritability with inevitability.”",
+          "blurb": "Ridley takes one newly-mapped gene from each of our 23 chromosomes and uses it to tell a story: about disease, intelligence, personality, history, and the misuses of genetic ideas. A tour of what the genome does and doesn't determine.",
           "cover": "https://m.media-amazon.com/images/I/61J0IGoDviL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004JKFQO2/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004JKFQO2/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Great Influenza: The Epic Story of the Deadliest Plague in History",
           "author": "John M. Barry",
-          "blurb": "In the winter of 1918, at the height of World War I, history's most lethal influenza virus erupted in an army camp in Kansas, moved east with American troops, then exploded, killing as many as 100 million people worldwide. It killed more people in twenty-four weeks than AIDS has killed in twenty-four years, more in a year than the Black Death killed in a century.",
+          "blurb": "The 1918 flu killed more people than the World War it rode in on, and Barry tracks both the virus and the young American science establishment racing to understand it. The parallels to modern pandemics need no pointing out.",
           "cover": "https://m.media-amazon.com/images/I/511lAxQS6EL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002UZLF8Y/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002UZLF8Y/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -543,65 +612,74 @@
         {
           "title": "The Interpretation of Dreams",
           "author": "Sigmund Freud",
-          "blurb": "The Interpretation of Dreams is the book that Sigmund Freud considered his most important and that forever changed the way we think about our dreams. Here, Freud explained his discoveries about why we dream, what we dream, and what our dreams mean. In this groundbreaking work, Freud further demonstrated that it is in the treatment of abnormal mental states that dream analysis is the most valuable.",
+          "blurb": "Freud's argument that dreams are disguised wish fulfillment, and the book that introduced the unconscious to the general public. Much of it hasn't survived scientifically, but its influence on how we talk about the mind is everywhere, and the case studies remain fascinating.",
           "cover": "https://m.media-amazon.com/images/I/51ufQTWPmgS._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8MSNG/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8MSNG/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Great Mental Models: General Thinking Concepts",
           "author": "Shane Parrish",
-          "blurb": "The old saying goes, \"To the man with a hammer, everything looks like a nail\". But anyone who has done any kind of project knows a hammer often isn't enough. The more tools you have at your disposal, the more likely you'll use the right tool for the job - and get it done right. The same is true when it comes to your thinking.",
+          "blurb": "The first Mental Models volume: the map is not the territory, circle of competence, inversion, second-order thinking, Occam's razor. A starter kit for reasoning that transfers to almost any decision.",
           "cover": "https://m.media-amazon.com/images/I/51frmShzuIL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07P7XYQK1/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07P7XYQK1/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Wanting: The Power of Mimetic Desire in Everyday Life",
           "author": "Luke Burgis",
-          "blurb": "A groundbreaking exploration of why we want what we want, and a toolkit for freeing ourselves from chasing unfulfilling desires. Gravity affects every aspect of our physical being, but there’s a psychological force just as powerful—yet almost nobody has heard of it. It’s responsible for bringing groups of people together and pulling them apart, making certain goals attractive to some and not to others, and fueling cycles of anxiety and conflict.",
+          "blurb": "Girard's theory of mimetic desire, made practical: we don't want things so much as we copy the wanting of others, which explains fashion, rivalry, bubbles, and career envy. Burgis's book is the accessible on-ramp to an idea that explains an unsettling amount of behavior.",
           "cover": "https://m.media-amazon.com/images/I/51EPbqCHCmS._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1250802946/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1250802946/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Determined: A Science of Life Without Free Will",
           "author": "Robert M. Sapolsky",
-          "blurb": "The instant New York Times bestseller “Excellent…Outstanding for its breadth of research, the liveliness of the writing, and the depth of humanity it conveys.”",
+          "blurb": "Sapolsky follows the biology of behavior all the way down and concludes there is no room left for free will: every choice is the output of genes, environment, and the moment before. Whether or not you accept the conclusion, the argument is formidable and the implications for blame and punishment are serious.",
           "cover": "https://m.media-amazon.com/images/I/41H6RyCz-dL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BVNNWFR5/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BVNNWFR5/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Sociopath Next Door",
           "author": "Martha Stout",
-          "blurb": "We are accustomed to think of sociopaths as violent criminals, but in The Sociopath Next Door , Harvard psychologist Martha Stout reveals that a shocking 4 percent of ordinary people, one in 25, has an often undetected mental disorder, the chief symptom of which is that that person possesses no conscience.",
+          "blurb": "Stout's claim: roughly one in twenty-five people has no conscience, and most of them are not killers but bosses, partners, and neighbors who play by entirely different rules. Useful as a field guide to manipulation, whatever you make of the prevalence numbers.",
           "cover": "https://m.media-amazon.com/images/I/51oo22ZkGCL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8MREQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8MREQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Undoing Project: A Friendship That Changed Our Minds",
           "author": "Michael Lewis",
-          "blurb": "Bestselling author Michael Lewis examines how a Nobel Prize–winning theory of the mind altered our perception of reality. Forty years ago, Israeli psychologists Daniel Kahneman and Amos Tversky wrote a series of breathtakingly original studies undoing our assumptions about the decision-making process.",
+          "blurb": "The friendship between Daniel Kahneman and Amos Tversky, whose arguments with each other produced the science of cognitive bias. Lewis makes the relationship the story: two opposite men who thought better together than anyone thought alone, until the collaboration curdled.",
           "cover": "https://m.media-amazon.com/images/I/5136M1Gap0L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01KBM825G/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01KBM825G/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Rethinking Narcissism: The Bad - and Surprising Good - About Feeling Special",
           "author": "Dr. Craig Malkin",
-          "blurb": "Harvard Medical School psychologist and Huffington Post blogger Craig Malkin addresses the \"narcissism epidemic,\" by illuminating the spectrum of narcissism, identifying ways to control the trait, and explaining how too little of it may be a bad thing. \"What is narcissism?\" is one of the fastest rising searches on Google, and articles on the topic routinely go viral.",
+          "blurb": "Malkin treats narcissism as a spectrum everyone sits on: too much is destructive, but so is too little. Comes with tools for spotting the difference between healthy confidence and exploitation, and for dealing with the people at the far end.",
           "cover": "https://m.media-amazon.com/images/I/41r-tlO+HWL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00XD0CU0W/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00XD0CU0W/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions",
           "author": "Dan Ariely",
-          "blurb": "The groundbreaking bestseller from iconic behavioral psychologist Dan Ariely, now the inspiration for the Fall 2023 NBC show The Irrational “A marvelous book that is both thought provoking and highly entertaining, ranging from the power of placebos to the pleasures of Pepsi. Ariely unmasks the subtle but powerful tricks that our minds play on us, and shows us how we can prevent being fooled.”",
+          "blurb": "Ariely's experiments on why we overvalue free things, why decoy prices work, why we cheat a little but not a lot, and why expectations change experience. The cheerful, readable introduction to how systematically weird human decisions are.",
           "cover": "https://m.media-amazon.com/images/I/51zvOkieKjL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V0GCE0/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V0GCE0/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Influence: Science and Practice, ePub, 5th Edition",
           "author": "Robert B. Cialdini",
-          "blurb": "Influence: Science and Practice is an examination of the psychology of compliance (i.e. uncovering which factors cause a person to say \"yes\" to another's request). Written in a narrative style combined with scholarly research, Cialdini combines evidence from experimental work with the techniques and strategies he gathered while working as a salesperson, fundraiser, advertiser, and in other positions inside organizations that commonly use compliance tactics to get us to say \"yes.\"",
+          "blurb": "Cialdini's six levers of persuasion: reciprocity, commitment, social proof, liking, authority, and scarcity, each documented through experiments and through the compliance professionals who weaponize them. Read it to persuade or to notice when it's being done to you.",
           "cover": "https://m.media-amazon.com/images/I/51Ez+y4yUBL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00N346UYK/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00N346UYK/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -612,58 +690,66 @@
         {
           "title": "The Game: Penetrating the Secret Society of Pickup Artists",
           "author": "Neil Strauss",
-          "blurb": "Nearly every major city in the world has them: hidden underground seduction lairs where men gather to trade the most devastatingly effective techniques ever invented to seduce women. This is not fiction. For two years, bestselling author Neil Strauss lived among these men. Using the pseudonym Style to protect his real-life identity, he began his remarkable journey from AFC (Average Frustrated Chump) to PUA (Pickup Artist) to PUG (Pickup Guru) —refining his approach, sharing unforgettable encounters with the likes of Tom Cruise, Britney Spears, Paris Hilton, and Courtney Love, and ultimately transforming himself from frog to prince .",
+          "blurb": "Strauss embeds with the pickup-artist underground and becomes its star pupil, then watches the community consume itself. Half how-to, half cautionary tale about what happens when you optimize for seduction and call it self-improvement.",
           "cover": "https://m.media-amazon.com/images/I/51TMc4FljBL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1K17I/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1K17I/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "ADD in Intimate Relationships: A Comprehensive Guide for Couples",
           "author": "Daniel G. Amen",
-          "blurb": "Attention deficit disorder causes intense unhappiness. Men and women who truly desire a close relationship often find that their day-to-day behaviors interfere with the very intimacy they seek. Understanding ADD can provide hope. In this book Dr. Amen shares both a professional and personal knowledge of the disorder.",
+          "blurb": "Amen on how attention deficit disorder shows up inside couples: the forgetfulness, conflict-seeking, and overwhelm that get misread as not caring. Practical guidance for both partners, from a clinic that has seen thousands of these cases.",
           "cover": "https://m.media-amazon.com/images/I/51pmZ9X8DVL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00M7BYGBE/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00M7BYGBE/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Infidelity: Why Men and Women Cheat",
           "author": "Kenneth Paul Rosenberg",
-          "blurb": "What the latest science tells us about the brain's reward systems, love, and sex -- and how to prevent an affair from destroying your life How can I prevent an affair from destroying my life? Whether I am the cheater or the betrayed partner, how can I survive, even thrive, in the wake of an affair?",
+          "blurb": "Rosenberg, a psychiatrist, walks through what brain science says about desire, attachment, and why people cheat, and how couples survive it or don't. Less moralizing than the title suggests; more interested in mechanisms than blame.",
           "cover": "https://m.media-amazon.com/images/I/51dtWltQlbL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07CXW44NW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07CXW44NW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The State of Affairs: Rethinking Infidelity",
           "author": "Esther Perel",
-          "blurb": "Read by Esther Perel “Perel is a master at what she does.”  The New Yorker “[Perel] knows the depth of your shame and the vibrancy of your lust.”- The New York Times From iconic couples’ therapist and bestselling author of Mating in Captivity comes a provocative and controversial look at infidelity with practical, honest, and empathetic advice for how to move beyond it.",
+          "blurb": "Perel's contrarian look at infidelity: affairs are as much about the self you miss as the partner you betray, and recovery is possible but never symmetric. Uncomfortable, humane, and full of lines you'll want to argue with out loud.",
           "cover": "https://m.media-amazon.com/images/I/510Fk3kw7mL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B072WBLT3K/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B072WBLT3K/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Truth",
           "author": "Neil Strauss",
-          "blurb": "From the author of the blockbuster bestseller The Game : A shockingly personal, surprisingly relatable, brutally honest memoir, in which the celebrated dating expert confronts the greatest challenge he has ever faced: monogamy and fidelity. Neil Strauss became famous to millions around the world as the author of The Game, a funny and slyly instructive account of how he transformed himself from a scrawny, insecure nerd into the ultra-confident, ultra-successful “pickup artist” known as Style.",
+          "blurb": "After The Game blows up his life, Strauss checks into rehab for sex addiction and road-tests every alternative to monogamy he can find before circling back to what he actually wants. The rare sequel that undermines its predecessor honestly.",
           "cover": "https://m.media-amazon.com/images/I/51yBQp8WuUL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00RMFLY88/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00RMFLY88/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Modern Romance: An Investigation",
           "author": "Aziz Ansari",
-          "blurb": "The #1 New York Times Bestseller “An engaging look at the often head-scratching, frequently infuriating mating behaviors that shape our love lives.” — Refinery 29 A hilarious, thoughtful, and in-depth exploration of the pleasures and perils of modern romance from Aziz Ansari, the star of Master of None and one of this generation’s sharpest comedic voices At some point, every one of us embarks on a journey to find love.",
+          "blurb": "Ansari teams up with a sociologist to study how smartphones rewired dating: infinite options, texting games, and the paradox of choice applied to people. Genuinely researched and genuinely funny, especially in the author-read audio.",
           "cover": "https://m.media-amazon.com/images/I/41iQeiOBkzL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00UKEQK82/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00UKEQK82/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Ethical Slut: A Practical Guide to Polyamory, Open Relationships, & Other Adventures",
           "author": "Janet W. Hardy",
-          "blurb": "For anyone who has ever dreamed of love, sex, and companionship beyond the limits of traditional monogamy, this groundbreaking guide navigates the infinite possibilities that open relationships can offer. Experienced ethical sluts Dossie Easton and Janet W. Hardy dispel myths and cover all the skills necessary to maintain a successful and responsible polyamorous lifestyle - from self-reflection and honest communication to practicing safe sex and raising a family.",
+          "blurb": "The standard reference on consensual non-monogamy: jealousy, agreements, communication, and the practical mechanics of relationships that don't follow the default script. Whatever your arrangement, its chapters on honest negotiation apply.",
           "cover": "https://m.media-amazon.com/images/I/51aXLppXsHL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00B1VIPX6/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00B1VIPX6/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Mating in Captivity: Reconciling the Erotic & the Domestic",
           "author": "Esther Perel",
-          "blurb": "A New York City therapist examines the paradoxical relationship between domesticity and sexual desire and explains what it takes to bring lust home. One of the world’s most respected voices on erotic intelligence, Esther Perel offers a bold, provocative new take on intimacy and sex.",
+          "blurb": "Perel's core paradox: love wants closeness and safety, desire wants distance and mystery, and long-term couples have to hold both. The book that made her famous, and still the sharpest statement of the problem.",
           "cover": "https://m.media-amazon.com/images/I/516W4IbHeML._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8HNWC/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8HNWC/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -674,72 +760,82 @@
         {
           "title": "The Theory of the Leisure Class",
           "author": "Thorstein Veblen",
-          "blurb": "In this, his best-known work, the controversial American economist and social critic Thorstein Veblen appropriates Darwin's theory of evolution to analyze the modern industrial system. For Veblen, the shallowness and superficiality observed in society results from the tendency to believe that true accomplishment lies in arriving at a condition of ostentatious wealth and status.",
+          "blurb": "Veblen, writing in 1899, coins conspicuous consumption: the rich signal status by wasting time and money visibly, and everyone below imitates them. Swap carriages for watches and yachts and the analysis reads like it was written this year.",
           "cover": "https://m.media-amazon.com/images/I/41yqOm30bTL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B077ZJW1PJ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B077ZJW1PJ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Caste: The Origins of Our Discontents",
           "author": "Isabel Wilkerson",
-          "blurb": "#1 NEW YORK TIMES BESTSELLER • NEW YORK TIMES READERS PICK: 100 BEST BOOKS OF THE 21st CENTURY • OPRAH’S BOOK CLUB PICK • ONE OF BARACK OBAMA’S FAVORITE BOOKS OF THE YEAR • TIME ’S #1 NONFICTION BOOK OF THE YEAR “An instant American classic and almost certainly the keynote nonfiction book of the American century thus far.”",
+          "blurb": "Wilkerson argues America's racial hierarchy works like a caste system, with the same machinery of rank, purity rules, and enforcement found in India and Nazi Germany. Whatever you conclude, the historical reporting is meticulous and the framework is hard to unsee.",
           "cover": "https://m.media-amazon.com/images/I/51kQonCW+gL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/0593339800/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/0593339800/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Better Angels of Our Nature: Why Violence Has Declined",
           "author": "Steven Pinker",
-          "blurb": "“If I could give each of you a graduation present, it would be this - the most inspiring book I've ever read.\" - Bill Gates (May, 2017) Selected by The New York Times Book Review as a Notable Book of the Year The author of Enlightenment Now and The New York Times bestseller The Stuff of Thought offers a controversial history of violence.",
+          "blurb": "Pinker marshals centuries of data to argue that violence of every kind has declined, and tries to explain why: states, commerce, literacy, reason. A genuinely optimistic book that forces you to check your instincts against the numbers.",
           "cover": "https://m.media-amazon.com/images/I/51c9nmYKj+L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B005PP1ONW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B005PP1ONW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Rational Optimist: How Prosperity Evolves",
           "author": "Matt Ridley",
-          "blurb": "“A delightful and fascinating book filled with insight and wit, which will make you think twice and cheer up.” — Steven Pinker In a bold and provocative interpretation of economic history, Matt Ridley, the New York Times -bestselling author of Genome and The Red Queen , makes the case for an economics of hope, arguing that the benefits of commerce, technology, innovation, and change—what Ridley calls cultural evolution—will inevitably increase human prosperity.",
+          "blurb": "Ridley's case that exchange and specialization are humanity's engine: when ideas can meet and mate, prosperity compounds. A deliberate antidote to doom, and a useful frame even where you think he's too sunny.",
           "cover": "https://m.media-amazon.com/images/I/51lMYH2xvdL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B003L25KGS/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B003L25KGS/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Gang Leader for a Day: A Rogue Sociologist Takes to the Streets",
           "author": "Sudhir Venkatesh",
-          "blurb": "The story of the young sociologist who studied a Chicago crack-dealing gang from the inside captured the world's attention when it was first described in Freakonomics . Gang Leader for a Day is the fascinating full story of how Sudhir Venkatesh managed to gain entrée into the gang, what he learned, and how his method revolutionized the academic establishment.",
+          "blurb": "A sociology grad student walks into a Chicago housing project with a survey and ends up spending years inside a crack-selling gang, learning its org chart, wages, and politics. The fieldwork behind Freakonomics' most famous chapter, with all the texture the summary left out.",
           "cover": "https://m.media-amazon.com/images/I/51nYxKrlxAL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V0TJRW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V0TJRW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Bobos in Paradise: The New Upper Class and How They Got There",
           "author": "David Brooks",
-          "blurb": "It used to be pretty easy to distinguish between the bourgeois world of capitalism and the bohemian counterculture. The bourgeois worked for corporations, wore gray, and went to church. The bohemians were artists and intellectuals. Bohemians championed the values of the liberated 1960s; the bourgeois were the enterprising yuppies of the 1980s.",
+          "blurb": "Brooks anatomizes the bourgeois bohemians: the educated class that fused sixties counterculture with eighties ambition and made spending virtuous. Written in 2000, it accidentally described the next twenty-five years of upscale taste.",
           "cover": "https://m.media-amazon.com/images/I/41kRF4qWHyL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8HHFA/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8HHFA/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Old Money: The Mythology of Wealth in America",
           "author": "Nelson Aldrich",
-          "blurb": "This insider's look at inherited wealth in the United States explores the complex meanings of money and success in American sociey with a new introduction that examinies whether America's privileged class will be willing or able to play a leadership role in the twenty-first century.",
+          "blurb": "Aldrich, himself old money, examines America's inherited-wealth class from the inside: its codes, guilt, institutions, and its uneasy relationship with the newly rich. An odd, thoughtful book on a subject Americans pretend not to have.",
           "cover": "https://m.media-amazon.com/images/I/519VeDZE8qL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00B8ZZMP4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00B8ZZMP4/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "White Trash: The 400-Year Untold History of Class in America",
           "author": "Nancy Isenberg",
-          "blurb": "The wretched and landless poor have existed from the time of the earliest British colonial settlement. They were alternately known as \"waste people\", \"offals\", \"rubbish\", \"lazy lubbers\", and \"crackers\". By the 1850s the downtrodden included so-called \"clay eaters\" and \"sandhillers\", known for prematurely aged children distinguished by their yellowish skin, ragged clothing, and listless minds.",
+          "blurb": "Isenberg traces four hundred years of America's white underclass, from colonial waste people to hillbillies to trailer parks, and shows how much of national politics is class contempt wearing other costumes. A history that explains more current events than it should.",
           "cover": "https://m.media-amazon.com/images/I/61yozG4sg+L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01H62F8G0/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01H62F8G0/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Very Important People: Status and Beauty in the Global Party Circuit",
           "author": "Ashley Mears",
-          "blurb": "A sociologist and former fashion model takes listeners inside the elite global party circuit of \"models and bottles\" to reveal how beautiful young women are used to boost the status of men. Million-dollar birthday parties, megayachts on the French Riviera, and $40,000 bottles of champagne.",
+          "blurb": "Mears, a sociologist and former model, spends eighteen months inside the global VIP party circuit documenting how beauty is recruited, comped, and spent to signal men's status. A sharp ethnography of an economy everyone senses and nobody names.",
           "cover": "https://m.media-amazon.com/images/I/51gtnVvJyFL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1980089817/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1980089817/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Troubled: The Failed Promise of America’s Behavioral Treatment Programs",
           "author": "Kenneth R. Rosen",
-          "blurb": "A New York Times Editor’s Choice One of Newsweek ’s Most Highly Anticipated Books of 2021 Named a Bustle Best Book of 2021 An award-winning journalist’s breathtaking mosaic of the tough-love industry and the young adults it inevitably fails. In the middle of the night, they are vanished.",
+          "blurb": "Rosen, who survived four programs himself, investigates the tough-love industry for troubled teens: wilderness camps, boot camps, and residential facilities where discipline shades into abuse. Reporting that helped force a reckoning with an industry parents trusted blind.",
           "cover": "https://m.media-amazon.com/images/I/413PeRYmpKL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1799771474/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1799771474/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -750,107 +846,114 @@
         {
           "title": "What Would Mrs. Astor Do?: The Essential Guide to the Manners and Mores of the Gilded Age (Washington Mews Books, Book 5)",
           "author": "Cecelia Tichi",
-          "blurb": "Mark Twain called it the Gilded Age. Between 1870 and 1900, the United States’ population doubled, accompanied by an unparalleled industrial expansion and an explosion of wealth. America was the foremost nation of the world, and New York City was its beating heart. There, the richest and most influential—Thomas Edison, J.",
+          "blurb": "A guided tour of Gilded Age New York's social machinery: calling cards, opera boxes, seating charts, and the four hundred people who mattered, ruled over by Caroline Astor. Frothy on the surface, but sneakily good on how status systems actually operate.",
           "cover": "https://m.media-amazon.com/images/I/51+mqkXs1KL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0F84WB8TN/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0F84WB8TN/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "King of Kings: The Fall of the Shah and the Revolution That Forged Modern Iran",
           "author": "Scott Anderson",
-          "blurb": "Brought to you by Penguin. THE NEW YORK TIMES BESTSELLER NEW STATESMAN , ATLANTIC AND WALL STREET JOURNAL BOOK OF THE YEAR A spellbinding narrative history of the 1979 Iranian Revolution and its devastating consequences by the Sunday Times bestselling author of Lawrence in Arabia.",
+          "blurb": "Anderson reconstructs the Iranian Revolution through the Americans and Iranians who lived it, showing how the Shah's regime rotted from within while Washington saw only its own reflection. The best single explanation of how 1979 still shapes the region.",
           "cover": "https://m.media-amazon.com/images/I/51F0AWIw9RL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0F1QGD5LP/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0F1QGD5LP/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Sapiens: A Brief History of Humankind",
           "author": "Yuval Noah Harari",
-          "blurb": "#1 New York Times Bestseller • New York Times Readers’ Pick: Top 100 Books of the 21 st Century • The Summer Reading Pick for President Barack Obama and Bill Gates Official U.S. edition From renowned historian Yuval Noah Harari comes a groundbreaking narrative of humanity’s creation and evolution—a #1 international bestseller—that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be “human.”",
+          "blurb": "Harari's sweep from forager bands to empires to algorithms, built on one idea: humans dominate because we cooperate around shared fictions like money, nations, and gods. Parts are contested and parts are glib, but as a frame for thinking about our species it's unmatched.",
           "cover": "https://m.media-amazon.com/images/I/41HWFhtig3L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0741G911Q/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0741G911Q/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Israel: A Concise History of a Nation Reborn",
           "author": "Daniel Gordis",
-          "blurb": "The first comprehensive yet accessible history of the state of Israel from its inception to present day, from Daniel Gordis, \"\"one of the most respected Israel analysts\"\" ( The Forward ) living and writing in Jerusalem. Israel is a tiny state, and yet it has captured the world’s attention, aroused its imagination, and lately, been the object of its opprobrium.",
+          "blurb": "Gordis covers Israel from the earliest Zionist arguments through statehood, wars, and modern politics, focusing on the ideas the country was built to answer. Sympathetic but not uncritical, and the most efficient single-volume introduction available.",
           "cover": "https://m.media-amazon.com/images/I/613wcP8wooL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01L7GUS70/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01L7GUS70/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Americana: A 400-Year History of American Capitalism",
           "author": "Bhu Srinivasan",
-          "blurb": "An absorbing and original narrative history of American capitalism NAMED A BEST BOOK OF 2017 BY THE ECONOMIST From the days of the Mayflower and the Virginia Company, America has been a place for people to dream, invent, build, tinker, and bet the farm in pursuit of a better life.",
+          "blurb": "Srinivasan tells American history through its businesses: tobacco, canals, railroads, radio, venture capital, each chapter an industry that remade the country. Four hundred years of capitalism, told as a story rather than a lecture.",
           "cover": "https://m.media-amazon.com/images/I/514BmGWbq8L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07565H29V/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07565H29V/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Great Earthquake and Firestorms of 1906: How San Francisco Nearly Destroyed Itself",
           "author": "Philip L. Fradkin",
-          "blurb": "The first indication of the prolonged terror that followed the 1906 earthquake occurred when a ship steaming off San Francisco's Golden Gate \"seemed to jump clear out of the water\". This gripping account of the earthquake, the devastating firestorms that followed, and the city's subsequent reconstruction vividly shows how, after the shaking stopped, humans, not the forces of nature, nearly destroyed San Francisco in a remarkable display of simple ineptitude and power politics.",
+          "blurb": "The 1906 earthquake broke San Francisco, but the fires and the decisions that followed did most of the destroying. Fradkin is unsparing about the officials who dynamited neighborhoods, lied about deaths, and rebuilt on the same fault lines.",
           "cover": "https://m.media-amazon.com/images/I/51PNKmohmFL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B009KR70PW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B009KR70PW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Palo Alto: A History of California, Capitalism, and the World",
           "author": "Malcolm Harris",
-          "blurb": "The history of Silicon Valley, from railroads to microchips, is a story of disruption and destruction, told for the first time in this comprehensive, jaw-dropping narrative. “Extraordinary.” —Greg Grandin, Pulitzer Prize-winning author of The End of the Myth Palo Alto’s weather is temperate, its people are educated and enterprising, its corporations are spiritually and materially ambitious and demonstrably world-changing.",
+          "blurb": "Harris's massive, combative history argues that Palo Alto perfected a system for extracting profit from talent, from Stanford's horse farm through eugenics, defense money, and startups. Openly polemical, but full of history the Valley prefers to forget. Read it alongside the boosters.",
           "cover": "https://m.media-amazon.com/images/I/51g0A-V5q-L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BF16WTB5/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BF16WTB5/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Electric Kool-Aid Acid Test",
           "author": "Tom Wolfe",
-          "blurb": "Tom Wolfe - one of the 20th century’s foremost voices in cultural criticism - went from local news reporter to international icon in 1968, with the publication of The Electric Kool-Aid Acid Test . Now voiced with vivacity and vigor by Audible Hall of Fame narrator Luke Daniels, the non-fiction swan-dive delves into the world of hippies, hedonism, and everything in between.",
+          "blurb": "Wolfe rides with Ken Kesey and the Merry Pranksters as they drive a painted bus across America dosing themselves and inventing the acid-test parties that became the counterculture. New Journalism at full volume; you can hear the sixties turning.",
           "cover": "https://m.media-amazon.com/images/I/61FrIfgE4rL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07N944QPK/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07N944QPK/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Countdown 1945: The Extraordinary Story of the Atomic Bomb and the 116 Days That Changed the World",
           "author": "Chris Wallace",
-          "blurb": "The #1 national bestselling “riveting” ( The New York Times ), “propulsive” ( Time ) behind-the-scenes account “that reads like a tense thriller” ( The Washington Post ) of the 116 days leading up to the American attack on Hiroshima, by Chris Wallace, veteran journalist and CNN anchor and Max host.",
+          "blurb": "Wallace counts down the 116 days from Roosevelt's death to Hiroshima through Truman, the Los Alamos scientists, and the crew of the Enola Gay. A propulsive account of the decision that opened the nuclear age.",
           "cover": "https://m.media-amazon.com/images/I/51ZEI-NjeRL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1797105450/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1797105450/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Pioneers: The Heroic Story of the Settlers Who Brought the American Ideal West",
           "author": "David McCullough",
-          "blurb": "The #1 New York Times bestseller by Pulitzer Prize–winning historian David McCullough rediscovers an important chapter in the American story that’s “ as resonant today as ever” ( The Wall Street Journal )—the settling of the Northwest Territory by courageous pioneers who overcame incredible hardships to build a community based on ideals that would define our country.",
+          "blurb": "McCullough follows the New Englanders who settled the Ohio territory, carrying with them a ban on slavery and a mania for schools. A smaller, quieter story than his presidential biographies, about the unglamorous work of building institutions from mud.",
           "cover": "https://m.media-amazon.com/images/I/51+dOikxcPL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B07L3B3D6G/?ref=nosim&tag=brianhamachek-20"
-        },
-        {
-          "title": "Sapiens: A Brief History of Humankind",
-          "author": "Yuval Noah Harari",
-          "blurb": "One hundred thousand years ago, at least six human species inhabited the Earth. Today there is just one. Us. Homo sapiens . How did our species succeed in the battle for dominance? Why did our foraging ancestors come together to create cities and kingdoms? How did we come to believe in gods, nations, and human rights; to trust money, books, and laws; and to be enslaved by bureaucracy, timetables, and consumerism?",
-          "cover": "https://m.media-amazon.com/images/I/61I+lVZw8yL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00SXJF7J4/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B07L3B3D6G/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Nuclear War: A Scenario",
           "author": "Annie Jacobsen",
-          "blurb": "The INSTANT New York Times bestseller Instant Los Angeles Times bestseller Finalist, Dayton Literary Peace Prize One of NPR's Books We Love One of Newsweek Staffers' Favorite Books of the Year Shortlisted for the Baillie Gifford Prize “In Nuclear War: A Scenario , Annie Jacobsen gives us a vivid picture of what could happen if our nuclear guardians fail…Terrifying.”",
+          "blurb": "Jacobsen walks through a nuclear exchange minute by minute, from launch detection to the collapse of everything after, based on interviews with the people who built the plans. The scariest book on this list by a wide margin, and it's all sourced.",
           "cover": "https://m.media-amazon.com/images/I/41ucJrSCTUL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0CF6R3R7W/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0CF6R3R7W/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Right Stuff",
           "author": "Tom Wolfe",
-          "blurb": "From \"America's nerviest journalist\" ( Newsweek ) - a breathtaking epic, a magnificent adventure story, and an investigation into the true heroism and courage of the first Americans to conquer space. \"Tom Wolfe at his very best\" ( The New York Times Book Review ) Millions of words have poured forth about man's trip to the moon, but until now few people have had a sense of the most engrossing side of the adventure: namely, what went on in the minds of the astronauts themselves - in space, on the moon, and even during certain odysseys on earth.",
+          "blurb": "Wolfe's account of the test pilots and Mercury astronauts, and of the unspoken code of courage they measured each other against. The best book ever written about American machismo pointed at the sky.",
           "cover": "https://m.media-amazon.com/images/I/514bTcXstSL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B077K8CR41/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B077K8CR41/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Art of War",
           "author": "Sun Tzu",
-          "blurb": "The 13 chapters of The Art of War , each devoted to one aspect of warfare, were compiled by the high-ranking Chinese military general, strategist, and philosopher Sun-Tzu. In spite of its battlefield specificity, The Art of War has found new life in the modern age, with leaders in fields as wide and far-reaching as world politics, human psychology, and corporate strategy finding valuable insight in its timeworn words.",
+          "blurb": "Sun Tzu's 2,500-year-old manual on winning conflicts, ideally without fighting them: deception, positioning, timing, and knowing yourself and your enemy. Short enough to finish in a sitting and vague enough to apply to everything, which is why everyone from generals to founders quotes it.",
           "cover": "https://m.media-amazon.com/images/I/51EE3GAdmfL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00URXOQ1E/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00URXOQ1E/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Misquoting Jesus",
           "author": "Bart D. Ehrman",
-          "blurb": "When world-class biblical scholar Bart Ehrman first began to study the texts of the Bible in their original languages he was startled to discover the multitude of mistakes and intentional alterations that had been made by earlier translators. In Misquoting Jesus, Ehrman tells the story behind the mistakes and changes that ancient scribes made to the New Testament and shows the great impact they had upon the Bible we use today.",
+          "blurb": "Ehrman, a textual scholar who began as an evangelical, explains how the New Testament was copied by hand for centuries and what the accumulated changes mean, from slips of the pen to deliberate edits. A calm, scholarly book about an explosive subject.",
           "cover": "https://m.media-amazon.com/images/I/515AWhxHp9L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1M3WY/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1M3WY/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -861,51 +964,58 @@
         {
           "title": "The Fort Bragg Cartel: Drug Trafficking and Murder in the Special Forces",
           "author": "Seth Harp",
-          "blurb": "INSTANT NEW YORK TIMES BESTSELLER A New Yorker Best Book of 2025 A Forbes Best True Crime Book of 2025 “Probably the most gripping, memorable, eye-opening book I’ve read in months.” —David Wallace-Wells, The New York Times “Propulsive.” — The Washington Post “Engrossing.  .  Truly shocking.”",
+          "blurb": "Harp investigates a string of unexplained deaths at Fort Bragg and finds Special Forces soldiers moving drugs, a base flooded with fentanyl, and an Army with no appetite for looking closely. Reporting that reads like a thriller and lands like an indictment.",
           "cover": "https://m.media-amazon.com/images/I/41ND0nmb+QL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0DNGQV7VC/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0DNGQV7VC/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Helter Skelter: The True Story of the Manson Murders",
           "author": "Vincent Bugliosi",
-          "blurb": "Prosecuting attorney in the Manson trial Vincent Bugliosi held a unique insider's position in one of the most baffling and horrifying cases of the 20th century: the cold-blooded Tate-LaBianca murders carried out by Charles Manson and four of his followers. What motivated Manson in his seemingly mindless selection of victims, and what was his hold over the young women who obeyed his orders?",
+          "blurb": "The Manson murders told by the man who prosecuted them. Bugliosi walks through the crimes, the investigation's fumbles, and the trial where he had to convince a jury that Manson killed through obedience. The bestselling true crime book ever written, and it earns it.",
           "cover": "https://m.media-amazon.com/images/I/51IqQzORQML._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B005KBQQZC/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B005KBQQZC/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road",
           "author": "Nick Bilton",
-          "blurb": "The unbelievable true story of the man who built a billion-dollar online drug empire from his bedroom—and almost got away with it In 2011, a twenty-six-year-old libertarian programmer named Ross Ulbricht launched the ultimate free market: the Silk Road, a clandestine Web site hosted on the Dark Web where anyone could trade anything—drugs, hacking software, forged passports, counterfeit cash, poisons—free of the government’s watchful eye.",
+          "blurb": "Ross Ulbricht built the Silk Road, an eBay for drugs run from laptops in coffee shops, and became a libertarian folk hero while ordering hits he thought he was paying for. Bilton turns the hunt for the Dread Pirate Roberts into a genuine page-turner.",
           "cover": "https://m.media-amazon.com/images/I/51Ejp6zICNL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B06Y1RH224/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B06Y1RH224/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Who Killed Jane Stanford?: A Gilded Age Tale of Murder, Deceit, Spirits and the Birth of a University",
           "author": "Richard White",
-          "blurb": "In 1885, Jane and Leland Stanford cofounded a university to honor their recently deceased young son. After her husband's death in 1893, Jane Stanford, a devoted spiritualist who expected the university to inculcate her values, steered Stanford into eccentricity and public controversy for more than a decade.",
+          "blurb": "Stanford University's co-founder was poisoned with strychnine in 1905, and the university's first president led the effort to declare it natural causes. White, a Stanford historian, reopens the case and names a culprit. Gilded Age murder plus institutional cover-up.",
           "cover": "https://m.media-amazon.com/images/I/51CL6-rTjhL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B09XY55D8F/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B09XY55D8F/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Mindhunter: Inside the FBI's Elite Serial Crime Unit",
           "author": "John E. Douglas",
-          "blurb": "Bonus material! Includes an excerpt from John Douglas and Mark Olshaker’s Obsession ! Discover the classic behind-the-scenes chronicle of John E. Douglas' 25-year career in the FBI Investigative Support Unit, where he used psychological profiling to delve into the minds of the country's most notorious serial killers and criminals - the basis for the upcoming Netflix original series.",
+          "blurb": "Douglas spent his FBI career interviewing serial killers and turning what he heard into criminal profiling. The memoir behind the Netflix series, equal parts casework and the cost of spending decades inside the worst minds available.",
           "cover": "https://m.media-amazon.com/images/I/51i+ZbKIV3L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B074Q1L6J6/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B074Q1L6J6/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "American Radical: Inside the World of an Undercover Muslim FBI Agent",
           "author": "Tamer Elnoury",
-          "blurb": "THE NEW YORK TIMES BESTSELLER The explosive memoir of a Muslim American FBI agent fighting terror from the inside. It’s no secret that federal agencies are waging a broad, global war against terror. But for the first time in this memoir, an active Muslim American federal agent reveals his experience infiltrating and bringing down a terror cell in North America.",
+          "blurb": "An undercover FBI agent, himself a devout Muslim, spends years inside terror plots, wearing a wire while extremists debate targets. Elnoury's double life raises hard questions about faith, loyalty, and what counterterrorism actually looks like from inside.",
           "cover": "https://m.media-amazon.com/images/I/51SnsM+6S4L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B074F41J3Z/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B074F41J3Z/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Billion Dollar Whale",
           "author": "Bradley Hope",
-          "blurb": "Named a Best Book of 2018 by the Financial Times and Fortune , this \"thrilling\" (Bill Gates) New York Times bestseller exposes how a \"modern Gatsby\" swindled over $5 billion with the aid of Goldman Sachs in \"the heist of the century\" (Axios). Now a #1 international bestseller, Billion Dollar Whale is \"an epic tale of white-collar crime on a global scale\" ( Publishers Weekly ), revealing how a young social climber from Malaysia pulled off one of the biggest heists in history.",
+          "blurb": "Jho Low siphoned billions from a Malaysian sovereign fund and spent it on Hollywood, superyachts, and Wolf of Wall Street financing while Goldman Sachs collected fees. A heist story where the getaway car is the global financial system.",
           "cover": "https://m.media-amazon.com/images/I/51d2wR7k3GL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1478948000/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1478948000/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -916,191 +1026,218 @@
         {
           "title": "Spare",
           "author": "Prince Harry The Duke of Sussex",
-          "blurb": "#1 NEW YORK TIMES BESTSELLER • Discover the global phenomenon that tells an unforgettable story of love, loss, courage, and healing. “Compellingly artful .  . [a] blockbuster memoir.”— The New Yorker (Best Books of the Year) It was one of the most searing images of the twentieth century: two young boys, two princes, walking behind their mother’s coffin as the world watched in sorrow—and horror.",
+          "blurb": "Prince Harry on growing up as the designated backup: his mother's death, the tabloid machine, Afghanistan, and the family rupture that followed his exit. Whatever you think of the institution, it's a startlingly candid book, and his narration makes it more so.",
           "cover": "https://m.media-amazon.com/images/I/41hYQIILU3L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BJ4X9D2F/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BJ4X9D2F/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Source Code: My Beginnings",
           "author": "Bill Gates",
-          "blurb": "#1 NEW YORK TIMES BESTSELLER • The origin story of one of the most influential and transformative business leaders and philanthropists of the modern age “A surprisingly candid memoir of the Microsoft mogul’s early years…Reading this book feels like watching someone take a well-known black-and-white sketch, fill in the details, and paint it in vivid color.”",
+          "blurb": "Bill Gates on his beginnings: a restless kid in Seattle, a lucky terminal, thousands of hours of code, and the decision to leave Harvard and bet on software. It ends before Microsoft gets big, which is exactly why it works; it's about how the machine got built.",
           "cover": "https://m.media-amazon.com/images/I/41OBdC3PYML._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0D5KLQZQV/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0D5KLQZQV/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Vanderbilt: The Rise and Fall of an American Dynasty",
           "author": "Anderson Cooper, Katherine Howe",
-          "blurb": "New York Times bestselling author and journalist Anderson Cooper teams with New York Times bestselling historian and novelist Katherine Howe to chronicle the rise and fall of a legendary American dynasty—his mother’s family, the Vanderbilts. When eleven-year-old Cornelius Vanderbilt began to work on his father’s small boat ferrying supplies in New York Harbor at the beginning of the nineteenth century, no one could have imagined that one day he would, through ruthlessness, cunning, and a pathological desire for money, build two empires—one in shipping and another in railroads—that would make him the richest man in America.",
+          "blurb": "Cooper, the family's most famous living descendant, teams with a historian to trace the Commodore's ruthless fortune and the gilded generations that spent it into legend and then into nothing. A dynasty story told with the access of an insider and the distance of a journalist.",
           "cover": "https://m.media-amazon.com/images/I/51NigX0wktL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/0062964658/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/0062964658/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Trading Game: A Confession",
           "author": "Gary Stevenson",
-          "blurb": "#1 SUNDAY TIMES BESTSELLER • “The Best Wall Street Book of 2024”—Bloomberg A “vivid” ( Financial Times ) rags-to-riches memoir that takes readers inside the high-stakes drama and hubris of the trading floor, a “darkly funny” ( Guardian ) tale of Citibank’s one-time most profitable trader, and why he gave it all up “Darker than [ Liar’s Poker ], but if anything even more of a rollicking read .",
+          "blurb": "Stevenson grows up poor in East London, wins a Citibank trading seat by being better at a card game, and becomes one of the bank's most profitable traders by betting the economy would stay broken. Then the money stops meaning anything. The most honest book about trading in years.",
           "cover": "https://m.media-amazon.com/images/I/41D8WGukI+L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0CBZVSKY5/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0CBZVSKY5/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Einstein: His Life and Universe",
           "author": "Walter Isaacson",
-          "blurb": "Winner of the 2008 Audie Award for Biography/Memoir The definitive, internationally bestselling biography of Albert Einstein. Now the basis of Genius, the ten-part National Geographic series on the life of Albert Einstein, starring the Oscar, Emmy, and Tony Award–winning actor Geoffrey Rush as Einstein.",
+          "blurb": "Isaacson's full portrait: the patent clerk who rewrote physics, the celebrity who couldn't manage his own family, the refugee who watched his equations become weapons. Makes the science graspable and the man complicated.",
           "cover": "https://m.media-amazon.com/images/I/51VEeZWAo-L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V1A1YQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V1A1YQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Elon Musk",
           "author": "Walter Isaacson",
-          "blurb": "The #1 New York Times and global bestseller from Walter Isaacson—the acclaimed author of Steve Jobs , Einstein: His Life and World , Benjamin Franklin , and Leonardo da Vinci— is the astonishingly intimate story of the most fascinating, controversial innovator of modern times. For two years, Isaacson shadowed Elon Musk as he executed his vision for electric vehicles at Tesla, space exploration with SpaceX, the AI revolution, and the takeover of Twitter and its conversion to X.",
+          "blurb": "Isaacson shadowed Musk for two years across Tesla, SpaceX, and the Twitter purchase, and the result is the fullest picture yet of the demon-mode management style and the output and damage it produces. Neither hagiography nor hit piece.",
           "cover": "https://m.media-amazon.com/images/I/519diyDo0ML._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BX4SCV1V/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BX4SCV1V/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "King: A Life",
           "author": "Jonathan Eig",
-          "blurb": "This program is narrated by Dion Graham, n arrator of over 300 audiobooks and an AudioFile Golden Voice. Dion has won multiple Earphones and Audie Awards. \"Dion Graham superbly narrates this riveting audiobook, emulating the majestic cadence of Dr. Martin Luther King, Jr.'s, speeches.",
+          "blurb": "Eig's biography of Martin Luther King Jr. uses newly released FBI files and fresh interviews to recover the man from the monument: brilliant, depressive, surveilled, and braver than the sanitized version suggests. The definitive modern King biography.",
           "cover": "https://m.media-amazon.com/images/I/41r6Xg98YJL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BJY44ST3/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BJY44ST3/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Paris: The Memoir",
           "author": "Paris Hilton",
-          "blurb": "***An Instant New York Times Bestseller*** From the woman who is credited for launching what we know as the celebrity focused, “brand” driven, social media obsessed popular culture of today, comes an honest and surprising memoir that reckons with that truth, and shows that there is so much more to Paris Hilton than you might believe.",
+          "blurb": "Paris Hilton on inventing the famous-for-being-famous playbook, and on the abusive troubled-teen facilities her parents sent her to, which she has since campaigned against. Far more substance than the brand implies.",
           "cover": "https://m.media-amazon.com/images/I/41iaUFTequL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0BCHBZDPX/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0BCHBZDPX/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Benjamin Franklin: An American Life",
           "author": "Walter Isaacson",
-          "blurb": "In this authoritative and engrossing full-scale biography, Walter Isaacson, bestselling author of Einstein and Steve Jobs , shows how the most fascinating of America's founders helped define our national character. Benjamin Franklin is the founding father who winks at us, the one who seems made of flesh rather than marble.",
+          "blurb": "Printer, scientist, diplomat, founder: Isaacson's Franklin is the most approachable of the founders, a self-made operator whose pragmatism and humor built institutions we still use. The best single door into the founding generation.",
           "cover": "https://m.media-amazon.com/images/I/61zcpKItWZL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004VA8ZVQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004VA8ZVQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Washington: A Life",
           "author": "Ron Chernow",
-          "blurb": "Winner of the Pulitzer Prize and a New York Times Bestseller, a landmark biography of George Washington. In Washington: A Life celebrated biographer Ron Chernow provides a richly nuanced portrait of the father of our nation. With a breadth and depth matched by no other one-volume life of Washington, this crisply paced narrative carries the reader through his troubled boyhood, his precocious feats in the French and Indian War, his creation of Mount Vernon, his heroic exploits with the Continental Army, his presiding over the Constitutional Convention, and his magnificent performance as America's first president.",
+          "blurb": "Chernow's cradle-to-grave Washington: ambitious, thin-skinned, physically fearless, and acutely aware that everything he did set precedent. The book's achievement is making the marble statue back into a striving, calculating man.",
           "cover": "https://m.media-amazon.com/images/I/51VOPahycoL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0044EMDEO/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0044EMDEO/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Leland Stanford: The Life and Legacy of the Railroad Executive Who Became California's Governor and the West's Most Famous Robber Baron",
           "author": "Charles River Editors",
-          "blurb": "\"The employee is regarded by the employer merely in the light of his value as an operative. His productive capacity alone is taken into account.\" (Stanford) For many people, the Gilded Age and the dawn of the 20th century continue to be remembered for monopolies, trusts, and economic giants in heavy industries like railroads, oil, and steel.",
+          "blurb": "A short biography of the railroad baron and politician who built a fortune on the transcontinental line and turned grief for his son into a university. Useful context for anyone living in the world Stanford money built.",
           "cover": "https://m.media-amazon.com/images/I/51bm1zi6z1L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B082WN2MKV/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B082WN2MKV/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Will",
           "author": "Will Smith",
-          "blurb": "“It's the best memoir I've ever read.” — Oprah Winfrey “Will Smith isn't holding back in his bravely inspiring new memoir .  . An ultimately heartwarming read, Will provides a humane glimpse of the man behind the actor, producer and musician, as he bares all his insecurities and trauma.”",
+          "blurb": "Will Smith tells his story as a series of performances: the fearful kid in Philadelphia, the rapper, the biggest movie star alive, and the husband and father performing happiness. Co-written with Mark Manson, unexpectedly raw, and terrific in audio.",
           "cover": "https://m.media-amazon.com/images/I/61gS6EWmWwL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/0593146239/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/0593146239/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "A Promised Land",
           "author": "Barack Obama",
-          "blurb": "A riveting, deeply personal account of history in the making—from the president who inspired us to believe in the power of democracy #1 NEW YORK TIMES BESTSELLER • NAACP IMAGE AWARD NOMINEE • NAMED ONE OF THE TEN BEST BOOKS OF THE YEAR BY THE NEW YORK TIMES BOOK REVIEW AND PEOPLE NAMED ONE OF THE BEST BOOKS OF THE YEAR BY The Washington Post • Jennifer Szalai, The New York Times • NPR • The Guardian • Slate • Vox • The Economist • Marie Claire In the stirring first volume of his presidential memoirs, Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader of the free world, describing in strikingly personal detail both his political education and the landmark moments of the first term of his historic presidency—a time of dramatic transformation and turmoil.",
+          "blurb": "Obama's first presidential volume, from Chicago organizing through the bin Laden raid, with long, candid detours into how the sausage actually gets made. He's a genuine writer, and his narration turns it into forty hours of fireside explanation.",
           "cover": "https://m.media-amazon.com/images/I/41CMMz4RC8L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/0525633723/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/0525633723/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Washington's End: The Final Years and Forgotten Struggle",
           "author": "Jonathan Horn",
-          "blurb": "Popular historian and former White House speechwriter Jonathan Horn “provides a captivating and enlightening look at George Washington’s post-presidential life and the politically divided country that was part of his legacy” ( New York Journal of Books ). Beginning where most biographies of George Washington leave off, Washington’s End opens with the first president exiting office after eight years and entering what would become the most bewildering stage of his life.",
+          "blurb": "Horn picks up where most Washington biographies stop: the awkward final years after the presidency, watching the republic he built fracture into parties while he worried about his legacy and his will. A study of what it means to actually give up power.",
           "cover": "https://m.media-amazon.com/images/I/51H3v85MyKL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/1797111051/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/1797111051/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Picking Up: On the Streets and Behind the Trucks with the Sanitation Workers of New York City",
           "author": "Robin Nagle",
-          "blurb": "America’s largest city generates garbage in torrents - 11,000 tons a day on average. But New Yorkers don’t give it much attention. They leave their trash on the curb or drop it in a litter basket, and promptly forget about it. And why not? On a schedule so regular you could almost set your watch by it, someone always comes to take it away.",
+          "blurb": "Nagle, anthropologist-in-residence at New York's sanitation department, rides the trucks and documents the invisible system that keeps a city from drowning in its own trash. You will never see a garbage truck the same way.",
           "cover": "https://m.media-amazon.com/images/I/513Hl3HQa+L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00BOU98I0/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00BOU98I0/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Thank You for My Service",
           "author": "Mat Best",
-          "blurb": "NEW YORK TIMES BESTSELLER • The unapologetic, laugh-your-ass-off military memoir both vets and civilians have been waiting for, from a five-tour Army Ranger turned YouTube phenomenon and zealous advocate for veterans Members of the military’s special operations branches share a closely guarded secret: They love their jobs.",
+          "blurb": "Army Ranger turned internet personality Mat Best on deployments, dark humor as a survival mechanism, and building a business with veterans afterward. Profane, funny, and more thoughtful about war than it pretends to be.",
           "cover": "https://m.media-amazon.com/images/I/51ok7zll9AL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/0593164407/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/0593164407/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "My Own Words",
           "author": "Ruth Bader Ginsburg",
-          "blurb": "The first book from Ruth Bader Ginsburg since becoming a Supreme Court Justice in 1993—a witty, engaging, serious, and playful collection of writings and speeches from the woman who has had a powerful and enduring influence on law, women’s rights, and popular culture. My Own Words offers Justice Ginsburg on wide-ranging topics, including gender equality, the workways of the Supreme Court, being Jewish, law and lawyers in opera, and the value of looking beyond US shores when interpreting the US Constitution.",
+          "blurb": "Ruth Bader Ginsburg in her own writing: briefs, bench announcements, speeches on dissent and equality, with context from her biographers. Less a memoir than a documentary record of how she argued the world into changing.",
           "cover": "https://m.media-amazon.com/images/I/51NwvTgdAYL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01K3KUJ5C/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01K3KUJ5C/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Born a Crime: Stories from a South African Childhood",
           "author": "Trevor Noah",
-          "blurb": "Highest-rated new book of 2016 by Audible customers Winner: Audible's Best of 2016 - Celebrity Memoirs In this award-winning Audible Studios production, Trevor Noah tells his wild coming-of-age tale during the twilight of apartheid in South Africa. It’s a story that begins with his mother throwing him from a moving van to save him from a potentially fatal dispute with gangsters, then follows the budding comedian’s path to self-discovery through episodes both poignant and comical.",
+          "blurb": "Trevor Noah's childhood under apartheid, where his existence as a mixed child was literally illegal, raised by a fearless religious mother. Funny and harrowing in the same paragraph. The audio, in Noah's own voices, is the definitive version.",
           "cover": "https://m.media-amazon.com/images/I/51Mc--F6zGL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01IW9TQPK/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01IW9TQPK/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "21: Bringing Down the House: The Inside Story of Six M.I.T. Students Who Took Vegas for Millions",
           "author": "Ben Mezrich",
-          "blurb": "THE #1 NATIONAL BESTSELLER -- NOW THE MAJOR MOTION PICTURE 21 The long-running New York Times bestseller that has become a cultural phenomenon, Bringing Down the House is an action-filled caper carried out by the unlikeliest of cons -- supersmart geeks. Gambling pervaded the M.I.",
+          "blurb": "Six MIT students turn card counting into a business, flying to Vegas with hundreds of thousands strapped to their bodies until the casinos catch on. Mezrich's dramatized but irresistible account of math beating the house.",
           "cover": "https://m.media-amazon.com/images/I/61RIh9gAAFL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V8MEZS/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V8MEZS/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Leonardo da Vinci",
           "author": "Walter Isaacson",
-          "blurb": "The #1 New York Times bestseller from Walter Isaacson brings Leonardo da Vinci to life in this exciting new biography that is “a study in creativity: how to define it, how to achieve it…Most important, it is a powerful story of an exhilarating mind and life” ( The New Yorker ). Based on thousands of pages from Leonardo da Vinci’s astonishing notebooks and new discoveries about his life and work, Walter Isaacson “deftly reveals an intimate Leonardo” ( San Francisco Chronicle ) in a narrative that connects his art to his science.",
+          "blurb": "Isaacson reads Leonardo through his notebooks: the to-do lists, dissections, water studies, and unfinished commissions of a man who found everything interesting. The argument is that his genius was curiosity plus observation, which makes it feel almost learnable.",
           "cover": "https://m.media-amazon.com/images/I/61VMbkvRXUL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B071VTQZYT/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B071VTQZYT/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Operator: Firing the Shots That Killed Osama Bin Laden and My Years as a SEAL Team Warrior",
           "author": "Robert O'Neill",
-          "blurb": "Stirringly evocative, thought provoking, and often jaw dropping, The Operator ranges across SEAL Team Operator Robert O'Neill's awe-inspiring 400-mission career that included his involvement in attempts to rescue \"Lone Survivor\" Marcus Luttrell and abducted-by-Somali-pirates Captain Richard Phillips and culminated in those famous three shots that dispatched the world's most wanted terrorist, Osama bin Laden.",
+          "blurb": "Robert O'Neill's account of four hundred combat missions, ending with the shot that killed bin Laden, and of what those years cost everyone involved. A blunt, first-person view of the SEAL machine.",
           "cover": "https://m.media-amazon.com/images/I/61jsqgBB+3L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01N6XS0HX/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01N6XS0HX/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Alexander Hamilton",
           "author": "Ron Chernow",
-          "blurb": "The inspiration for the hit Broadway musical Hamilton ! In the first full-length biography of Alexander Hamilton in decades, National Book Award winner Ron Chernow tells the riveting story of a man who overcame all odds to shape, inspire, and scandalize the newborn America. According to historian Joseph Ellis, Alexander Hamilton is “a robust full-length portrait, in my view the best ever written, of the most brilliant, charismatic and dangerous founder of them all.”",
+          "blurb": "The immigrant orphan who wrote his way into the revolution, built the American financial system, and died in a duel he probably let happen. Chernow's biography is the one that inspired the musical, and it's even better than that suggests.",
           "cover": "https://m.media-amazon.com/images/I/41CPS3JoO6L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002UZLEFS/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002UZLEFS/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Lincoln",
           "author": "David Herbert Donald",
-          "blurb": "A masterful work by Pulitzer Prize–winning author David Herbert Donald, Lincoln is a stunning portrait of Abraham Lincoln’s life and presidency. Donald brilliantly depicts Lincoln’s gradual ascent from humble beginnings in rural Kentucky to the ever-expanding political circles in Illinois, and finally to the presidency of a country divided by civil war.",
+          "blurb": "Donald's classic one-volume Lincoln: the ambitious prairie lawyer who grew into the presidency in real time, improvising through catastrophe. The standard against which Lincoln biographies get measured.",
           "cover": "https://m.media-amazon.com/images/I/616eaUDkw9L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00A41XXRM/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00A41XXRM/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "High Price: A Neuroscientist's Journey of Self-Discovery That Challenges Everything You Know About Drugs and Society",
           "author": "Carl Hart",
-          "blurb": "A pioneering neuroscientist shares his story of growing up in one of Miami's toughest neighborhoods and how it led him to his groundbreaking work in drug addiction. As a youth, Carl Hart didn't realize the value of school; he studied just enough to stay on the basketball team. At the same time, he was immersed in street life.",
+          "blurb": "Hart grew up in one of Miami's roughest neighborhoods and became a Columbia neuroscientist studying drugs, concluding that most of what America believes about addiction is wrong. Memoir and science interleaved, both aimed at the drug war.",
           "cover": "https://m.media-amazon.com/images/I/61gzwAKgOnL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00GFSC4O6/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00GFSC4O6/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Pimp: The Story of My Life",
           "author": "Iceberg Slim",
-          "blurb": "A blueprint. A bible. What Sun Tzu’s Art of War was to ancient China, Pimp is to the streets. As real as you can get without jumping in, this is the story of Iceberg Slim’s life as he saw, felt, tasted, and smelled it. It is a trip through hell by the one man who lived to tell the tale—the dangers of jail, addiction, and death that are still all too familiar for today’s Black community.",
+          "blurb": "Iceberg Slim's unflinching memoir of twenty-five years in the Chicago street life, written in the language of it. Brutal and unromantic; it influenced generations of writers and musicians precisely because it refuses to glamorize what it describes.",
           "cover": "https://m.media-amazon.com/images/I/41Hw+cFHzKL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B004ZXZROW/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B004ZXZROW/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Educated: A Memoir",
           "author": "Tara Westover",
-          "blurb": "#1 NEW YORK TIMES, WALL STREET JOURNAL, AND BOSTON GLOBE BESTSELLER • One of the most acclaimed books of our time: an unforgettable memoir about a young woman who, kept out of school, leaves her survivalist family and goes on to earn a PhD from Cambridge University “Extraordinary .",
+          "blurb": "Westover grew up in a survivalist Mormon family that didn't believe in school or doctors, and clawed her way from a junkyard childhood to a Cambridge PhD. A memoir about how education both frees you and costs you your family.",
           "cover": "https://m.media-amazon.com/images/I/41goWDE1PUL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B075F8MBMQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B075F8MBMQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
           "author": "Ashlee Vance",
-          "blurb": "A New York Times Bestseller In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of one of Silicon Valley’s most exciting, unpredictable, and ambitious entrepreneurs—a real-life Tony Stark—and a fascinating exploration of the renewal of American invention and its new “makers.”",
+          "blurb": "Vance's 2015 biography, written when Tesla and SpaceX were still plausible failures, remains the best account of Musk's early arc: PayPal, near-bankruptcy in 2008, and the will-it-into-existence style that built both companies.",
           "cover": "https://m.media-amazon.com/images/I/51IQzkj0+NL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00UX8ODPM/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00UX8ODPM/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     },
@@ -1111,72 +1248,82 @@
         {
           "title": "How to Win Friends & Influence People",
           "author": "Dale Carnegie",
-          "blurb": "Updated for today’s readers, Dale Carnegie’s timeless bestseller How to Win Friends and Influence People is a classic that has improved and transformed the professional and personal and lives of millions. One of the best-known motivational guides in history, Dale Carnegie’s groundbreaking book has sold tens of millions of copies, been translated into almost every known language, and has helped countless people succeed.",
+          "blurb": "Carnegie's 1936 manual on getting along with people: be genuinely interested, remember names, avoid arguments, let others save face. Corny on the surface, but the underlying observation that people run on feeling important has not aged a day.",
           "cover": "https://m.media-amazon.com/images/I/51PWIy1rHUL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B002V5BV96/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B002V5BV96/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Law School for Everyone",
           "author": "The Great Courses",
-          "blurb": "The skills lawyers wield in courtrooms across the country are the result of years of study. As much as we'd like to cultivate these same skills, the truth is that you cannot know how a lawyer thinks and works without studying the law itself. Now there's an easier way to get the same foundational knowledge as lawyers - without the enormous time and financial commitment.",
+          "blurb": "A Great Courses series that walks through the first-year law curriculum: torts, contracts, criminal law, and civil procedure, taught by four law professors. The fastest way to understand how lawyers actually think.",
           "cover": "https://m.media-amazon.com/images/I/515aLpBOsyL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B0758MV7WM/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B0758MV7WM/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Republic",
           "author": "Plato",
-          "blurb": "What is at stake is far from insignificant: it is how one should live one's life. Plato's The Republic is widely acknowledged as the cornerstone of Western philosophy. Presented in the form of a dialogue between Socrates and three different interlocutors, it is an inquiry into the notion of a perfect community and the ideal individual within it.",
+          "blurb": "Plato's dialogue on justice, featuring the philosopher-kings, the noble lie, and the cave. The questions it asks about who should rule and why remain unresolved 2,400 years later, which is either depressing or reassuring.",
           "cover": "https://m.media-amazon.com/images/I/51dekFVqy-L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B003D8W9CS/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B003D8W9CS/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "48 Laws of Power",
           "author": "Robert Greene",
-          "blurb": "Amoral, cunning, ruthless, and instructive, this piercing work distills 3,000 years of the history of power into 48 well-explicated laws. This bold volume outlines the laws of power in their unvarnished essence, synthesizing the philosophies of Machiavelli, Sun Tzu, Carl von Clausewitz, and other infamous strategists.",
+          "blurb": "Greene distills history's manipulators into 48 amoral laws: conceal your intentions, never outshine the master, crush your enemy totally. Read it as a playbook or as a defense manual; either way you'll recognize your workplace in it.",
           "cover": "https://m.media-amazon.com/images/I/41dTDMW9IhL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00WYDJ2YQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00WYDJ2YQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Heads in Beds: A Reckless Memoir of Hotels, Hustles, and So-Called Hospitality",
           "author": "Jacob Tomsky",
-          "blurb": "In the tradition of Kitchen Confidential and Waiter Rant , a rollicking, eye-opening, fantastically indiscreet memoir of a life spent (and misspent) in the hotel industry. Jacob Tomsky never intended to go into the hotel business. As a new college graduate, armed only with a philosophy degree and a singular lack of career direction, he became a valet parker for a large luxury hotel in New Orleans.",
+          "blurb": "A decade in hotels, from luxury valet to front-desk burnout, with all the tips, scams, and upgrade levers explained by someone who worked them. Funny, and genuinely useful the next time you check in.",
           "cover": "https://m.media-amazon.com/images/I/51EvZOmzf-L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B009PRICSQ/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B009PRICSQ/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Never Split the Difference: Negotiating as if Your Life Depended on It",
           "author": "Chris Voss",
-          "blurb": "This international bestseller, with more than 5 million copies sold, offers a field-tested approach to high-stakes negotiations—whether in the boardroom, in your community, or at home. Life is a series of negotiations, and negotiation is at the heart of collaboration—whether you are a business executive, a salesperson, a parent , a community leader, or a spouse.",
+          "blurb": "Voss spent years as the FBI's lead hostage negotiator, and his toolkit transfers: tactical empathy, mirroring, calibrated questions, and getting to 'that's right.' The most practical negotiation book available, because none of it assumes goodwill.",
           "cover": "https://m.media-amazon.com/images/I/51l4HGsEqyL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B01CF5O89G/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B01CF5O89G/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "400 Things Cops Know: Street-Smart Lessons From a Veteran Patrolman",
           "author": "Adam Plantinga",
-          "blurb": "How does it feel to be in a high-speed car chase? What is it like to shoot someone? What do cops really think about the citizens they serve? Nearly everyone has wondered what it's like to be a police officer, but no civilian really understands what happens on the job. 400 Things Cops Know shows police work on the inside, from the viewpoint of the regular cop on the beat - a profession that can range from rewarding to bizarre to terrifying, all within the course of an eight-hour shift.",
+          "blurb": "A veteran patrol sergeant lists what the job teaches in 400 blunt observations, from how people lie to what a traffic stop feels like from the other side. A street-level education in how policing actually works.",
           "cover": "https://m.media-amazon.com/images/I/515dztuMvSL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00VS6CZUS/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00VS6CZUS/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing",
           "author": "Marie Kondo",
-          "blurb": "Despite constant efforts to declutter your home, do papers still accumulate like snowdrifts and clothes pile up like a tangled mess of noodles? Japanese cleaning consultant Marie Kondo takes tidying to a whole new level, promising that if you properly simplify and organize your home once, you'll never have to do it again.",
+          "blurb": "Kondo's method is really a filter: hold each thing you own and keep it only if it sparks joy, category by category, clothes before mementos. Underneath the tidying is a fairly radical idea about deciding what your life is for.",
           "cover": "https://m.media-amazon.com/images/I/61nBw77qi6L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00RC3M6OG/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00RC3M6OG/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Law 101: Everything You Need to Know About American Law",
           "author": "Jay M. Feinman",
-          "blurb": "The best-selling first edition of Law 101 provided a vividly written and indispensable portrait of our nation's legal system. Now, in this revised edition, Jay M. Feinman offers an updated survey of American law, spiced with new anecdotes and cases, and incorporating fresh material on topics ranging from the President's war powers, to intellectual property, standard form contracts, and eminent domain.",
+          "blurb": "Feinman covers the first year of law school in one book: constitutional law, torts, contracts, property, and criminal procedure, with real cases as illustrations. The single most useful primer for understanding American legal news.",
           "cover": "https://m.media-amazon.com/images/I/51gzRqi-P0L._SL200_.jpg",
-          "link": "http://www.audible.com/pd/B00GIN4FZE/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/B00GIN4FZE/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         },
         {
           "title": "Arrest-Proof Yourself, Second Edition",
           "author": "Dale C. Carson",
-          "blurb": "What do you say if a cop pulls you over and asks to search your car? What if he gets up in your face and uses a racial slur? What if there's a roach in the ashtray? And what if your hot-headed teenage son is at the wheel? If you listen to this book, you'll know exactly what to do and say.",
+          "blurb": "A former FBI agent turned defense lawyer explains how arrests actually happen, why so many are avoidable, and exactly how to behave in police encounters to stay out of the system. Uncomfortable, practical knowledge.",
           "cover": "https://m.media-amazon.com/images/I/51XR1BJ1wuL._SL200_.jpg",
-          "link": "http://www.audible.com/pd/197738174X/?ref=nosim&tag=brianhamachek-20"
+          "link": "http://www.audible.com/pd/197738174X/?ref=nosim&tag=brianhamachek-20",
+          "blurbLocked": true
         }
       ]
     }
