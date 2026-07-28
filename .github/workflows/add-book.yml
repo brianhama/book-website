@@ -1,0 +1,102 @@
+name: Add book from issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  add-book:
+    if: contains(github.event.issue.labels.*.name, 'add-book')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Parse issue form
+        id: parse
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          section() {
+            echo "$ISSUE_BODY" | awk -v h="### $1" '
+              $0 == h {grab=1; next}
+              /^### / {grab=0}
+              grab && !/^[[:space:]]*$/ && $0 != "_No response_"' | head -c 2000
+          }
+          {
+            echo "asin=$(section 'ASIN or Audible URL' | head -1 | tr -d '\r')"
+            echo "category=$(section 'Category' | head -1 | tr -d '\r')"
+            echo "blurb<<BLURB_EOF"
+            section 'Custom blurb (optional)'
+            echo "BLURB_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Add the book
+        id: add
+        env:
+          ASIN: ${{ steps.parse.outputs.asin }}
+          CATEGORY: ${{ steps.parse.outputs.category }}
+          BLURB: ${{ steps.parse.outputs.blurb }}
+        run: |
+          set +e
+          if [ -n "$BLURB" ]; then
+            OUTPUT=$(node scripts/add-book.mjs "$ASIN" --category "$CATEGORY" --blurb "$BLURB" 2>&1)
+          else
+            OUTPUT=$(node scripts/add-book.mjs "$ASIN" --category "$CATEGORY" 2>&1)
+          fi
+          STATUS=$?
+          echo "$OUTPUT"
+          {
+            echo "message<<OUT_EOF"
+            echo "$OUTPUT"
+            echo "OUT_EOF"
+          } >> "$GITHUB_OUTPUT"
+          exit $STATUS
+
+      - name: Open pull request
+        id: pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: add-book/issue-${{ github.event.issue.number }}
+          title: "Add book: ${{ steps.parse.outputs.asin }} (closes #${{ github.event.issue.number }})"
+          commit-message: |
+            Add book ${{ steps.parse.outputs.asin }} from issue #${{ github.event.issue.number }}
+          body: |
+            ${{ steps.add.outputs.message }}
+
+            Requested in #${{ github.event.issue.number }}.
+
+            Closes #${{ github.event.issue.number }}
+          delete-branch: true
+
+      - name: Comment success on issue
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" \
+            --body "✅ ${{ steps.add.outputs.message }}
+
+          Review and merge ${{ steps.pr.outputs.pull-request-url }} to publish it."
+
+      - name: Comment failure on issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" \
+            --body "❌ Could not add this book automatically:
+
+          \`\`\`
+          ${{ steps.add.outputs.message || 'Failed before metadata lookup — check the workflow logs.' }}
+          \`\`\`
+
+          Double-check the ASIN/URL and try again, or add it to books.json manually."
