@@ -186,6 +186,13 @@
       "name": "Fiction - Literary & Classics",
       "books": [
         {
+          "title": "Forrest Gump",
+          "author": "Winston Groom",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51dRrii4AFL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B004VFKPOG/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "North Woods: A Novel",
           "author": "Daniel Mason",
           "blurb": "",
