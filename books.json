@@ -144,6 +144,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "11-22-63: A Novel",
+          "author": "Stephen King",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/51b3MJwd2YL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B005UR3VFO/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "North Woods: A Novel",
           "author": "Daniel Mason",
           "blurb": "",
