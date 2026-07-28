@@ -103,6 +103,13 @@
       "name": "Non Fiction - Science",
       "books": [
         {
+          "title": "The Genome Odyssey: Medical Mysteries and the Incredible Quest to Solve Them",
+          "author": "Euan Angus Ashley",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/518luwnBn2L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/1250792150/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Physics, Chemistry, and Biology: The Great Mental Models, Volume 2",
           "author": "Shane Parrish",
           "blurb": "Volume 2 of The Great Mental Models series provides a collection of over twenty important concepts from physics, chemistry, and biology in a clear and accessible style.",
