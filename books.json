@@ -151,6 +151,13 @@
       "name": "Fiction",
       "books": [
         {
+          "title": "The Man in the High Castle: Das Orakel vom Berge",
+          "author": "Philip K. Dick",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/61C7uoX1fiL._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B01M98WD7G/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "One Second After",
           "author": "William R. Forstchen",
           "blurb": "",
