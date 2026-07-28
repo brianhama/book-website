@@ -14,6 +14,7 @@ const data = JSON.parse(readFileSync(BOOKS_JSON, 'utf8'));
 let fixed = 0, failed = 0;
 for (const cat of data.categories) {
   for (const book of cat.books) {
+    if (book.blurbLocked) continue;
     if (!refreshAll && book.blurb && book.cover) continue;
     const m = book.link.match(/\/pd\/([A-Z0-9]{10})/i);
     if (!m) continue;
