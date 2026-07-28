@@ -135,19 +135,6 @@
                     '<span class="cat-count">' + cat.books.length + '</span></h2>' + books + '</div>';
             });
             listEl.innerHTML = htmlParts.join('');
-            var collage = document.createElement('div');
-            collage.id = 'cover-collage';
-            collage.setAttribute('aria-hidden', 'true');
-            data.categories.forEach(function (cat) {
-                cat.books.forEach(function (b) {
-                    var img = document.createElement('img');
-                    img.src = b.cover;
-                    img.alt = '';
-                    img.loading = 'lazy';
-                    collage.appendChild(img);
-                });
-            });
-            document.body.prepend(collage);
             if (isMobile.matches) {
                 document.querySelectorAll('.category-container').forEach(function (c) {
                     c.classList.add('collapsed');
