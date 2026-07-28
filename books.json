@@ -856,6 +856,13 @@
       "name": "Non Fiction - Biography & Memoir",
       "books": [
         {
+          "title": "Spare",
+          "author": "Prince Harry The Duke of Sussex",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41hYQIILU3L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0BJ4X9D2F/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Source Code: My Beginnings",
           "author": "Bill Gates",
           "blurb": "",
