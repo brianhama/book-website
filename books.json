@@ -506,6 +506,13 @@
       "name": "Non Fiction - History",
       "books": [
         {
+          "title": "Sapiens: A Brief History of Humankind",
+          "author": "Yuval Noah Harari",
+          "blurb": "",
+          "cover": "https://m.media-amazon.com/images/I/41HWFhtig3L._SL200_.jpg",
+          "link": "http://www.audible.com/pd/B0741G911Q/?ref=nosim&tag=brianhamachek-20"
+        },
+        {
           "title": "Israel: A Concise History of a Nation Reborn",
           "author": "Daniel Gordis",
           "blurb": "",
