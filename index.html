@@ -70,6 +70,7 @@
                 <p class="last-updated" id="last-updated">Last updated January 23, 2025</p>
             </div>
 
+            <div id="filter-sentinel" style="height: 1px;"></div>
             <div class="filter-bar">
                 <div class="search-wrap">
                     <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -210,6 +211,12 @@
                 count.textContent = 'Showing ' + visibleBooks + ' book' + (visibleBooks === 1 ? '' : 's');
             }
         }
+
+        new IntersectionObserver(function (entries) {
+            var e = entries[0];
+            var scrolledPast = !e.isIntersecting && e.boundingClientRect.top < 0;
+            document.querySelector('.filter-bar').classList.toggle('stuck', scrolledPast);
+        }, { threshold: 0 }).observe(document.getElementById('filter-sentinel'));
 
         window.addEventListener('scroll', function () {
             var btn = document.getElementById('back-to-top');
