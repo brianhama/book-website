@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Where Healthcare Meets Ecology · Planetary Health</title>
+    <meta name="description"
+        content="A data visualization of the two-way relationship between human health and the living planet: how ecosystems shape health, and how health care shapes ecosystems.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ============================================================
+           Design tokens — warm "book-shelf" light theme + dark theme.
+           Chart color roles come from the validated data-viz palette;
+           dark steps are the same hues re-stepped for the dark surface.
+           ============================================================ */
+        :root {
+            color-scheme: light;
+
+            --bg: #faf7f2;
+            --bg-dot: rgba(179, 89, 46, 0.05);
+            --surface: #ffffff;
+            --surface-2: #fbf8f3;
+            --ink: #2b2621;
+            --ink-soft: #6b625a;
+            --ink-muted: #8c8178;
+            --accent: #b3592e;
+            --accent-dark: #93441f;
+            --line: #e8e0d6;
+            --shadow: 0 1px 3px rgba(43, 38, 33, 0.06), 0 8px 24px rgba(43, 38, 33, 0.07);
+            --shadow-hover: 0 4px 8px rgba(43, 38, 33, 0.08), 0 16px 40px rgba(43, 38, 33, 0.12);
+            --radius: 14px;
+            --serif: 'Fraunces', Georgia, serif;
+            --sans: 'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
+
+            /* thematic hues */
+            --health: #2a6fb0;
+            --health-soft: #e4eef7;
+            --eco: #0f7a5c;
+            --eco-soft: #dcefe7;
+
+            /* chart ink + chrome (light) */
+            --c-surface: #ffffff;
+            --c-ink: #221f1b;
+            --c-ink-2: #52514e;
+            --c-muted: #8c8178;
+            --c-grid: #ece5db;
+            --c-axis: #cfc6ba;
+
+            /* categorical slots (light) — validated set */
+            --s1: #2a78d6;
+            --s2: #eb6834;
+            --s3: #1baf7a;
+
+            /* single-hue data marks (light) */
+            --bar-eco: #0f7a5c;
+            --line-health: #2a6fb0;
+            --line-health-fill: rgba(42, 111, 176, 0.12);
+        }
+
+        :root[data-theme="dark"] {
+            color-scheme: dark;
+
+            --bg: #17130f;
+            --bg-dot: rgba(255, 255, 255, 0.035);
+            --surface: #221d18;
+            --surface-2: #1c1813;
+            --ink: #f3ece2;
+            --ink-soft: #c3b7a9;
+            --ink-muted: #9a8d7e;
+            --accent: #e08a5c;
+            --accent-dark: #c2703f;
+            --line: #362e26;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.4);
+            --shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.45), 0 16px 40px rgba(0, 0, 0, 0.5);
+
+            --health: #6db2ea;
+            --health-soft: #1e2c39;
+            --eco: #3fc79a;
+            --eco-soft: #16281f;
+
+            --c-surface: #221d18;
+            --c-ink: #f3ece2;
+            --c-ink-2: #c3b7a9;
+            --c-muted: #9a8d7e;
+            --c-grid: #33291f;
+            --c-axis: #43382c;
+
+            --s1: #3987e5;
+            --s2: #e08a4b;
+            --s3: #24c896;
+
+            --bar-eco: #2fb98a;
+            --line-health: #6db2ea;
+            --line-health-fill: rgba(109, 178, 234, 0.16);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                color-scheme: dark;
+
+                --bg: #17130f;
+                --bg-dot: rgba(255, 255, 255, 0.035);
+                --surface: #221d18;
+                --surface-2: #1c1813;
+                --ink: #f3ece2;
+                --ink-soft: #c3b7a9;
+                --ink-muted: #9a8d7e;
+                --accent: #e08a5c;
+                --accent-dark: #c2703f;
+                --line: #362e26;
+                --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.4);
+                --shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.45), 0 16px 40px rgba(0, 0, 0, 0.5);
+
+                --health: #6db2ea;
+                --health-soft: #1e2c39;
+                --eco: #3fc79a;
+                --eco-soft: #16281f;
+
+                --c-surface: #221d18;
+                --c-ink: #f3ece2;
+                --c-ink-2: #c3b7a9;
+                --c-muted: #9a8d7e;
+                --c-grid: #33291f;
+                --c-axis: #43382c;
+
+                --s1: #3987e5;
+                --s2: #e08a4b;
+                --s3: #24c896;
+
+                --bar-eco: #2fb98a;
+                --line-health: #6db2ea;
+                --line-health-fill: rgba(109, 178, 234, 0.16);
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--sans);
+            margin: 0;
+            background-color: var(--bg);
+            background-image: radial-gradient(var(--bg-dot) 1px, transparent 1px);
+            background-size: 24px 24px;
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        main {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 0 20px 72px;
+        }
+
+        /* ============ Hero ============ */
+        .hero {
+            background: linear-gradient(135deg, #123b30 0%, #1f4a3a 45%, #2b3f52 100%);
+            color: #f2fbf6;
+            padding: 66px 20px 58px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
+
+        .hero-inner { position: relative; z-index: 1; max-width: 780px; margin: 0 auto; }
+
+        .hero-eyebrow {
+            display: inline-block;
+            font-size: 0.82em;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 100px;
+            padding: 6px 16px;
+            margin: 0 0 20px;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(2.1em, 5.5vw, 3.4em);
+            line-height: 1.12;
+            margin: 0 0 16px;
+            font-weight: 700;
+        }
+
+        .hero-tagline {
+            font-size: 1.14em;
+            color: rgba(242, 251, 246, 0.88);
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        /* theme toggle */
+        .theme-toggle {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.12);
+            color: #f2fbf6;
+            font-size: 1.1em;
+            cursor: pointer;
+            line-height: 1;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+        .theme-toggle:hover { background: rgba(255, 255, 255, 0.22); transform: rotate(-15deg); }
+
+        /* ============ Cards / sections ============ */
+        .card {
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 28px 30px;
+            margin-top: 26px;
+        }
+
+        .section-eyebrow {
+            font-size: 0.76em;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--accent);
+            margin: 0 0 8px;
+        }
+
+        h2.section-heading {
+            font-family: var(--serif);
+            font-size: 1.55em;
+            font-weight: 700;
+            margin: 0 0 10px;
+            line-height: 1.2;
+        }
+
+        .lead { font-size: 1.05em; color: var(--ink-soft); margin: 0 0 4px; }
+        .card p { color: var(--ink-soft); }
+        .card p:last-child { margin-bottom: 0; }
+
+        .intro-card .intro-lead {
+            font-family: var(--serif);
+            font-size: 1.28em;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 0 0 12px;
+            line-height: 1.35;
+        }
+
+        /* ============ Feedback-loop diagram ============ */
+        .loop-figure { margin: 26px 0 0; }
+        .loop-wrap {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 22px 24px 18px;
+        }
+        .loop-wrap svg { width: 100%; height: auto; display: block; }
+        .loop-caption {
+            font-size: 0.86em;
+            color: var(--ink-muted);
+            text-align: center;
+            margin: 8px 4px 0;
+        }
+
+        /* ============ KPI stat tiles ============ */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 26px;
+        }
+        .kpi {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px 18px;
+            border-top: 3px solid var(--kpi-accent, var(--accent));
+        }
+        .kpi-value {
+            font-family: var(--serif);
+            font-size: 2.05em;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--ink);
+            margin: 0;
+            font-variant-numeric: tabular-nums;
+        }
+        .kpi-unit { font-size: 0.5em; font-weight: 600; color: var(--ink-muted); }
+        .kpi-label { font-size: 0.9em; color: var(--ink-soft); margin: 10px 0 0; }
+        .kpi-source { font-size: 0.76em; color: var(--ink-muted); margin: 8px 0 0; }
+
+        /* ============ Charts ============ */
+        .chart-head { margin-bottom: 4px; }
+        .chart-dir {
+            display: inline-block;
+            font-size: 0.74em;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+        .dir-eco { background: var(--eco-soft); color: var(--eco); }
+        .dir-health { background: var(--health-soft); color: var(--health); }
+
+        .chart-sub { font-size: 0.95em; color: var(--ink-soft); margin: 2px 0 0; }
+
+        .chart-area { margin-top: 18px; position: relative; }
+        .chart-area svg { width: 100%; height: auto; display: block; overflow: visible; }
+
+        /* legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            margin: 4px 0 14px;
+            padding: 0;
+            list-style: none;
+        }
+        .legend li { display: flex; align-items: center; gap: 8px; font-size: 0.9em; color: var(--ink-soft); }
+        .legend .swatch { width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0; }
+        .legend b { color: var(--ink); font-weight: 600; }
+
+        /* tooltip */
+        .tt {
+            position: absolute;
+            pointer-events: none;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-hover);
+            border-radius: 10px;
+            padding: 9px 12px;
+            font-size: 0.85em;
+            color: var(--ink);
+            opacity: 0;
+            transform: translate(-50%, -112%);
+            transition: opacity 0.12s ease;
+            z-index: 10;
+            white-space: nowrap;
+            max-width: 240px;
+        }
+        .tt.show { opacity: 1; }
+        .tt .tt-title { font-weight: 600; margin-bottom: 2px; }
+        .tt .tt-val { color: var(--ink-soft); }
+        .tt .tt-val b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+        /* SVG text roles */
+        .ax-label { fill: var(--c-muted); font-size: 12px; font-family: var(--sans); }
+        .ax-tick { fill: var(--c-muted); font-size: 11px; font-family: var(--sans); font-variant-numeric: tabular-nums; }
+        .bar-name { fill: var(--c-ink); font-size: 13px; font-family: var(--sans); font-weight: 500; }
+        .bar-val { fill: var(--c-ink); font-size: 13px; font-family: var(--sans); font-weight: 600; font-variant-numeric: tabular-nums; }
+        .seg-label { fill: #ffffff; font-size: 12px; font-family: var(--sans); font-weight: 600; }
+        .pt-label { fill: var(--c-ink); font-size: 12px; font-family: var(--sans); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+        /* data table */
+        .table-toggle {
+            margin-top: 16px;
+            font-family: var(--sans);
+            font-size: 0.85em;
+            font-weight: 500;
+            color: var(--ink-soft);
+            background: var(--surface-2);
+            border: 1px solid var(--line);
+            border-radius: 100px;
+            padding: 6px 15px;
+            cursor: pointer;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+        .table-toggle:hover { border-color: var(--accent); color: var(--accent); }
+        .data-table { margin-top: 14px; overflow-x: auto; }
+        .data-table[hidden] { display: none; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.88em;
+        }
+        caption { text-align: left; color: var(--ink-muted); font-size: 0.92em; margin-bottom: 8px; }
+        th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+        thead th { color: var(--ink); font-weight: 600; border-bottom: 1.5px solid var(--line); }
+        td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        tbody tr:last-child td { border-bottom: none; }
+
+        .chart-note { font-size: 0.8em; color: var(--ink-muted); margin: 14px 0 0; }
+        .chart-source { font-size: 0.8em; color: var(--ink-muted); margin: 6px 0 0; }
+
+        /* takeaways */
+        .takeaways { list-style: none; margin: 14px 0 0; padding: 0; }
+        .takeaways li {
+            position: relative;
+            padding: 0 0 0 30px;
+            margin: 0 0 14px;
+            color: var(--ink-soft);
+        }
+        .takeaways li:last-child { margin-bottom: 0; }
+        .takeaways li::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 9px;
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            background: var(--tk, var(--accent));
+        }
+        .takeaways b { color: var(--ink); font-weight: 600; }
+
+        /* ============ Footer ============ */
+        .site-footer {
+            text-align: center;
+            padding: 40px 20px 52px;
+            border-top: 1px solid var(--line);
+            color: var(--ink-muted);
+            margin-top: 40px;
+        }
+        .site-footer p { margin: 5px 0; font-size: 0.85em; }
+        .src-list {
+            max-width: 780px;
+            margin: 0 auto 18px;
+            font-size: 0.8em;
+            color: var(--ink-muted);
+            line-height: 1.7;
+            text-align: left;
+        }
+        .src-list h3 {
+            font-family: var(--sans);
+            font-size: 0.82em;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin: 0 0 8px;
+        }
+
+        /* ============ Responsive ============ */
+        @media (max-width: 760px) {
+            .hero { padding: 54px 16px 46px; }
+            main { padding: 0 14px 56px; }
+            .card { padding: 22px 18px; }
+            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+            .kpi-value { font-size: 1.8em; }
+        }
+        @media (max-width: 400px) {
+            .kpi-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; transition: none !important; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">◑</button>
+        <div class="hero-inner">
+            <p class="hero-eyebrow">🌍 Planetary Health · One Health</p>
+            <h1>Where Healthcare<br>Meets Ecology</h1>
+            <p class="hero-tagline">Human health and the living planet are a single, looped system. Ecosystems keep
+                us well — and the way we deliver care, in turn, reshapes those ecosystems. Here is that intersection,
+                in data.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro -->
+        <section class="card intro-card">
+            <p class="section-eyebrow">The big idea</p>
+            <p class="intro-lead">There is no human health on a sick planet.</p>
+            <p>Medicine tends to treat the body as if it ended at the skin. But clean air, safe water, a stable
+                climate, biodiverse landscapes, and the animals we live alongside are all upstream of whether people
+                get sick or stay well. That is the premise of <b>One Health</b> and <b>Planetary Health</b>: human,
+                animal, and ecosystem health are one interdependent system.</p>
+            <p>The relationship runs <b>both directions</b>. Degraded ecosystems drive disease — through pollution,
+                heat, and pathogens that spill over from wildlife. And health care itself is a heavy industry: if the
+                global health sector were a country, it would be the planet's fifth-largest climate polluter. The
+                visualizations below trace that loop.</p>
+        </section>
+
+        <!-- Feedback loop diagram -->
+        <figure class="loop-figure">
+            <div class="loop-wrap">
+                <svg viewBox="0 0 760 340" role="img"
+                    aria-label="Diagram of the feedback loop between ecosystems and human health. Ecosystems supply clean air, water, food, medicines, and a stable climate to human health; when degraded, they drive pollution, heat stress, and zoonotic disease. Human health care, in return, generates greenhouse-gas emissions, waste, and pharmaceutical pollution that burden ecosystems.">
+                    <defs>
+                        <marker id="arrow-eco" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+                            orient="auto-start-reverse">
+                            <path d="M0,0 L10,5 L0,10 z" fill="var(--eco)"></path>
+                        </marker>
+                        <marker id="arrow-health" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+                            orient="auto-start-reverse">
+                            <path d="M0,0 L10,5 L0,10 z" fill="var(--health)"></path>
+                        </marker>
+                    </defs>
+
+                    <!-- top arc: ecosystems -> health (supports) -->
+                    <path d="M 250 120 C 340 70, 420 70, 510 120" fill="none" stroke="var(--eco)" stroke-width="2.5"
+                        marker-end="url(#arrow-eco)"></path>
+                    <text x="380" y="60" text-anchor="middle" class="bar-name" style="fill:var(--eco);">
+                        Ecosystems sustain health</text>
+                    <text x="380" y="92" text-anchor="middle" class="ax-tick">clean air · water · food · medicines · stable climate</text>
+
+                    <!-- bottom arc: health -> ecosystems (burdens) -->
+                    <path d="M 510 220 C 420 270, 340 270, 250 220" fill="none" stroke="var(--health)" stroke-width="2.5"
+                        marker-end="url(#arrow-health)"></path>
+                    <text x="380" y="292" text-anchor="middle" class="bar-name" style="fill:var(--health);">
+                        Health care burdens ecosystems</text>
+                    <text x="380" y="252" text-anchor="middle" class="ax-tick">emissions · medical waste · pharmaceutical pollution</text>
+
+                    <!-- left hub: ecosystems -->
+                    <circle cx="170" cy="170" r="88" fill="var(--eco-soft)" stroke="var(--eco)" stroke-width="2"></circle>
+                    <text x="170" y="150" text-anchor="middle" class="loop-hub"
+                        style="fill:var(--eco);font-family:var(--serif);font-weight:700;font-size:19px;">Ecosystems</text>
+                    <text x="170" y="176" text-anchor="middle" class="loop-hub"
+                        style="fill:var(--eco);font-family:var(--serif);font-weight:700;font-size:19px;">&amp; Climate</text>
+                    <text x="170" y="200" text-anchor="middle" class="ax-tick">the biosphere</text>
+
+                    <!-- right hub: health -->
+                    <circle cx="590" cy="170" r="88" fill="var(--health-soft)" stroke="var(--health)" stroke-width="2"></circle>
+                    <text x="590" y="150" text-anchor="middle"
+                        style="fill:var(--health);font-family:var(--serif);font-weight:700;font-size:19px;">Human &amp;</text>
+                    <text x="590" y="176" text-anchor="middle"
+                        style="fill:var(--health);font-family:var(--serif);font-weight:700;font-size:19px;">Public Health</text>
+                    <text x="590" y="200" text-anchor="middle" class="ax-tick">bodies &amp; care systems</text>
+                </svg>
+            </div>
+            <figcaption class="loop-caption">The planetary-health loop: ecosystems and human health continuously act on
+                each other. Break one arc and the other frays.</figcaption>
+        </figure>
+
+        <!-- KPI row -->
+        <section aria-label="Key figures">
+            <div class="kpi-grid" id="kpi-grid"></div>
+        </section>
+
+        <!-- Chart 1: Ecology -> Health -->
+        <section class="card" id="chart-deaths">
+            <div class="chart-head">
+                <span class="chart-dir dir-eco">Ecology → Health</span>
+                <p class="section-eyebrow" style="margin:0;">The environment as a driver of disease</p>
+                <h2 class="section-heading">A quarter of all deaths trace back to the environment</h2>
+                <p class="chart-sub">Estimated deaths each year attributable to major environmental risk factors,
+                    worldwide.</p>
+            </div>
+            <div class="chart-area" id="deaths-area"></div>
+            <button class="table-toggle" data-target="deaths-table" aria-expanded="false">Show data table</button>
+            <div class="data-table" id="deaths-table" hidden></div>
+            <p class="chart-note">Note: ambient (outdoor) and household (indoor) air pollution overlap in the people
+                they affect and should not be simply added. Figures are rounded estimates of annual premature deaths.</p>
+            <p class="chart-source">Source: World Health Organization; Global Burden of Disease (IHME).</p>
+        </section>
+
+        <!-- Chart 2: Health -> Ecology -->
+        <section class="card" id="chart-footprint">
+            <div class="chart-head">
+                <span class="chart-dir dir-health">Health → Ecology</span>
+                <p class="section-eyebrow" style="margin:0;">Care has a carbon footprint</p>
+                <h2 class="section-heading">If health care were a country, it would be the 5th-largest emitter</h2>
+                <p class="chart-sub">The global health sector produces about <b>2.0 gigatonnes of CO₂e a year — 4.4% of
+                    net global emissions</b>. Here is where those emissions come from.</p>
+            </div>
+            <ul class="legend" id="footprint-legend"></ul>
+            <div class="chart-area" id="footprint-area"></div>
+            <button class="table-toggle" data-target="footprint-table" aria-expanded="false">Show data table</button>
+            <div class="data-table" id="footprint-table" hidden></div>
+            <p class="chart-note">Scopes follow the Greenhouse Gas Protocol: Scope 1 is direct emissions (facilities,
+                vehicles), Scope 2 is purchased energy, and Scope 3 is the supply chain (pharmaceuticals, devices,
+                food, transport) — by far the largest share.</p>
+            <p class="chart-source">Source: Health Care Without Harm & Arup, “Health Care's Climate Footprint” (2019).</p>
+        </section>
+
+        <!-- Chart 3: the loop over time -->
+        <section class="card" id="chart-dengue">
+            <div class="chart-head">
+                <span class="chart-dir dir-eco">Ecology → Health</span>
+                <p class="section-eyebrow" style="margin:0;">A warming world, on the move</p>
+                <h2 class="section-heading">As the climate shifts, mosquito-borne disease climbs</h2>
+                <p class="chart-sub">Dengue cases reported to the WHO have risen roughly 13-fold this century as warming
+                    and urbanization expand the range of the <i>Aedes</i> mosquito.</p>
+            </div>
+            <div class="chart-area" id="dengue-area"></div>
+            <button class="table-toggle" data-target="dengue-table" aria-expanded="false">Show data table</button>
+            <div class="data-table" id="dengue-table" hidden></div>
+            <p class="chart-note">Reported cases reflect both true spread and improving surveillance, but the trend
+                tracks the expanding climatic suitability for transmission. Dengue is now the fastest-spreading
+                vector-borne disease in the world.</p>
+            <p class="chart-source">Source: World Health Organization dengue surveillance; Lancet Countdown on Health
+                and Climate Change.</p>
+        </section>
+
+        <!-- Takeaways -->
+        <section class="card">
+            <p class="section-eyebrow">Closing the loop</p>
+            <h2 class="section-heading">The intersection, in three moves</h2>
+            <ul class="takeaways">
+                <li style="--tk: var(--eco);"><b>Ecosystems are upstream of health.</b> Pollution, unsafe water, lead,
+                    and heat quietly account for roughly one in four deaths — more than any single disease.</li>
+                <li style="--tk: var(--health);"><b>Health care is upstream of ecosystems.</b> The sector built to
+                    heal is also a top-five global polluter, most of it hidden in the supply chain.</li>
+                <li style="--tk: var(--accent);"><b>The fixes are shared.</b> Cleaner energy, resilient food and water,
+                    protected habitat, and low-carbon care are simultaneously climate policy <i>and</i> health policy.
+                    Treating them as one system is the whole point of planetary health.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="src-list">
+            <h3>Sources &amp; notes</h3>
+            <p>World Health Organization — environmental burden of disease, air pollution, water &amp; sanitation, and
+                dengue surveillance. · Health Care Without Harm &amp; Arup — “Health Care's Climate Footprint” (2019). ·
+                IPCC Sixth Assessment Report (2022) — climate vulnerability. · U.S. CDC &amp; UNEP — zoonotic disease and
+                One Health. · Institute for Health Metrics and Evaluation — Global Burden of Disease. · The Lancet
+                Countdown on Health and Climate Change. Figures are rounded best estimates compiled for illustration;
+                consult the primary sources for exact, current values and methods.</p>
+        </div>
+        <p>A data-story on the healthcare–ecology intersection.</p>
+        <p>Part of <a href="index.html">brianhama.com</a> · <a target="_blank" rel="noopener"
+                href="https://github.com/brianhama/book-website">open source on GitHub</a>.</p>
+    </footer>
+
+    <script>
+        "use strict";
+
+        /* ============================================================
+           Data
+           ============================================================ */
+        var KPIS = [
+            {
+                value: "24", unit: "%",
+                label: "of deaths worldwide are linked to environmental factors — about 13.7 million a year.",
+                source: "WHO", accent: "var(--eco)"
+            },
+            {
+                value: "4.4", unit: "%",
+                label: "of global greenhouse-gas emissions come from health care — a top-5 emitter if it were a country.",
+                source: "Health Care Without Harm", accent: "var(--health)"
+            },
+            {
+                value: "60", unit: "%",
+                label: "of known human infectious diseases are zoonotic — they spill over from animals.",
+                source: "CDC · One Health", accent: "var(--eco)"
+            },
+            {
+                value: "3.3–3.6", unit: "bn",
+                label: "people live in settings highly vulnerable to climate change.",
+                source: "IPCC AR6", accent: "var(--health)"
+            }
+        ];
+
+        // Chart 1 — annual deaths (millions) by environmental risk factor
+        var DEATHS = [
+            { name: "Ambient air pollution", value: 4.2, note: "Outdoor fine particulates & ozone" },
+            { name: "Household air pollution", value: 3.2, note: "Indoor smoke from solid cooking fuels" },
+            { name: "Lead exposure", value: 1.5, note: "Mostly cardiovascular, via GBD 2021" },
+            { name: "Unsafe water, sanitation & hygiene", value: 1.4, note: "Diarrhoeal & related disease" },
+            { name: "Extreme heat (projected, 2030s+)", value: 0.25, note: "WHO projection, 2030–2050", projected: true }
+        ];
+
+        // Chart 2 — healthcare climate footprint by GHG-protocol scope (% of sector emissions)
+        var FOOTPRINT = [
+            { name: "Supply chain", scope: "Scope 3", value: 71, color: "var(--s1)", desc: "Pharma, devices, food, transport" },
+            { name: "Direct operations", scope: "Scope 1", value: 17, color: "var(--s2)", desc: "Facilities & fleet" },
+            { name: "Purchased energy", scope: "Scope 2", value: 12, color: "var(--s3)", desc: "Grid electricity, heat & cooling" }
+        ];
+
+        // Chart 3 — dengue cases reported to WHO (millions)
+        var DENGUE = [
+            { year: 2000, value: 0.5 },
+            { year: 2005, value: 1.0 },
+            { year: 2010, value: 2.4 },
+            { year: 2015, value: 3.2 },
+            { year: 2019, value: 5.2 },
+            { year: 2023, value: 6.5 }
+        ];
+
+        var SVGNS = "http://www.w3.org/2000/svg";
+        function el(name, attrs) {
+            var n = document.createElementNS(SVGNS, name);
+            if (attrs) { for (var k in attrs) { n.setAttribute(k, attrs[k]); } }
+            return n;
+        }
+        function fmtNum(v) {
+            return (Math.round(v * 100) / 100).toLocaleString("en-US");
+        }
+
+        /* ============================================================
+           KPI tiles
+           ============================================================ */
+        (function renderKpis() {
+            var grid = document.getElementById("kpi-grid");
+            KPIS.forEach(function (k) {
+                var d = document.createElement("div");
+                d.className = "kpi";
+                d.style.setProperty("--kpi-accent", k.accent);
+                d.innerHTML =
+                    '<p class="kpi-value">' + k.value + '<span class="kpi-unit">' + k.unit + '</span></p>' +
+                    '<p class="kpi-label">' + k.label + '</p>' +
+                    '<p class="kpi-source">' + k.source + '</p>';
+                grid.appendChild(d);
+            });
+        })();
+
+        /* ============================================================
+           Shared tooltip helper
+           ============================================================ */
+        function makeTooltip(area) {
+            var tt = document.createElement("div");
+            tt.className = "tt";
+            area.appendChild(tt);
+            return {
+                show: function (html, cx, cy) {
+                    tt.innerHTML = html;
+                    tt.style.left = cx + "px";
+                    tt.style.top = cy + "px";
+                    tt.classList.add("show");
+                },
+                hide: function () { tt.classList.remove("show"); }
+            };
+        }
+        // convert an SVG x/y (viewBox units) to pixel offset within the area element
+        function svgToPx(svg, area, vx, vy) {
+            var vb = svg.viewBox.baseVal;
+            var rect = svg.getBoundingClientRect();
+            var arect = area.getBoundingClientRect();
+            var px = (vx / vb.width) * rect.width + (rect.left - arect.left);
+            var py = (vy / vb.height) * rect.height + (rect.top - arect.top);
+            return { x: px, y: py };
+        }
+
+        /* ============================================================
+           Chart 1 — horizontal bars (single hue, magnitude)
+           ============================================================ */
+        (function renderDeaths() {
+            var area = document.getElementById("deaths-area");
+            var W = 700, rowH = 52, padTop = 8, padBottom = 34;
+            var labelW = 250, valW = 58;
+            var plotLeft = labelW, plotRight = W - valW;
+            var plotW = plotRight - plotLeft;
+            var H = padTop + DEATHS.length * rowH + padBottom;
+            var maxV = 4.5;
+            var svg = el("svg", { viewBox: "0 0 " + W + " " + H });
+
+            // gridlines + ticks
+            var ticks = [0, 1, 2, 3, 4];
+            ticks.forEach(function (t) {
+                var x = plotLeft + (t / maxV) * plotW;
+                svg.appendChild(el("line", {
+                    x1: x, y1: padTop, x2: x, y2: H - padBottom,
+                    stroke: "var(--c-grid)", "stroke-width": 1
+                }));
+                var tk = el("text", { x: x, y: H - padBottom + 18, "text-anchor": "middle", "class": "ax-tick" });
+                tk.textContent = t;
+                svg.appendChild(tk);
+            });
+            var axl = el("text", { x: plotLeft + plotW / 2, y: H - 2, "text-anchor": "middle", "class": "ax-label" });
+            axl.textContent = "Estimated deaths per year (millions)";
+            svg.appendChild(axl);
+
+            var tip = makeTooltip(area);
+
+            DEATHS.forEach(function (d, i) {
+                var cy = padTop + i * rowH;
+                var bh = 22;
+                var by = cy + (rowH - bh) / 2 - 4;
+                var w = Math.max(3, (d.value / maxV) * plotW);
+
+                // category name (right-aligned to the axis)
+                var nm = el("text", { x: plotLeft - 12, y: by + bh / 2 + 4, "text-anchor": "end", "class": "bar-name" });
+                nm.textContent = d.name;
+                svg.appendChild(nm);
+
+                // bar (4px rounded, anchored to baseline at plotLeft)
+                var bar = el("rect", {
+                    x: plotLeft, y: by, width: w, height: bh, rx: 4, ry: 4,
+                    fill: d.projected ? "var(--c-axis)" : "var(--bar-eco)",
+                    "fill-opacity": d.projected ? 0.9 : 1
+                });
+                bar.style.cursor = "pointer";
+                svg.appendChild(bar);
+
+                // value label at bar end
+                var vl = el("text", { x: plotLeft + w + 8, y: by + bh / 2 + 4, "text-anchor": "start", "class": "bar-val" });
+                vl.textContent = d.value < 1 ? d.value.toFixed(2) : d.value.toFixed(1);
+                svg.appendChild(vl);
+
+                // hover hit-area over the row
+                var hit = el("rect", { x: 0, y: cy, width: W, height: rowH, fill: "transparent" });
+                hit.style.cursor = "pointer";
+                (function (dd, yy) {
+                    hit.addEventListener("mousemove", function (e) {
+                        var p = svgToPx(svg, area, plotLeft + Math.max(3, (dd.value / maxV) * plotW), yy + rowH / 2 - 4);
+                        tip.show(
+                            '<div class="tt-title">' + dd.name + '</div>' +
+                            '<div class="tt-val"><b>' + (dd.value < 1 ? dd.value.toFixed(2) : dd.value.toFixed(1)) +
+                            ' million</b> deaths / yr</div>' +
+                            '<div class="tt-val" style="font-size:0.92em;">' + dd.note + '</div>',
+                            p.x, p.y);
+                    });
+                    hit.addEventListener("mouseleave", tip.hide);
+                })(d, cy);
+                svg.appendChild(hit);
+            });
+
+            area.appendChild(svg);
+
+            // data table
+            var rows = DEATHS.map(function (d) {
+                return '<tr><td>' + d.name + '</td><td class="num">' +
+                    (d.value < 1 ? d.value.toFixed(2) : d.value.toFixed(1)) + '</td><td>' + d.note + '</td></tr>';
+            }).join("");
+            document.getElementById("deaths-table").innerHTML =
+                '<table><caption>Annual deaths attributable to environmental risk factors (millions)</caption>' +
+                '<thead><tr><th scope="col">Risk factor</th><th scope="col" class="num">Deaths / yr (M)</th>' +
+                '<th scope="col">Detail</th></tr></thead><tbody>' + rows + '</tbody></table>';
+        })();
+
+        /* ============================================================
+           Chart 2 — horizontal stacked bar (part-to-whole, 3 series)
+           ============================================================ */
+        (function renderFootprint() {
+            var area = document.getElementById("footprint-area");
+            var W = 700, H = 132;
+            var padX = 8, barY = 30, barH = 46;
+            var plotW = W - padX * 2;
+            var gap = 2; // 2px surface gap between segments
+            var svg = el("svg", { viewBox: "0 0 " + W + " " + H });
+            var tip = makeTooltip(area);
+
+            var x = padX;
+            FOOTPRINT.forEach(function (s, i) {
+                var segW = (s.value / 100) * plotW - (i < FOOTPRINT.length - 1 ? gap : 0);
+                var seg = el("rect", {
+                    x: x, y: barY, width: Math.max(1, segW), height: barH,
+                    rx: 4, ry: 4, fill: s.color
+                });
+                seg.style.cursor = "pointer";
+                svg.appendChild(seg);
+
+                // in-segment % label (white) where it fits; else above
+                var cx = x + segW / 2;
+                if (segW > 40) {
+                    var pl = el("text", { x: cx, y: barY + barH / 2 + 5, "text-anchor": "middle", "class": "seg-label" });
+                    pl.textContent = s.value + "%";
+                    svg.appendChild(pl);
+                } else {
+                    var pl2 = el("text", { x: cx, y: barY - 8, "text-anchor": "middle", "class": "pt-label" });
+                    pl2.textContent = s.value + "%";
+                    svg.appendChild(pl2);
+                    svg.appendChild(el("line", { x1: cx, y1: barY - 4, x2: cx, y2: barY + 2, stroke: "var(--c-axis)", "stroke-width": 1 }));
+                }
+
+                (function (ss, segx, segw) {
+                    var hitCx = segx + segw / 2;
+                    seg.addEventListener("mousemove", function () {
+                        var p = svgToPx(svg, area, hitCx, barY);
+                        tip.show(
+                            '<div class="tt-title">' + ss.name + ' · ' + ss.scope + '</div>' +
+                            '<div class="tt-val"><b>' + ss.value + '%</b> of the sector footprint</div>' +
+                            '<div class="tt-val" style="font-size:0.92em;">' + ss.desc + '</div>',
+                            p.x, p.y);
+                    });
+                    seg.addEventListener("mouseleave", tip.hide);
+                })(s, x, segW);
+
+                x += (s.value / 100) * plotW;
+            });
+
+            // scale caption
+            var sc = el("text", { x: padX, y: H - 8, "text-anchor": "start", "class": "ax-tick" });
+            sc.textContent = "0%";
+            svg.appendChild(sc);
+            var sc2 = el("text", { x: W - padX, y: H - 8, "text-anchor": "end", "class": "ax-tick" });
+            sc2.textContent = "100% · ≈ 2.0 Gt CO₂e / yr";
+            svg.appendChild(sc2);
+
+            area.appendChild(svg);
+
+            // legend
+            var leg = document.getElementById("footprint-legend");
+            FOOTPRINT.forEach(function (s) {
+                var li = document.createElement("li");
+                li.innerHTML = '<span class="swatch" style="background:' + s.color + ';"></span>' +
+                    '<span><b>' + s.name + '</b> (' + s.scope + ') — ' + s.value + '%</span>';
+                leg.appendChild(li);
+            });
+
+            // data table
+            var rows = FOOTPRINT.map(function (s) {
+                return '<tr><td>' + s.name + '</td><td>' + s.scope + '</td><td class="num">' + s.value +
+                    '%</td><td>' + s.desc + '</td></tr>';
+            }).join("");
+            document.getElementById("footprint-table").innerHTML =
+                '<table><caption>Global health-sector greenhouse-gas emissions by scope (≈ 2.0 Gt CO₂e / yr)</caption>' +
+                '<thead><tr><th scope="col">Source</th><th scope="col">Scope</th>' +
+                '<th scope="col" class="num">Share</th><th scope="col">Detail</th></tr></thead><tbody>' +
+                rows + '</tbody></table>';
+        })();
+
+        /* ============================================================
+           Chart 3 — line chart (single series, trend over time)
+           ============================================================ */
+        (function renderDengue() {
+            var area = document.getElementById("dengue-area");
+            var W = 700, H = 320;
+            var padL = 46, padR = 24, padT = 22, padB = 42;
+            var plotW = W - padL - padR, plotH = H - padT - padB;
+            var years = DENGUE.map(function (d) { return d.year; });
+            var minYear = 2000, maxYear = 2023, maxV = 7;
+            var svg = el("svg", { viewBox: "0 0 " + W + " " + H });
+
+            function X(yr) { return padL + ((yr - minYear) / (maxYear - minYear)) * plotW; }
+            function Y(v) { return padT + plotH - (v / maxV) * plotH; }
+
+            // y gridlines + ticks
+            [0, 1, 2, 3, 4, 5, 6, 7].forEach(function (t) {
+                var y = Y(t);
+                svg.appendChild(el("line", { x1: padL, y1: y, x2: W - padR, y2: y, stroke: "var(--c-grid)", "stroke-width": 1 }));
+                var tk = el("text", { x: padL - 10, y: y + 4, "text-anchor": "end", "class": "ax-tick" });
+                tk.textContent = t;
+                svg.appendChild(tk);
+            });
+            var yl = el("text", { x: padL - 34, y: padT + plotH / 2, "text-anchor": "middle", "class": "ax-label",
+                transform: "rotate(-90 " + (padL - 34) + " " + (padT + plotH / 2) + ")" });
+            yl.textContent = "Cases reported (millions)";
+            svg.appendChild(yl);
+
+            // x ticks
+            years.forEach(function (yr) {
+                var tk = el("text", { x: X(yr), y: H - padB + 20, "text-anchor": "middle", "class": "ax-tick" });
+                tk.textContent = yr;
+                svg.appendChild(tk);
+            });
+
+            // area fill under the line
+            var areaPath = "M " + X(DENGUE[0].year) + " " + Y(0);
+            DENGUE.forEach(function (d) { areaPath += " L " + X(d.year) + " " + Y(d.value); });
+            areaPath += " L " + X(DENGUE[DENGUE.length - 1].year) + " " + Y(0) + " Z";
+            svg.appendChild(el("path", { d: areaPath, fill: "var(--line-health-fill)", stroke: "none" }));
+
+            // the line (2px)
+            var linePath = "";
+            DENGUE.forEach(function (d, i) { linePath += (i === 0 ? "M " : " L ") + X(d.year) + " " + Y(d.value); });
+            svg.appendChild(el("path", { d: linePath, fill: "none", stroke: "var(--line-health)", "stroke-width": 2.5,
+                "stroke-linejoin": "round", "stroke-linecap": "round" }));
+
+            var tip = makeTooltip(area);
+
+            // markers + hover (>= 8px targets via invisible 22px hit circles)
+            DENGUE.forEach(function (d) {
+                var cx = X(d.year), cy = Y(d.value);
+                // 2px surface ring on the marker
+                svg.appendChild(el("circle", { cx: cx, cy: cy, r: 5.5, fill: "var(--line-health)",
+                    stroke: "var(--c-surface)", "stroke-width": 2 }));
+                var hit = el("circle", { cx: cx, cy: cy, r: 16, fill: "transparent" });
+                hit.style.cursor = "pointer";
+                (function (dd, x, y) {
+                    hit.addEventListener("mousemove", function () {
+                        var p = svgToPx(svg, area, x, y);
+                        tip.show(
+                            '<div class="tt-title">' + dd.year + '</div>' +
+                            '<div class="tt-val"><b>' + dd.value.toFixed(1) + ' million</b> cases reported</div>',
+                            p.x, p.y);
+                    });
+                    hit.addEventListener("mouseleave", tip.hide);
+                })(d, cx, cy);
+                svg.appendChild(hit);
+            });
+
+            // direct end label on the final point
+            var last = DENGUE[DENGUE.length - 1];
+            var endLbl = el("text", { x: X(last.year), y: Y(last.value) - 14, "text-anchor": "end", "class": "pt-label" });
+            endLbl.textContent = last.value.toFixed(1) + "M";
+            svg.appendChild(endLbl);
+
+            area.appendChild(svg);
+
+            // data table
+            var rows = DENGUE.map(function (d) {
+                return '<tr><td class="num">' + d.year + '</td><td class="num">' + d.value.toFixed(1) + '</td></tr>';
+            }).join("");
+            document.getElementById("dengue-table").innerHTML =
+                '<table><caption>Dengue cases reported to the WHO, by year (millions)</caption>' +
+                '<thead><tr><th scope="col" class="num">Year</th>' +
+                '<th scope="col" class="num">Cases (millions)</th></tr></thead><tbody>' + rows + '</tbody></table>';
+        })();
+
+        /* ============================================================
+           Data-table toggles
+           ============================================================ */
+        Array.prototype.forEach.call(document.querySelectorAll(".table-toggle"), function (btn) {
+            btn.addEventListener("click", function () {
+                var t = document.getElementById(btn.getAttribute("data-target"));
+                var open = !t.hidden;
+                t.hidden = open;
+                btn.setAttribute("aria-expanded", String(!open));
+                btn.textContent = open ? "Show data table" : "Hide data table";
+            });
+        });
+
+        /* ============================================================
+           Theme toggle (light / dark), respects OS preference
+           ============================================================ */
+        (function themeToggle() {
+            var root = document.documentElement;
+            var btn = document.getElementById("theme-toggle");
+            function current() {
+                var explicit = root.getAttribute("data-theme");
+                if (explicit) { return explicit; }
+                return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            btn.addEventListener("click", function () {
+                var next = current() === "dark" ? "light" : "dark";
+                root.setAttribute("data-theme", next);
+            });
+        })();
+    </script>
+</body>
+
+</html>
